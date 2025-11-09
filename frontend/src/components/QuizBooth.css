@@ -1,0 +1,263 @@
+.quiz-booth-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 500;
+  backdrop-filter: blur(4px);
+  animation: fadeIn 0.3s ease-out;
+}
+
+.quiz-booth-modal {
+  background: white;
+  border-radius: 16px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+  max-width: 600px;
+  width: 90%;
+  max-height: 90vh;
+  overflow-y: auto;
+  animation: slideUp 0.3s ease-out;
+}
+
+/* ヘッダー */
+.quiz-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 25px;
+  border-bottom: 2px solid #f0f0f0;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  border-radius: 16px 16px 0 0;
+}
+
+.quiz-header h2 {
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+.close-button {
+  background: rgba(255, 255, 255, 0.2);
+  border: none;
+  color: white;
+  font-size: 1.5rem;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.2s ease;
+  padding: 0;
+}
+
+.close-button:hover:not(:disabled) {
+  background: rgba(255, 255, 255, 0.3);
+  transform: rotate(90deg);
+}
+
+.close-button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+/* 問題文 */
+.quiz-question {
+  padding: 25px;
+  background: #f9f9f9;
+}
+
+.quiz-question p {
+  margin: 0;
+  font-size: 1.1rem;
+  color: #333;
+  font-weight: 500;
+  line-height: 1.6;
+}
+
+/* 選択肢 */
+.quiz-options {
+  padding: 20px 25px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.option-button {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 15px 20px;
+  border: 2px solid #ddd;
+  background: white;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  text-align: left;
+  font-size: 1rem;
+}
+
+.option-button:hover:not(:disabled) {
+  border-color: #667eea;
+  background: #f5f7ff;
+  transform: translateX(5px);
+}
+
+.option-button.selected {
+  background: #667eea;
+  color: white;
+  border-color: #667eea;
+  font-weight: 500;
+}
+
+.option-button:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+.option-letter {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 30px;
+  height: 30px;
+  background: rgba(102, 126, 234, 0.1);
+  border-radius: 50%;
+  font-weight: bold;
+  color: #667eea;
+}
+
+.option-button.selected .option-letter {
+  background: rgba(255, 255, 255, 0.3);
+  color: white;
+}
+
+.option-text {
+  flex: 1;
+}
+
+/* フッター */
+.quiz-footer {
+  padding: 20px 25px;
+  border-top: 2px solid #f0f0f0;
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+}
+
+.submit-button {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  border: none;
+  padding: 12px 30px;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.submit-button:hover:not(:disabled) {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(102, 126, 234, 0.4);
+}
+
+.submit-button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+/* 結果表示 */
+.quiz-result {
+  padding: 60px 25px;
+  text-align: center;
+  min-height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.quiz-result.correct {
+  background: linear-gradient(135deg, #4CAF50 0%, #45a049 100%);
+}
+
+.quiz-result.incorrect {
+  background: linear-gradient(135deg, #F44336 0%, #da190b 100%);
+}
+
+.result-icon {
+  color: white;
+}
+
+.checkmark,
+.cross {
+  display: block;
+  font-size: 4rem;
+  margin-bottom: 20px;
+  animation: popIn 0.5s ease-out;
+}
+
+.result-text {
+  margin: 10px 0;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.correct-answer {
+  margin: 20px 0 0 0;
+  font-size: 0.95rem;
+  opacity: 0.9;
+}
+
+/* アニメーション */
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes popIn {
+  from {
+    transform: scale(0.5);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@media (max-width: 600px) {
+  .quiz-booth-modal {
+    width: 95%;
+  }
+
+  .option-button {
+    padding: 12px 15px;
+    gap: 10px;
+  }
+
+  .result-text {
+    font-size: 1.5rem;
+  }
+}

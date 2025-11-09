@@ -1,0 +1,6154 @@
+{
+  "id": "session_1762504748042_nvq1b73yn",
+  "difficulty": "easy",
+  "startTime": "2025/11/07 17:39:08",
+  "sensorData": [
+    {
+      "timestamp": "2025/11/07 17:39:08",
+      "position": {
+        "x": 735,
+        "y": 659
+      },
+      "rotation": {
+        "x": -0.006231527093596059,
+        "y": 0.0002083333333333326
+      },
+      "gaze": {
+        "x": 735,
+        "y": 659,
+        "object": "empty",
+        "inCenter": false
+      }
+    },
+    {
+      "timestamp": "2025/11/07 17:39:08",
+      "position": {
+        "x": 735,
+        "y": 653
+      },
+      "rotation": {
+        "x": 0.0001477832512315258,
+        "y": 0
+      },
+      "gaze": {
+        "x": 735,
+        "y": 653,
+        "object": "empty",
+        "inCenter": false
+      }
+    },
+    {
+      "timestamp": "2025/11/07 17:39:08",
+      "position": {
+        "x": 735,
+        "y": 628
+      },
+      "rotation": {
+        "x": 0.0006157635467980293,
+        "y": 0
+      },
+      "gaze": {
+        "x": 735,
+        "y": 628,
+        "object": "empty",
+        "inCenter": false
+      }
+    },
+    {
+      "timestamp": "2025/11/07 17:39:08",
+      "position": {
+        "x": 737,
+        "y": 580
+      },
+      "rotation": {
+        "x": 0.0011822660098522175,
+        "y": 0.00002777777777777768
+      },
+      "gaze": {
+        "x": 737,
+        "y": 580,
+        "object": "empty",
+        "inCenter": true
+      }
+    },
+    {
+      "timestamp": "2025/11/07 17:39:08",
+      "position": {
+        "x": 741,
+        "y": 498
+      },
+      "rotation": {
+        "x": 0.002019704433497538,
+        "y": 0.00005555555555555536
+      },
+      "gaze": {
+        "x": 741,
+        "y": 498,
+        "object": "empty",
+        "inCenter": true
+      }
+    },
+    {
+      "timestamp": "2025/11/07 17:39:08",
+      "position": {
+        "x": 747,
+        "y": 413
+      },
+      "rotation": {
+        "x": 0.0020935960591133007,
+        "y": 0.00008333333333333526
+      },
+      "gaze": {
+        "x": 747,
+        "y": 413,
+        "object": "empty",
+        "inCenter": true
+      }
+    },
+    {
+      "timestamp": "2025/11/07 17:39:08",
+      "position": {
+        "x": 756,
+        "y": 328
+      },
+      "rotation": {
+        "x": 0.0020935960591133,
+        "y": 0.00012499999999999957
+      },
+      "gaze": {
+        "x": 756,
+        "y": 328,
+        "object": "empty",
+        "inCenter": true
+      }
+    },
+    {
+      "timestamp": "2025/11/07 17:39:08",
+      "position": {
+        "x": 760,
+        "y": 302
+      },
+      "rotation": {
+        "x": 0.0006403940886699511,
+        "y": 0.00005555555555555536
+      },
+      "gaze": {
+        "x": 760,
+        "y": 302,
+        "object": "empty",
+        "inCenter": true
+      }
+    },
+    {
+      "timestamp": "2025/11/07 17:39:08",
+      "position": {
+        "x": 765,
+        "y": 280
+      },
+      "rotation": {
+        "x": 0.0005418719211822653,
+        "y": 0.0000694444444444442
+      },
+      "gaze": {
+        "x": 765,
+        "y": 280,
+        "object": "empty",
+        "inCenter": true
+      }
+    },
+    {
+      "timestamp": "2025/11/07 17:39:08",
+      "position": {
+        "x": 767,
+        "y": 270
+      },
+      "rotation": {
+        "x": 0.0002463054187192126,
+        "y": 0.00002777777777777768
+      },
+      "gaze": {
+        "x": 767,
+        "y": 270,
+        "object": "empty",
+        "inCenter": true
+      }
+    },
+    {
+      "timestamp": "2025/11/07 17:39:08",
+      "position": {
+        "x": 768,
+        "y": 267
+      },
+      "rotation": {
+        "x": 0.0000738916256157629,
+        "y": 0.00001388888888888884
+      },
+      "gaze": {
+        "x": 768,
+        "y": 267,
+        "object": "empty",
+        "inCenter": true
+      }
+    },
+    {
+      "timestamp": "2025/11/07 17:39:08",
+      "position": {
+        "x": 769,
+        "y": 266
+      },
+      "rotation": {
+        "x": 0.00002463054187192171,
+        "y": 0.00001388888888888884
+      },
+      "gaze": {
+        "x": 769,
+        "y": 266,
+        "object": "empty",
+        "inCenter": true
+      }
+    },
+    {
+      "timestamp": "2025/11/07 17:39:08",
+      "position": {
+        "x": 769,
+        "y": 265
+      },
+      "rotation": {
+        "x": 0.000024630541871920598,
+        "y": 0
+      },
+      "gaze": {
+        "x": 769,
+        "y": 265,
+        "object": "empty",
+        "inCenter": true
+      }
+    },
+    {
+      "timestamp": "2025/11/07 17:39:08",
+      "position": {
+        "x": 769,
+        "y": 265
+      },
+      "rotation": {
+        "x": 0,
+        "y": 0
+      },
+      "gaze": {
+        "x": 769,
+        "y": 265,
+        "object": "empty",
+        "inCenter": true
+      }
+    },
+    {
+      "timestamp": "2025/11/07 17:39:08",
+      "position": {
+        "x": 769,
+        "y": 265
+      },
+      "rotation": {
+        "x": 0,
+        "y": 0
+      },
+      "gaze": {
+        "x": 769,
+        "y": 265,
+        "object": "empty",
+        "inCenter": true
+      }
+    },
+    {
+      "timestamp": "2025/11/07 17:39:08",
+      "position": {
+        "x": 769,
+        "y": 264
+      },
+      "rotation": {
+        "x": 0.00002463054187192171,
+        "y": 0
+      },
+      "gaze": {
+        "x": 769,
+        "y": 264,
+        "object": "empty",
+        "inCenter": true
+      }
+    },
+    {
+      "timestamp": "2025/11/07 17:39:08",
+      "position": {
+        "x": 769,
+        "y": 260
+      },
+      "rotation": {
+        "x": 0.00009852216748768461,
+        "y": 0
+      },
+      "gaze": {
+        "x": 769,
+        "y": 260,
+        "object": "empty",
+        "inCenter": true
+      }
+    },
+    {
+      "timestamp": "2025/11/07 17:39:08",
+      "position": {
+        "x": 769,
+        "y": 254
+      },
+      "rotation": {
+        "x": 0.00014778325123152692,
+        "y": 0
+      },
+      "gaze": {
+        "x": 769,
+        "y": 254,
+        "object": "empty",
+        "inCenter": true
+      }
+    },
+    {
+      "timestamp": "2025/11/07 17:39:08",
+      "position": {
+        "x": 769,
+        "y": 241
+      },
+      "rotation": {
+        "x": 0.00032019704433497556,
+        "y": 0
+      },
+      "gaze": {
+        "x": 769,
+        "y": 241,
+        "object": "empty",
+        "inCenter": true
+      }
+    },
+    {
+      "timestamp": "2025/11/07 17:39:08",
+      "position": {
+        "x": 769,
+        "y": 227
+      },
+      "rotation": {
+        "x": 0.00034482758620689615,
+        "y": 0
+      },
+      "gaze": {
+        "x": 769,
+        "y": 227,
+        "object": "empty",
+        "inCenter": true
+      }
+    },
+    {
+      "timestamp": "2025/11/07 17:39:08",
+      "position": {
+        "x": 769,
+        "y": 209
+      },
+      "rotation": {
+        "x": 0.00044334975369458184,
+        "y": 0
+      },
+      "gaze": {
+        "x": 769,
+        "y": 209,
+        "object": "empty",
+        "inCenter": false
+      }
+    },
+    {
+      "timestamp": "2025/11/07 17:39:08",
+      "position": {
+        "x": 769,
+        "y": 189
+      },
+      "rotation": {
+        "x": 0.0004926108374384241,
+        "y": 0
+      },
+      "gaze": {
+        "x": 769,
+        "y": 189,
+        "object": "empty",
+        "inCenter": false
+      }
+    },
+    {
+      "timestamp": "2025/11/07 17:39:08",
+      "position": {
+        "x": 767,
+        "y": 176
+      },
+      "rotation": {
+        "x": 0.0003201970443349744,
+        "y": -0.00002777777777777768
+      },
+      "gaze": {
+        "x": 767,
+        "y": 176,
+        "object": "empty",
+        "inCenter": false
+      }
+    },
+    {
+      "timestamp": "2025/11/07 17:39:08",
+      "position": {
+        "x": 766,
+        "y": 168
+      },
+      "rotation": {
+        "x": 0.00019704433497537034,
+        "y": -0.00001388888888888884
+      },
+      "gaze": {
+        "x": 766,
+        "y": 168,
+        "object": "empty",
+        "inCenter": false
+      }
+    },
+    {
+      "timestamp": "2025/11/07 17:39:09",
+      "position": {
+        "x": 765,
+        "y": 165
+      },
+      "rotation": {
+        "x": 0.0000738916256157629,
+        "y": -0.00001388888888888884
+      },
+      "gaze": {
+        "x": 765,
+        "y": 165,
+        "object": "empty",
+        "inCenter": false
+      }
+    },
+    {
+      "timestamp": "2025/11/07 17:39:09",
+      "position": {
+        "x": 764,
+        "y": 163
+      },
+      "rotation": {
+        "x": 0.000049261083743842307,
+        "y": -0.00001388888888888884
+      },
+      "gaze": {
+        "x": 764,
+        "y": 163,
+        "object": "empty",
+        "inCenter": false
+      }
+    },
+    {
+      "timestamp": "2025/11/07 17:39:09",
+      "position": {
+        "x": 764,
+        "y": 162
+      },
+      "rotation": {
+        "x": 0.000024630541871920598,
+        "y": 0
+      },
+      "gaze": {
+        "x": 764,
+        "y": 162,
+        "object": "empty",
+        "inCenter": false
+      }
+    },
+    {
+      "timestamp": "2025/11/07 17:39:09",
+      "position": {
+        "x": 764,
+        "y": 162
+      },
+      "rotation": {
+        "x": 0,
+        "y": 0
+      },
+      "gaze": {
+        "x": 764,
+        "y": 162,
+        "object": "empty",
+        "inCenter": false
+      }
+    },
+    {
+      "timestamp": "2025/11/07 17:39:09",
+      "position": {
+        "x": 763,
+        "y": 162
+      },
+      "rotation": {
+        "x": 0,
+        "y": -0.00001388888888888884
+      },
+      "gaze": {
+        "x": 763,
+        "y": 162,
+        "object": "empty",
+        "inCenter": false
+      }
+    },
+    {
+      "timestamp": "2025/11/07 17:39:09",
+      "position": {
+        "x": 763,
+        "y": 162
+      },
+      "rotation": {
+        "x": 0,
+        "y": 0
+      },
+      "gaze": {
+        "x": 763,
+        "y": 162,
+        "object": "empty",
+        "inCenter": false
+      }
+    },
+    {
+      "timestamp": "2025/11/07 17:39:09",
+      "position": {
+        "x": 763,
+        "y": 162
+      },
+      "rotation": {
+        "x": 0,
+        "y": 0
+      },
+      "gaze": {
+        "x": 763,
+        "y": 162,
+        "object": "empty",
+        "inCenter": false
+      }
+    },
+    {
+      "timestamp": "2025/11/07 17:39:09",
+      "position": {
+        "x": 762,
+        "y": 162
+      },
+      "rotation": {
+        "x": 0,
+        "y": -0.00001388888888888884
+      },
+      "gaze": {
+        "x": 762,
+        "y": 162,
+        "object": "empty",
+        "inCenter": false
+      }
+    },
+    {
+      "timestamp": "2025/11/07 17:39:09",
+      "position": {
+        "x": 762,
+        "y": 162
+      },
+      "rotation": {
+        "x": 0,
+        "y": 0
+      },
+      "gaze": {
+        "x": 762,
+        "y": 162,
+        "object": "empty",
+        "inCenter": false
+      }
+    },
+    {
+      "timestamp": "2025/11/07 17:39:09",
+      "position": {
+        "x": 762,
+        "y": 162
+      },
+      "rotation": {
+        "x": 0,
+        "y": 0
+      },
+      "gaze": {
+        "x": 762,
+        "y": 162,
+        "object": "empty",
+        "inCenter": false
+      }
+    },
+    {
+      "timestamp": "2025/11/07 17:39:09",
+      "position": {
+        "x": 762,
+        "y": 162
+      },
+      "rotation": {
+        "x": 0,
+        "y": 0
+      },
+      "gaze": {
+        "x": 762,
+        "y": 162,
+        "object": "empty",
+        "inCenter": false
+      }
+    },
+    {
+      "timestamp": "2025/11/07 17:39:09",
+      "position": {
+        "x": 760,
+        "y": 161
+      },
+      "rotation": {
+        "x": 0.00002463054187192171,
+        "y": -0.00002777777777777768
+      },
+      "gaze": {
+        "x": 760,
+        "y": 161,
+        "object": "empty",
+        "inCenter": false
+      }
+    },
+    {
+      "timestamp": "2025/11/07 17:39:09",
+      "position": {
+        "x": 759,
+        "y": 161
+      },
+      "rotation": {
+        "x": 0,
+        "y": -0.00001388888888888884
+      },
+      "gaze": {
+        "x": 759,
+        "y": 161,
+        "object": "empty",
+        "inCenter": false
+      }
+    },
+    {
+      "timestamp": "2025/11/07 17:39:09",
+      "position": {
+        "x": 757,
+        "y": 160
+      },
+      "rotation": {
+        "x": 0.00002463054187192171,
+        "y": -0.00002777777777777768
+      },
+      "gaze": {
+        "x": 757,
+        "y": 160,
+        "object": "empty",
+        "inCenter": false
+      }
+    },
+    {
+      "timestamp": "2025/11/07 17:39:09",
+      "position": {
+        "x": 756,
+        "y": 159
+      },
+      "rotation": {
+        "x": 0.000024630541871920598,
+        "y": -0.00001388888888888884
+      },
+      "gaze": {
+        "x": 756,
+        "y": 159,
+        "object": "empty",
+        "inCenter": false
+      }
+    },
+    {
+      "timestamp": "2025/11/07 17:39:09",
+      "position": {
+        "x": 754,
+        "y": 158
+      },
+      "rotation": {
+        "x": 0.000024630541871920598,
+        "y": -0.00002777777777777768
+      },
+      "gaze": {
+        "x": 754,
+        "y": 158,
+        "object": "empty",
+        "inCenter": false
+      }
+    },
+    {
+      "timestamp": "2025/11/07 17:39:09",
+      "position": {
+        "x": 753,
+        "y": 158
+      },
+      "rotation": {
+        "x": 0,
+        "y": -0.00001388888888888884
+      },
+      "gaze": {
+        "x": 753,
+        "y": 158,
+        "object": "empty",
+        "inCenter": false
+      }
+    },
+    {
+      "timestamp": "2025/11/07 17:39:09",
+      "position": {
+        "x": 753,
+        "y": 158
+      },
+      "rotation": {
+        "x": 0,
+        "y": 0
+      },
+      "gaze": {
+        "x": 753,
+        "y": 158,
+        "object": "empty",
+        "inCenter": false
+      }
+    },
+    {
+      "timestamp": "2025/11/07 17:39:09",
+      "position": {
+        "x": 752,
+        "y": 157
+      },
+      "rotation": {
+        "x": 0.00002463054187192171,
+        "y": -0.00001388888888888884
+      },
+      "gaze": {
+        "x": 752,
+        "y": 157,
+        "object": "empty",
+        "inCenter": false
+      }
+    },
+    {
+      "timestamp": "2025/11/07 17:39:09",
+      "position": {
+        "x": 752,
+        "y": 164
+      },
+      "rotation": {
+        "x": -0.0001724137931034475,
+        "y": 0
+      },
+      "gaze": {
+        "x": 752,
+        "y": 164,
+        "object": "empty",
+        "inCenter": false
+      }
+    },
+    {
+      "timestamp": "2025/11/07 17:39:09",
+      "position": {
+        "x": 753,
+        "y": 177
+      },
+      "rotation": {
+        "x": -0.00032019704433497556,
+        "y": 0.00001388888888888884
+      },
+      "gaze": {
+        "x": 753,
+        "y": 177,
+        "object": "empty",
+        "inCenter": false
+      }
+    },
+    {
+      "timestamp": "2025/11/07 17:39:09",
+      "position": {
+        "x": 756,
+        "y": 196
+      },
+      "rotation": {
+        "x": -0.00046798029556650357,
+        "y": 0.000041666666666666516
+      },
+      "gaze": {
+        "x": 756,
+        "y": 196,
+        "object": "empty",
+        "inCenter": false
+      }
+    },
+    {
+      "timestamp": "2025/11/07 17:39:09",
+      "position": {
+        "x": 758,
+        "y": 219
+      },
+      "rotation": {
+        "x": -0.000566502463054186,
+        "y": 0.00002777777777777768
+      },
+      "gaze": {
+        "x": 758,
+        "y": 219,
+        "object": "empty",
+        "inCenter": true
+      }
+    },
+    {
+      "timestamp": "2025/11/07 17:39:09",
+      "position": {
+        "x": 760,
+        "y": 234
+      },
+      "rotation": {
+        "x": -0.00036945812807881787,
+        "y": 0.00002777777777777768
+      },
+      "gaze": {
+        "x": 760,
+        "y": 234,
+        "object": "empty",
+        "inCenter": true
+      }
+    },
+    {
+      "timestamp": "2025/11/07 17:39:09",
+      "position": {
+        "x": 762,
+        "y": 250
+      },
+      "rotation": {
+        "x": -0.00039408866995073954,
+        "y": 0.00002777777777777768
+      },
+      "gaze": {
+        "x": 762,
+        "y": 250,
+        "object": "empty",
+        "inCenter": true
+      }
+    },
+    {
+      "timestamp": "2025/11/07 17:39:09",
+      "position": {
+        "x": 764,
+        "y": 267
+      },
+      "rotation": {
+        "x": -0.0004187192118226602,
+        "y": 0.00002777777777777768
+      },
+      "gaze": {
+        "x": 764,
+        "y": 267,
+        "object": "empty",
+        "inCenter": true
+      }
+    },
+    {
+      "timestamp": "2025/11/07 17:39:09",
+      "position": {
+        "x": 766,
+        "y": 273
+      },
+      "rotation": {
+        "x": -0.00014778325123152692,
+        "y": 0.00002777777777777768
+      },
+      "gaze": {
+        "x": 766,
+        "y": 273,
+        "object": "empty",
+        "inCenter": true
+      }
+    },
+    {
+      "timestamp": "2025/11/07 17:39:10",
+      "position": {
+        "x": 766,
+        "y": 278
+      },
+      "rotation": {
+        "x": -0.0001231527093596063,
+        "y": 0
+      },
+      "gaze": {
+        "x": 766,
+        "y": 278,
+        "object": "empty",
+        "inCenter": true
+      }
+    },
+    {
+      "timestamp": "2025/11/07 17:39:10",
+      "position": {
+        "x": 767,
+        "y": 281
+      },
+      "rotation": {
+        "x": -0.0000738916256157629,
+        "y": 0.00001388888888888884
+      },
+      "gaze": {
+        "x": 767,
+        "y": 281,
+        "object": "empty",
+        "inCenter": true
+      }
+    },
+    {
+      "timestamp": "2025/11/07 17:39:10",
+      "position": {
+        "x": 767,
+        "y": 284
+      },
+      "rotation": {
+        "x": -0.00007389162561576402,
+        "y": 0
+      },
+      "gaze": {
+        "x": 767,
+        "y": 284,
+        "object": "empty",
+        "inCenter": true
+      }
+    },
+    {
+      "timestamp": "2025/11/07 17:39:10",
+      "position": {
+        "x": 768,
+        "y": 286
+      },
+      "rotation": {
+        "x": -0.000049261083743842307,
+        "y": 0.00001388888888888884
+      },
+      "gaze": {
+        "x": 768,
+        "y": 286,
+        "object": "empty",
+        "inCenter": true
+      }
+    },
+    {
+      "timestamp": "2025/11/07 17:39:10",
+      "position": {
+        "x": 769,
+        "y": 294
+      },
+      "rotation": {
+        "x": -0.00019704433497536923,
+        "y": 0.00001388888888888884
+      },
+      "gaze": {
+        "x": 769,
+        "y": 294,
+        "object": "empty",
+        "inCenter": true
+      }
+    },
+    {
+      "timestamp": "2025/11/07 17:39:10",
+      "position": {
+        "x": 770,
+        "y": 302
+      },
+      "rotation": {
+        "x": -0.00019704433497536923,
+        "y": 0.00001388888888888884
+      },
+      "gaze": {
+        "x": 770,
+        "y": 302,
+        "object": "empty",
+        "inCenter": true
+      }
+    },
+    {
+      "timestamp": "2025/11/07 17:39:10",
+      "position": {
+        "x": 770,
+        "y": 321
+      },
+      "rotation": {
+        "x": -0.0004679802955665025,
+        "y": 0
+      },
+      "gaze": {
+        "x": 770,
+        "y": 321,
+        "object": "empty",
+        "inCenter": true
+      }
+    },
+    {
+      "timestamp": "2025/11/07 17:39:10",
+      "position": {
+        "x": 770,
+        "y": 330
+      },
+      "rotation": {
+        "x": -0.00022167487684729092,
+        "y": 0
+      },
+      "gaze": {
+        "x": 770,
+        "y": 330,
+        "object": "empty",
+        "inCenter": true
+      }
+    },
+    {
+      "timestamp": "2025/11/07 17:39:10",
+      "position": {
+        "x": 770,
+        "y": 341
+      },
+      "rotation": {
+        "x": -0.00027093596059113326,
+        "y": 0
+      },
+      "gaze": {
+        "x": 770,
+        "y": 341,
+        "object": "empty",
+        "inCenter": true
+      }
+    },
+    {
+      "timestamp": "2025/11/07 17:39:10",
+      "position": {
+        "x": 770,
+        "y": 351
+      },
+      "rotation": {
+        "x": -0.00024630541871921153,
+        "y": 0
+      },
+      "gaze": {
+        "x": 770,
+        "y": 351,
+        "object": "empty",
+        "inCenter": true
+      }
+    },
+    {
+      "timestamp": "2025/11/07 17:39:10",
+      "position": {
+        "x": 770,
+        "y": 367
+      },
+      "rotation": {
+        "x": -0.00039408866995073845,
+        "y": 0
+      },
+      "gaze": {
+        "x": 770,
+        "y": 367,
+        "object": "empty",
+        "inCenter": true
+      }
+    },
+    {
+      "timestamp": "2025/11/07 17:39:10",
+      "position": {
+        "x": 770,
+        "y": 386
+      },
+      "rotation": {
+        "x": -0.0004679802955665025,
+        "y": 0
+      },
+      "gaze": {
+        "x": 770,
+        "y": 386,
+        "object": "empty",
+        "inCenter": true
+      }
+    },
+    {
+      "timestamp": "2025/11/07 17:39:10",
+      "position": {
+        "x": 768,
+        "y": 412
+      },
+      "rotation": {
+        "x": -0.0006403940886699522,
+        "y": -0.00002777777777777768
+      },
+      "gaze": {
+        "x": 768,
+        "y": 412,
+        "object": "empty",
+        "inCenter": true
+      }
+    },
+    {
+      "timestamp": "2025/11/07 17:39:10",
+      "position": {
+        "x": 764,
+        "y": 423
+      },
+      "rotation": {
+        "x": -0.0002709359605911321,
+        "y": -0.00005555555555555536
+      },
+      "gaze": {
+        "x": 764,
+        "y": 423,
+        "object": "empty",
+        "inCenter": true
+      }
+    },
+    {
+      "timestamp": "2025/11/07 17:39:10",
+      "position": {
+        "x": 762,
+        "y": 431
+      },
+      "rotation": {
+        "x": -0.00019704433497536923,
+        "y": -0.00002777777777777768
+      },
+      "gaze": {
+        "x": 762,
+        "y": 431,
+        "object": "empty",
+        "inCenter": true
+      }
+    },
+    {
+      "timestamp": "2025/11/07 17:39:10",
+      "position": {
+        "x": 761,
+        "y": 433
+      },
+      "rotation": {
+        "x": -0.00004926108374384342,
+        "y": -0.00001388888888888884
+      },
+      "gaze": {
+        "x": 761,
+        "y": 433,
+        "object": "empty",
+        "inCenter": true
+      }
+    },
+    {
+      "timestamp": "2025/11/07 17:39:10",
+      "position": {
+        "x": 760,
+        "y": 434
+      },
+      "rotation": {
+        "x": -0.000024630541871919486,
+        "y": -0.00001388888888888884
+      },
+      "gaze": {
+        "x": 760,
+        "y": 434,
+        "object": "empty",
+        "inCenter": true
+      }
+    },
+    {
+      "timestamp": "2025/11/07 17:39:10",
+      "position": {
+        "x": 760,
+        "y": 434
+      },
+      "rotation": {
+        "x": 0,
+        "y": 0
+      },
+      "gaze": {
+        "x": 760,
+        "y": 434,
+        "object": "empty",
+        "inCenter": true
+      }
+    },
+    {
+      "timestamp": "2025/11/07 17:39:10",
+      "position": {
+        "x": 760,
+        "y": 434
+      },
+      "rotation": {
+        "x": 0,
+        "y": 0
+      },
+      "gaze": {
+        "x": 760,
+        "y": 434,
+        "object": "empty",
+        "inCenter": true
+      }
+    },
+    {
+      "timestamp": "2025/11/07 17:39:10",
+      "position": {
+        "x": 760,
+        "y": 434
+      },
+      "rotation": {
+        "x": 0,
+        "y": 0
+      },
+      "gaze": {
+        "x": 760,
+        "y": 434,
+        "object": "empty",
+        "inCenter": true
+      }
+    },
+    {
+      "timestamp": "2025/11/07 17:39:10",
+      "position": {
+        "x": 759,
+        "y": 433
+      },
+      "rotation": {
+        "x": 0.000024630541871919486,
+        "y": -0.00001388888888888884
+      },
+      "gaze": {
+        "x": 759,
+        "y": 433,
+        "object": "empty",
+        "inCenter": true
+      }
+    },
+    {
+      "timestamp": "2025/11/07 17:39:10",
+      "position": {
+        "x": 758,
+        "y": 430
+      },
+      "rotation": {
+        "x": 0.00007389162561576513,
+        "y": -0.00001388888888888884
+      },
+      "gaze": {
+        "x": 758,
+        "y": 430,
+        "object": "empty",
+        "inCenter": true
+      }
+    },
+    {
+      "timestamp": "2025/11/07 17:39:10",
+      "position": {
+        "x": 757,
+        "y": 427
+      },
+      "rotation": {
+        "x": 0.0000738916256157629,
+        "y": -0.00001388888888888884
+      },
+      "gaze": {
+        "x": 757,
+        "y": 427,
+        "object": "empty",
+        "inCenter": true
+      }
+    },
+    {
+      "timestamp": "2025/11/07 17:39:10",
+      "position": {
+        "x": 755,
+        "y": 422
+      },
+      "rotation": {
+        "x": 0.0001231527093596063,
+        "y": -0.00002777777777777768
+      },
+      "gaze": {
+        "x": 755,
+        "y": 422,
+        "object": "empty",
+        "inCenter": true
+      }
+    },
+    {
+      "timestamp": "2025/11/07 17:39:10",
+      "position": {
+        "x": 754,
+        "y": 418
+      },
+      "rotation": {
+        "x": 0.00009852216748768461,
+        "y": -0.00001388888888888884
+      },
+      "gaze": {
+        "x": 754,
+        "y": 418,
+        "object": "empty",
+        "inCenter": true
+      }
+    },
+    {
+      "timestamp": "2025/11/07 17:39:10",
+      "position": {
+        "x": 753,
+        "y": 416
+      },
+      "rotation": {
+        "x": 0.000049261083743841195,
+        "y": -0.00001388888888888884
+      },
+      "gaze": {
+        "x": 753,
+        "y": 416,
+        "object": "empty",
+        "inCenter": true
+      }
+    },
+    {
+      "timestamp": "2025/11/07 17:39:10",
+      "position": {
+        "x": 753,
+        "y": 415
+      },
+      "rotation": {
+        "x": 0.00002463054187192171,
+        "y": 0
+      },
+      "gaze": {
+        "x": 753,
+        "y": 415,
+        "object": "empty",
+        "inCenter": true
+      }
+    },
+    {
+      "timestamp": "2025/11/07 17:39:10",
+      "position": {
+        "x": 752,
+        "y": 414
+      },
+      "rotation": {
+        "x": 0.00002463054187192171,
+        "y": -0.00001388888888888884
+      },
+      "gaze": {
+        "x": 752,
+        "y": 414,
+        "object": "empty",
+        "inCenter": true
+      }
+    },
+    {
+      "timestamp": "2025/11/07 17:39:10",
+      "position": {
+        "x": 749,
+        "y": 411
+      },
+      "rotation": {
+        "x": 0.0000738916256157629,
+        "y": -0.000041666666666666516
+      },
+      "gaze": {
+        "x": 749,
+        "y": 411,
+        "object": "empty",
+        "inCenter": true
+      }
+    },
+    {
+      "timestamp": "2025/11/07 17:39:10",
+      "position": {
+        "x": 747,
+        "y": 410
+      },
+      "rotation": {
+        "x": 0.00002463054187192171,
+        "y": -0.00002777777777777768
+      },
+      "gaze": {
+        "x": 747,
+        "y": 410,
+        "object": "empty",
+        "inCenter": true
+      }
+    },
+    {
+      "timestamp": "2025/11/07 17:39:10",
+      "position": {
+        "x": 745,
+        "y": 408
+      },
+      "rotation": {
+        "x": 0.000049261083743841195,
+        "y": -0.00002777777777777768
+      },
+      "gaze": {
+        "x": 745,
+        "y": 408,
+        "object": "empty",
+        "inCenter": true
+      }
+    },
+    {
+      "timestamp": "2025/11/07 17:39:10",
+      "position": {
+        "x": 744,
+        "y": 407
+      },
+      "rotation": {
+        "x": 0.00002463054187192171,
+        "y": -0.00001388888888888884
+      },
+      "gaze": {
+        "x": 744,
+        "y": 407,
+        "object": "empty",
+        "inCenter": true
+      }
+    },
+    {
+      "timestamp": "2025/11/07 17:39:10",
+      "position": {
+        "x": 744,
+        "y": 407
+      },
+      "rotation": {
+        "x": 0,
+        "y": 0
+      },
+      "gaze": {
+        "x": 744,
+        "y": 407,
+        "object": "empty",
+        "inCenter": true
+      }
+    },
+    {
+      "timestamp": "2025/11/07 17:39:10",
+      "position": {
+        "x": 744,
+        "y": 421
+      },
+      "rotation": {
+        "x": -0.000344827586206895,
+        "y": 0
+      },
+      "gaze": {
+        "x": 744,
+        "y": 421,
+        "object": "empty",
+        "inCenter": true
+      }
+    },
+    {
+      "timestamp": "2025/11/07 17:39:10",
+      "position": {
+        "x": 744,
+        "y": 435
+      },
+      "rotation": {
+        "x": -0.00034482758620689723,
+        "y": 0
+      },
+      "gaze": {
+        "x": 744,
+        "y": 435,
+        "object": "empty",
+        "inCenter": true
+      }
+    },
+    {
+      "timestamp": "2025/11/07 17:39:10",
+      "position": {
+        "x": 744,
+        "y": 470
+      },
+      "rotation": {
+        "x": -0.000862068965517242,
+        "y": 0
+      },
+      "gaze": {
+        "x": 744,
+        "y": 470,
+        "object": "empty",
+        "inCenter": true
+      }
+    },
+    {
+      "timestamp": "2025/11/07 17:39:10",
+      "position": {
+        "x": 744,
+        "y": 525
+      },
+      "rotation": {
+        "x": -0.001354679802955665,
+        "y": 0
+      },
+      "gaze": {
+        "x": 744,
+        "y": 525,
+        "object": "empty",
+        "inCenter": true
+      }
+    },
+    {
+      "timestamp": "2025/11/07 17:39:10",
+      "position": {
+        "x": 744,
+        "y": 558
+      },
+      "rotation": {
+        "x": -0.0008128078817733986,
+        "y": 0
+      },
+      "gaze": {
+        "x": 744,
+        "y": 558,
+        "object": "empty",
+        "inCenter": true
+      }
+    },
+    {
+      "timestamp": "2025/11/07 17:39:10",
+      "position": {
+        "x": 739,
+        "y": 595
+      },
+      "rotation": {
+        "x": -0.0009113300492610832,
+        "y": -0.00006944444444444642
+      },
+      "gaze": {
+        "x": 739,
+        "y": 595,
+        "object": "empty",
+        "inCenter": true
+      }
+    },
+    {
+      "timestamp": "2025/11/07 17:39:10",
+      "position": {
+        "x": 737,
+        "y": 613
+      },
+      "rotation": {
+        "x": -0.00044334975369458184,
+        "y": -0.00002777777777777768
+      },
+      "gaze": {
+        "x": 737,
+        "y": 613,
+        "object": "empty",
+        "inCenter": false
+      }
+    },
+    {
+      "timestamp": "2025/11/07 17:39:11",
+      "position": {
+        "x": 733,
+        "y": 632
+      },
+      "rotation": {
+        "x": -0.00046798029556650357,
+        "y": -0.00005555555555555536
+      },
+      "gaze": {
+        "x": 733,
+        "y": 632,
+        "object": "empty",
+        "inCenter": false
+      }
+    },
+    {
+      "timestamp": "2025/11/07 17:39:11",
+      "position": {
+        "x": 732,
+        "y": 636
+      },
+      "rotation": {
+        "x": -0.00009852216748768461,
+        "y": -0.00001388888888888884
+      },
+      "gaze": {
+        "x": 732,
+        "y": 636,
+        "object": "empty",
+        "inCenter": false
+      }
+    },
+    {
+      "timestamp": "2025/11/07 17:39:11",
+      "position": {
+        "x": 732,
+        "y": 638
+      },
+      "rotation": {
+        "x": -0.000049261083743841195,
+        "y": 0
+      },
+      "gaze": {
+        "x": 732,
+        "y": 638,
+        "object": "empty",
+        "inCenter": false
+      }
+    },
+    {
+      "timestamp": "2025/11/07 17:39:11",
+      "position": {
+        "x": 731,
+        "y": 638
+      },
+      "rotation": {
+        "x": 0,
+        "y": -0.00001388888888888884
+      },
+      "gaze": {
+        "x": 731,
+        "y": 638,
+        "object": "empty",
+        "inCenter": false
+      }
+    },
+    {
+      "timestamp": "2025/11/07 17:39:11",
+      "position": {
+        "x": 731,
+        "y": 638
+      },
+      "rotation": {
+        "x": 0,
+        "y": 0
+      },
+      "gaze": {
+        "x": 731,
+        "y": 638,
+        "object": "empty",
+        "inCenter": false
+      }
+    },
+    {
+      "timestamp": "2025/11/07 17:39:11",
+      "position": {
+        "x": 731,
+        "y": 639
+      },
+      "rotation": {
+        "x": -0.00002463054187192171,
+        "y": 0
+      },
+      "gaze": {
+        "x": 731,
+        "y": 639,
+        "object": "empty",
+        "inCenter": false
+      }
+    },
+    {
+      "timestamp": "2025/11/07 17:39:11",
+      "position": {
+        "x": 731,
+        "y": 640
+      },
+      "rotation": {
+        "x": -0.00002463054187192171,
+        "y": 0
+      },
+      "gaze": {
+        "x": 731,
+        "y": 640,
+        "object": "empty",
+        "inCenter": false
+      }
+    },
+    {
+      "timestamp": "2025/11/07 17:39:11",
+      "position": {
+        "x": 732,
+        "y": 640
+      },
+      "rotation": {
+        "x": 0,
+        "y": 0.00001388888888888884
+      },
+      "gaze": {
+        "x": 732,
+        "y": 640,
+        "object": "empty",
+        "inCenter": false
+      }
+    },
+    {
+      "timestamp": "2025/11/07 17:39:11",
+      "position": {
+        "x": 732,
+        "y": 640
+      },
+      "rotation": {
+        "x": 0,
+        "y": 0
+      },
+      "gaze": {
+        "x": 732,
+        "y": 640,
+        "object": "empty",
+        "inCenter": false
+      }
+    },
+    {
+      "timestamp": "2025/11/07 17:39:11",
+      "position": {
+        "x": 720,
+        "y": 629
+      },
+      "rotation": {
+        "x": 0.00027093596059113434,
+        "y": -0.00016666666666666606
+      },
+      "gaze": {
+        "x": 720,
+        "y": 629,
+        "object": "empty",
+        "inCenter": false
+      }
+    },
+    {
+      "timestamp": "2025/11/07 17:39:11",
+      "position": {
+        "x": 696,
+        "y": 602
+      },
+      "rotation": {
+        "x": 0.0006650246305418705,
+        "y": -0.00033333333333333327
+      },
+      "gaze": {
+        "x": 696,
+        "y": 602,
+        "object": "empty",
+        "inCenter": true
+      }
+    },
+    {
+      "timestamp": "2025/11/07 17:39:11",
+      "position": {
+        "x": 647,
+        "y": 551
+      },
+      "rotation": {
+        "x": 0.0012561576354679805,
+        "y": -0.0006805555555555553
+      },
+      "gaze": {
+        "x": 647,
+        "y": 551,
+        "object": "empty",
+        "inCenter": true
+      }
+    },
+    {
+      "timestamp": "2025/11/07 17:39:11",
+      "position": {
+        "x": 601,
+        "y": 498
+      },
+      "rotation": {
+        "x": 0.0013054187192118238,
+        "y": -0.0006388888888888888
+      },
+      "gaze": {
+        "x": 601,
+        "y": 498,
+        "object": "empty",
+        "inCenter": true
+      }
+    },
+    {
+      "timestamp": "2025/11/07 17:39:11",
+      "position": {
+        "x": 574,
+        "y": 468
+      },
+      "rotation": {
+        "x": 0.0007389162561576357,
+        "y": -0.0003749999999999998
+      },
+      "gaze": {
+        "x": 574,
+        "y": 468,
+        "object": "empty",
+        "inCenter": true
+      }
+    },
+    {
+      "timestamp": "2025/11/07 17:39:11",
+      "position": {
+        "x": 543,
+        "y": 431
+      },
+      "rotation": {
+        "x": 0.0009113300492610832,
+        "y": -0.00043055555555555626
+      },
+      "gaze": {
+        "x": 543,
+        "y": 431,
+        "object": "empty",
+        "inCenter": true
+      }
+    },
+    {
+      "timestamp": "2025/11/07 17:39:11",
+      "position": {
+        "x": 521,
+        "y": 407
+      },
+      "rotation": {
+        "x": 0.0005911330049261077,
+        "y": -0.0003055555555555556
+      },
+      "gaze": {
+        "x": 521,
+        "y": 407,
+        "object": "empty",
+        "inCenter": true
+      }
+    },
+    {
+      "timestamp": "2025/11/07 17:39:11",
+      "position": {
+        "x": 513,
+        "y": 398
+      },
+      "rotation": {
+        "x": 0.00022167487684729092,
+        "y": -0.00011111111111111072
+      },
+      "gaze": {
+        "x": 513,
+        "y": 398,
+        "object": "empty",
+        "inCenter": false
+      }
+    },
+    {
+      "timestamp": "2025/11/07 17:39:11",
+      "position": {
+        "x": 507,
+        "y": 391
+      },
+      "rotation": {
+        "x": 0.00017241379310344861,
+        "y": -0.00008333333333333303
+      },
+      "gaze": {
+        "x": 507,
+        "y": 391,
+        "object": "empty",
+        "inCenter": false
+      }
+    },
+    {
+      "timestamp": "2025/11/07 17:39:11",
+      "position": {
+        "x": 503,
+        "y": 388
+      },
+      "rotation": {
+        "x": 0.0000738916256157629,
+        "y": -0.000055555555555556466
+      },
+      "gaze": {
+        "x": 503,
+        "y": 388,
+        "object": "empty",
+        "inCenter": false
+      }
+    },
+    {
+      "timestamp": "2025/11/07 17:39:11",
+      "position": {
+        "x": 501,
+        "y": 387
+      },
+      "rotation": {
+        "x": 0.00002463054187192171,
+        "y": -0.00002777777777777768
+      },
+      "gaze": {
+        "x": 501,
+        "y": 387,
+        "object": "empty",
+        "inCenter": false
+      }
+    },
+    {
+      "timestamp": "2025/11/07 17:39:11",
+      "position": {
+        "x": 501,
+        "y": 387
+      },
+      "rotation": {
+        "x": 0,
+        "y": 0
+      },
+      "gaze": {
+        "x": 501,
+        "y": 387,
+        "object": "empty",
+        "inCenter": false
+      }
+    },
+    {
+      "timestamp": "2025/11/07 17:39:11",
+      "position": {
+        "x": 500,
+        "y": 387
+      },
+      "rotation": {
+        "x": 0,
+        "y": -0.00001388888888888884
+      },
+      "gaze": {
+        "x": 500,
+        "y": 387,
+        "object": "empty",
+        "inCenter": false
+      }
+    },
+    {
+      "timestamp": "2025/11/07 17:39:11",
+      "position": {
+        "x": 499,
+        "y": 386
+      },
+      "rotation": {
+        "x": 0.00002463054187192171,
+        "y": -0.00001388888888888884
+      },
+      "gaze": {
+        "x": 499,
+        "y": 386,
+        "object": "empty",
+        "inCenter": false
+      }
+    },
+    {
+      "timestamp": "2025/11/07 17:39:11",
+      "position": {
+        "x": 499,
+        "y": 386
+      },
+      "rotation": {
+        "x": 0,
+        "y": 0
+      },
+      "gaze": {
+        "x": 499,
+        "y": 386,
+        "object": "empty",
+        "inCenter": false
+      }
+    },
+    {
+      "timestamp": "2025/11/07 17:39:12",
+      "position": {
+        "x": 499,
+        "y": 386
+      },
+      "rotation": {
+        "x": 0,
+        "y": 0
+      },
+      "gaze": {
+        "x": 499,
+        "y": 386,
+        "object": "empty",
+        "inCenter": false
+      }
+    },
+    {
+      "timestamp": "2025/11/07 17:39:12",
+      "position": {
+        "x": 499,
+        "y": 386
+      },
+      "rotation": {
+        "x": 0,
+        "y": 0
+      },
+      "gaze": {
+        "x": 499,
+        "y": 386,
+        "object": "empty",
+        "inCenter": false
+      }
+    },
+    {
+      "timestamp": "2025/11/07 17:39:12",
+      "position": {
+        "x": 497,
+        "y": 383
+      },
+      "rotation": {
+        "x": 0.0000738916256157629,
+        "y": -0.00002777777777777768
+      },
+      "gaze": {
+        "x": 497,
+        "y": 383,
+        "object": "empty",
+        "inCenter": false
+      }
+    },
+    {
+      "timestamp": "2025/11/07 17:39:12",
+      "position": {
+        "x": 495,
+        "y": 379
+      },
+      "rotation": {
+        "x": 0.00009852216748768461,
+        "y": -0.00002777777777777768
+      },
+      "gaze": {
+        "x": 495,
+        "y": 379,
+        "object": "empty",
+        "inCenter": false
+      }
+    },
+    {
+      "timestamp": "2025/11/07 17:39:12",
+      "position": {
+        "x": 492,
+        "y": 373
+      },
+      "rotation": {
+        "x": 0.00014778325123152692,
+        "y": -0.000041666666666666516
+      },
+      "gaze": {
+        "x": 492,
+        "y": 373,
+        "object": "empty",
+        "inCenter": false
+      }
+    },
+    {
+      "timestamp": "2025/11/07 17:39:12",
+      "position": {
+        "x": 489,
+        "y": 367
+      },
+      "rotation": {
+        "x": 0.00014778325123152803,
+        "y": -0.000041666666666666516
+      },
+      "gaze": {
+        "x": 489,
+        "y": 367,
+        "object": "empty",
+        "inCenter": false
+      }
+    },
+    {
+      "timestamp": "2025/11/07 17:39:12",
+      "position": {
+        "x": 486,
+        "y": 362
+      },
+      "rotation": {
+        "x": 0.0001231527093596052,
+        "y": -0.000041666666666666516
+      },
+      "gaze": {
+        "x": 486,
+        "y": 362,
+        "object": "empty",
+        "inCenter": false
+      }
+    },
+    {
+      "timestamp": "2025/11/07 17:39:12",
+      "position": {
+        "x": 483,
+        "y": 358
+      },
+      "rotation": {
+        "x": 0.00009852216748768461,
+        "y": -0.00004166666666666763
+      },
+      "gaze": {
+        "x": 483,
+        "y": 358,
+        "object": "empty",
+        "inCenter": false
+      }
+    },
+    {
+      "timestamp": "2025/11/07 17:39:12",
+      "position": {
+        "x": 482,
+        "y": 357
+      },
+      "rotation": {
+        "x": 0.00002463054187192171,
+        "y": -0.00001388888888888884
+      },
+      "gaze": {
+        "x": 482,
+        "y": 357,
+        "object": "empty",
+        "inCenter": false
+      }
+    },
+    {
+      "timestamp": "2025/11/07 17:39:12",
+      "position": {
+        "x": 482,
+        "y": 356
+      },
+      "rotation": {
+        "x": 0.000024630541871920598,
+        "y": 0
+      },
+      "gaze": {
+        "x": 482,
+        "y": 356,
+        "object": "empty",
+        "inCenter": false
+      }
+    },
+    {
+      "timestamp": "2025/11/07 17:39:12",
+      "position": {
+        "x": 481,
+        "y": 355
+      },
+      "rotation": {
+        "x": 0.00002463054187192171,
+        "y": -0.00001388888888888884
+      },
+      "gaze": {
+        "x": 481,
+        "y": 355,
+        "object": "empty",
+        "inCenter": false
+      }
+    },
+    {
+      "timestamp": "2025/11/07 17:39:12",
+      "position": {
+        "x": 480,
+        "y": 354
+      },
+      "rotation": {
+        "x": 0.000024630541871920598,
+        "y": -0.00001388888888888884
+      },
+      "gaze": {
+        "x": 480,
+        "y": 354,
+        "object": "empty",
+        "inCenter": false
+      }
+    },
+    {
+      "timestamp": "2025/11/07 17:39:12",
+      "position": {
+        "x": 479,
+        "y": 352
+      },
+      "rotation": {
+        "x": 0.000049261083743842307,
+        "y": -0.00001388888888888884
+      },
+      "gaze": {
+        "x": 479,
+        "y": 352,
+        "object": "empty",
+        "inCenter": false
+      }
+    },
+    {
+      "timestamp": "2025/11/07 17:39:12",
+      "position": {
+        "x": 477,
+        "y": 349
+      },
+      "rotation": {
+        "x": 0.00007389162561576402,
+        "y": -0.00002777777777777768
+      },
+      "gaze": {
+        "x": 477,
+        "y": 349,
+        "object": "empty",
+        "inCenter": false
+      }
+    },
+    {
+      "timestamp": "2025/11/07 17:39:12",
+      "position": {
+        "x": 475,
+        "y": 345
+      },
+      "rotation": {
+        "x": 0.00009852216748768461,
+        "y": -0.00002777777777777768
+      },
+      "gaze": {
+        "x": 475,
+        "y": 345,
+        "object": "empty",
+        "inCenter": false
+      }
+    },
+    {
+      "timestamp": "2025/11/07 17:39:12",
+      "position": {
+        "x": 472,
+        "y": 340
+      },
+      "rotation": {
+        "x": 0.0001231527093596063,
+        "y": -0.000041666666666666516
+      },
+      "gaze": {
+        "x": 472,
+        "y": 340,
+        "object": "empty",
+        "inCenter": false
+      }
+    },
+    {
+      "timestamp": "2025/11/07 17:39:12",
+      "position": {
+        "x": 469,
+        "y": 335
+      },
+      "rotation": {
+        "x": 0.0001231527093596052,
+        "y": -0.000041666666666666516
+      },
+      "gaze": {
+        "x": 469,
+        "y": 335,
+        "object": "empty",
+        "inCenter": false
+      }
+    },
+    {
+      "timestamp": "2025/11/07 17:39:12",
+      "position": {
+        "x": 466,
+        "y": 330
+      },
+      "rotation": {
+        "x": 0.0001231527093596063,
+        "y": -0.000041666666666666516
+      },
+      "gaze": {
+        "x": 466,
+        "y": 330,
+        "object": "empty",
+        "inCenter": false
+      }
+    },
+    {
+      "timestamp": "2025/11/07 17:39:12",
+      "position": {
+        "x": 462,
+        "y": 324
+      },
+      "rotation": {
+        "x": 0.00014778325123152692,
+        "y": -0.00005555555555555536
+      },
+      "gaze": {
+        "x": 462,
+        "y": 324,
+        "object": "empty",
+        "inCenter": false
+      }
+    },
+    {
+      "timestamp": "2025/11/07 17:39:12",
+      "position": {
+        "x": 458,
+        "y": 318
+      },
+      "rotation": {
+        "x": 0.00014778325123152692,
+        "y": -0.000055555555555556466
+      },
+      "gaze": {
+        "x": 458,
+        "y": 318,
+        "object": "empty",
+        "inCenter": false
+      }
+    },
+    {
+      "timestamp": "2025/11/07 17:39:13",
+      "position": {
+        "x": 455,
+        "y": 313
+      },
+      "rotation": {
+        "x": 0.0001231527093596063,
+        "y": -0.000041666666666666516
+      },
+      "gaze": {
+        "x": 455,
+        "y": 313,
+        "object": "empty",
+        "inCenter": false
+      }
+    },
+    {
+      "timestamp": "2025/11/07 17:39:13",
+      "position": {
+        "x": 454,
+        "y": 311
+      },
+      "rotation": {
+        "x": 0.000049261083743842307,
+        "y": -0.00001388888888888884
+      },
+      "gaze": {
+        "x": 454,
+        "y": 311,
+        "object": "empty",
+        "inCenter": false
+      }
+    },
+    {
+      "timestamp": "2025/11/07 17:39:13",
+      "position": {
+        "x": 454,
+        "y": 311
+      },
+      "rotation": {
+        "x": 0,
+        "y": 0
+      },
+      "gaze": {
+        "x": 454,
+        "y": 311,
+        "object": "empty",
+        "inCenter": false
+      }
+    },
+    {
+      "timestamp": "2025/11/07 17:39:13",
+      "position": {
+        "x": 453,
+        "y": 310
+      },
+      "rotation": {
+        "x": 0.00002463054187192171,
+        "y": -0.00001388888888888884
+      },
+      "gaze": {
+        "x": 453,
+        "y": 310,
+        "object": "empty",
+        "inCenter": false
+      }
+    },
+    {
+      "timestamp": "2025/11/07 17:39:13",
+      "position": {
+        "x": 463,
+        "y": 320
+      },
+      "rotation": {
+        "x": -0.00022167487684729092,
+        "y": 0.00012500000000000068
+      },
+      "gaze": {
+        "x": 463,
+        "y": 320,
+        "object": "empty",
+        "inCenter": false
+      }
+    },
+    {
+      "timestamp": "2025/11/07 17:39:13",
+      "position": {
+        "x": 454,
+        "y": 311
+      },
+      "rotation": {
+        "x": -0.00002463054187192171,
+        "y": 0.00001388888888888884
+      },
+      "gaze": {
+        "x": 454,
+        "y": 311,
+        "object": "empty",
+        "inCenter": false
+      }
+    },
+    {
+      "timestamp": "2025/11/07 17:39:13",
+      "position": {
+        "x": 479,
+        "y": 340
+      },
+      "rotation": {
+        "x": -0.0004926108374384231,
+        "y": 0.00022222222222222145
+      },
+      "gaze": {
+        "x": 479,
+        "y": 340,
+        "object": "empty",
+        "inCenter": false
+      }
+    },
+    {
+      "timestamp": "2025/11/07 17:39:13",
+      "position": {
+        "x": 511,
+        "y": 375
+      },
+      "rotation": {
+        "x": -0.000862068965517242,
+        "y": 0.0004444444444444451
+      },
+      "gaze": {
+        "x": 511,
+        "y": 375,
+        "object": "empty",
+        "inCenter": false
+      }
+    },
+    {
+      "timestamp": "2025/11/07 17:39:13",
+      "position": {
+        "x": 532,
+        "y": 398
+      },
+      "rotation": {
+        "x": -0.0005665024630541871,
+        "y": 0.00029166666666666675
+      },
+      "gaze": {
+        "x": 532,
+        "y": 398,
+        "object": "empty",
+        "inCenter": true
+      }
+    },
+    {
+      "timestamp": "2025/11/07 17:39:13",
+      "position": {
+        "x": 557,
+        "y": 427
+      },
+      "rotation": {
+        "x": -0.000714285714285714,
+        "y": 0.0003472222222222221
+      },
+      "gaze": {
+        "x": 557,
+        "y": 427,
+        "object": "empty",
+        "inCenter": true
+      }
+    },
+    {
+      "timestamp": "2025/11/07 17:39:13",
+      "position": {
+        "x": 577,
+        "y": 448
+      },
+      "rotation": {
+        "x": -0.0005172413793103447,
+        "y": 0.0002777777777777779
+      },
+      "gaze": {
+        "x": 577,
+        "y": 448,
+        "object": "empty",
+        "inCenter": true
+      }
+    },
+    {
+      "timestamp": "2025/11/07 17:39:13",
+      "position": {
+        "x": 585,
+        "y": 457
+      },
+      "rotation": {
+        "x": -0.00022167487684729092,
+        "y": 0.00011111111111111072
+      },
+      "gaze": {
+        "x": 585,
+        "y": 457,
+        "object": "empty",
+        "inCenter": true
+      }
+    },
+    {
+      "timestamp": "2025/11/07 17:39:14",
+      "position": {
+        "x": 593,
+        "y": 464
+      },
+      "rotation": {
+        "x": -0.0001724137931034475,
+        "y": 0.00011111111111111072
+      },
+      "gaze": {
+        "x": 593,
+        "y": 464,
+        "object": "empty",
+        "inCenter": true
+      }
+    },
+    {
+      "timestamp": "2025/11/07 17:39:14",
+      "position": {
+        "x": 597,
+        "y": 469
+      },
+      "rotation": {
+        "x": -0.0001231527093596063,
+        "y": 0.000055555555555556466
+      },
+      "gaze": {
+        "x": 597,
+        "y": 469,
+        "object": "empty",
+        "inCenter": true
+      }
+    },
+    {
+      "timestamp": "2025/11/07 17:39:14",
+      "position": {
+        "x": 599,
+        "y": 470
+      },
+      "rotation": {
+        "x": -0.00002463054187192171,
+        "y": 0.00002777777777777768
+      },
+      "gaze": {
+        "x": 599,
+        "y": 470,
+        "object": "empty",
+        "inCenter": true
+      }
+    },
+    {
+      "timestamp": "2025/11/07 17:39:14",
+      "position": {
+        "x": 600,
+        "y": 471
+      },
+      "rotation": {
+        "x": -0.00002463054187192171,
+        "y": 0.00001388888888888884
+      },
+      "gaze": {
+        "x": 600,
+        "y": 471,
+        "object": "empty",
+        "inCenter": true
+      }
+    },
+    {
+      "timestamp": "2025/11/07 17:39:14",
+      "position": {
+        "x": 601,
+        "y": 472
+      },
+      "rotation": {
+        "x": -0.000024630541871919486,
+        "y": 0.00001388888888888884
+      },
+      "gaze": {
+        "x": 601,
+        "y": 472,
+        "object": "empty",
+        "inCenter": true
+      }
+    },
+    {
+      "timestamp": "2025/11/07 17:39:14",
+      "position": {
+        "x": 602,
+        "y": 472
+      },
+      "rotation": {
+        "x": 0,
+        "y": 0.00001388888888888884
+      },
+      "gaze": {
+        "x": 602,
+        "y": 472,
+        "object": "empty",
+        "inCenter": true
+      }
+    },
+    {
+      "timestamp": "2025/11/07 17:39:14",
+      "position": {
+        "x": 602,
+        "y": 473
+      },
+      "rotation": {
+        "x": -0.00002463054187192171,
+        "y": 0
+      },
+      "gaze": {
+        "x": 602,
+        "y": 473,
+        "object": "empty",
+        "inCenter": true
+      }
+    },
+    {
+      "timestamp": "2025/11/07 17:39:14",
+      "position": {
+        "x": 602,
+        "y": 473
+      },
+      "rotation": {
+        "x": 0,
+        "y": 0
+      },
+      "gaze": {
+        "x": 602,
+        "y": 473,
+        "object": "empty",
+        "inCenter": true
+      }
+    },
+    {
+      "timestamp": "2025/11/07 17:39:14",
+      "position": {
+        "x": 603,
+        "y": 489
+      },
+      "rotation": {
+        "x": -0.00039408866995073845,
+        "y": 0.00001388888888888884
+      },
+      "gaze": {
+        "x": 603,
+        "y": 489,
+        "object": "empty",
+        "inCenter": true
+      }
+    },
+    {
+      "timestamp": "2025/11/07 17:39:14",
+      "position": {
+        "x": 608,
+        "y": 508
+      },
+      "rotation": {
+        "x": -0.00046798029556650357,
+        "y": 0.0000694444444444442
+      },
+      "gaze": {
+        "x": 608,
+        "y": 508,
+        "object": "empty",
+        "inCenter": true
+      }
+    },
+    {
+      "timestamp": "2025/11/07 17:39:14",
+      "position": {
+        "x": 630,
+        "y": 561
+      },
+      "rotation": {
+        "x": -0.0013054187192118216,
+        "y": 0.0003055555555555556
+      },
+      "gaze": {
+        "x": 630,
+        "y": 561,
+        "object": "empty",
+        "inCenter": true
+      }
+    },
+    {
+      "timestamp": "2025/11/07 17:39:14",
+      "position": {
+        "x": 662,
+        "y": 629
+      },
+      "rotation": {
+        "x": -0.0016748768472906407,
+        "y": 0.000444444444444444
+      },
+      "gaze": {
+        "x": 662,
+        "y": 629,
+        "object": "empty",
+        "inCenter": false
+      }
+    },
+    {
+      "timestamp": "2025/11/07 17:39:14",
+      "position": {
+        "x": 683,
+        "y": 663
+      },
+      "rotation": {
+        "x": -0.0008374384236453203,
+        "y": 0.00029166666666666675
+      },
+      "gaze": {
+        "x": 683,
+        "y": 663,
+        "object": "empty",
+        "inCenter": false
+      }
+    },
+    {
+      "timestamp": "2025/11/07 17:39:14",
+      "position": {
+        "x": 694,
+        "y": 678
+      },
+      "rotation": {
+        "x": -0.00036945812807881895,
+        "y": 0.00015277777777777834
+      },
+      "gaze": {
+        "x": 694,
+        "y": 678,
+        "object": "empty",
+        "inCenter": false
+      }
+    },
+    {
+      "timestamp": "2025/11/07 17:39:14",
+      "position": {
+        "x": 703,
+        "y": 688
+      },
+      "rotation": {
+        "x": -0.0002463054187192104,
+        "y": 0.00012499999999999957
+      },
+      "gaze": {
+        "x": 703,
+        "y": 688,
+        "object": "empty",
+        "inCenter": false
+      }
+    },
+    {
+      "timestamp": "2025/11/07 17:39:14",
+      "position": {
+        "x": 706,
+        "y": 692
+      },
+      "rotation": {
+        "x": -0.00009852216748768461,
+        "y": 0.000041666666666666516
+      },
+      "gaze": {
+        "x": 706,
+        "y": 692,
+        "object": "empty",
+        "inCenter": false
+      }
+    },
+    {
+      "timestamp": "2025/11/07 17:39:14",
+      "position": {
+        "x": 708,
+        "y": 693
+      },
+      "rotation": {
+        "x": -0.00002463054187192171,
+        "y": 0.00002777777777777768
+      },
+      "gaze": {
+        "x": 708,
+        "y": 693,
+        "object": "empty",
+        "inCenter": false
+      }
+    },
+    {
+      "timestamp": "2025/11/07 17:39:14",
+      "position": {
+        "x": 707,
+        "y": 692
+      },
+      "rotation": {
+        "x": 0.00002463054187192171,
+        "y": -0.00001388888888888884
+      },
+      "gaze": {
+        "x": 707,
+        "y": 692,
+        "object": "empty",
+        "inCenter": false
+      }
+    },
+    {
+      "timestamp": "2025/11/07 17:39:14",
+      "position": {
+        "x": 705,
+        "y": 689
+      },
+      "rotation": {
+        "x": 0.0000738916256157629,
+        "y": -0.00002777777777777768
+      },
+      "gaze": {
+        "x": 705,
+        "y": 689,
+        "object": "empty",
+        "inCenter": false
+      }
+    },
+    {
+      "timestamp": "2025/11/07 17:39:14",
+      "position": {
+        "x": 700,
+        "y": 679
+      },
+      "rotation": {
+        "x": 0.0002463054187192126,
+        "y": -0.0000694444444444442
+      },
+      "gaze": {
+        "x": 700,
+        "y": 679,
+        "object": "empty",
+        "inCenter": false
+      }
+    },
+    {
+      "timestamp": "2025/11/07 17:39:14",
+      "position": {
+        "x": 694,
+        "y": 665
+      },
+      "rotation": {
+        "x": 0.000344827586206895,
+        "y": -0.00008333333333333303
+      },
+      "gaze": {
+        "x": 694,
+        "y": 665,
+        "object": "empty",
+        "inCenter": false
+      }
+    },
+    {
+      "timestamp": "2025/11/07 17:39:15",
+      "position": {
+        "x": 690,
+        "y": 655
+      },
+      "rotation": {
+        "x": 0.0002463054187192126,
+        "y": -0.00005555555555555536
+      },
+      "gaze": {
+        "x": 690,
+        "y": 655,
+        "object": "empty",
+        "inCenter": false
+      }
+    },
+    {
+      "timestamp": "2025/11/07 17:39:15",
+      "position": {
+        "x": 688,
+        "y": 647
+      },
+      "rotation": {
+        "x": 0.00019704433497536923,
+        "y": -0.00002777777777777768
+      },
+      "gaze": {
+        "x": 688,
+        "y": 647,
+        "object": "empty",
+        "inCenter": false
+      }
+    },
+    {
+      "timestamp": "2025/11/07 17:39:15",
+      "position": {
+        "x": 687,
+        "y": 644
+      },
+      "rotation": {
+        "x": 0.0000738916256157629,
+        "y": -0.00001388888888888884
+      },
+      "gaze": {
+        "x": 687,
+        "y": 644,
+        "object": "empty",
+        "inCenter": false
+      }
+    },
+    {
+      "timestamp": "2025/11/07 17:39:15",
+      "position": {
+        "x": 687,
+        "y": 644
+      },
+      "rotation": {
+        "x": 0,
+        "y": 0
+      },
+      "gaze": {
+        "x": 687,
+        "y": 644,
+        "object": "empty",
+        "inCenter": false
+      }
+    },
+    {
+      "timestamp": "2025/11/07 17:39:16",
+      "position": {
+        "x": 683,
+        "y": 644
+      },
+      "rotation": {
+        "x": 0,
+        "y": -0.000055555555555556466
+      },
+      "gaze": {
+        "x": 683,
+        "y": 644,
+        "object": "empty",
+        "inCenter": false
+      }
+    },
+    {
+      "timestamp": "2025/11/07 17:39:16",
+      "position": {
+        "x": 675,
+        "y": 644
+      },
+      "rotation": {
+        "x": 0,
+        "y": -0.00011111111111111072
+      },
+      "gaze": {
+        "x": 675,
+        "y": 644,
+        "object": "empty",
+        "inCenter": false
+      }
+    },
+    {
+      "timestamp": "2025/11/07 17:39:16",
+      "position": {
+        "x": 663,
+        "y": 644
+      },
+      "rotation": {
+        "x": 0,
+        "y": -0.00016666666666666718
+      },
+      "gaze": {
+        "x": 663,
+        "y": 644,
+        "object": "empty",
+        "inCenter": false
+      }
+    },
+    {
+      "timestamp": "2025/11/07 17:39:16",
+      "position": {
+        "x": 640,
+        "y": 644
+      },
+      "rotation": {
+        "x": 0,
+        "y": -0.0003194444444444444
+      },
+      "gaze": {
+        "x": 640,
+        "y": 644,
+        "object": "empty",
+        "inCenter": false
+      }
+    },
+    {
+      "timestamp": "2025/11/07 17:39:16",
+      "position": {
+        "x": 615,
+        "y": 644
+      },
+      "rotation": {
+        "x": 0,
+        "y": -0.0003472222222222221
+      },
+      "gaze": {
+        "x": 615,
+        "y": 644,
+        "object": "empty",
+        "inCenter": false
+      }
+    },
+    {
+      "timestamp": "2025/11/07 17:39:16",
+      "position": {
+        "x": 594,
+        "y": 642
+      },
+      "rotation": {
+        "x": 0.00004926108374384342,
+        "y": -0.00029166666666666675
+      },
+      "gaze": {
+        "x": 594,
+        "y": 642,
+        "object": "empty",
+        "inCenter": false
+      }
+    },
+    {
+      "timestamp": "2025/11/07 17:39:16",
+      "position": {
+        "x": 581,
+        "y": 638
+      },
+      "rotation": {
+        "x": 0.00009852216748768461,
+        "y": -0.00018055555555555492
+      },
+      "gaze": {
+        "x": 581,
+        "y": 638,
+        "object": "empty",
+        "inCenter": false
+      }
+    },
+    {
+      "timestamp": "2025/11/07 17:39:16",
+      "position": {
+        "x": 571,
+        "y": 636
+      },
+      "rotation": {
+        "x": 0.000049261083743841195,
+        "y": -0.0001388888888888895
+      },
+      "gaze": {
+        "x": 571,
+        "y": 636,
+        "object": "empty",
+        "inCenter": false
+      }
+    },
+    {
+      "timestamp": "2025/11/07 17:39:16",
+      "position": {
+        "x": 564,
+        "y": 634
+      },
+      "rotation": {
+        "x": 0.00004926108374384342,
+        "y": -0.00009722222222222188
+      },
+      "gaze": {
+        "x": 564,
+        "y": 634,
+        "object": "empty",
+        "inCenter": false
+      }
+    },
+    {
+      "timestamp": "2025/11/07 17:39:16",
+      "position": {
+        "x": 562,
+        "y": 633
+      },
+      "rotation": {
+        "x": 0.00002463054187192171,
+        "y": -0.00002777777777777768
+      },
+      "gaze": {
+        "x": 562,
+        "y": 633,
+        "object": "empty",
+        "inCenter": false
+      }
+    },
+    {
+      "timestamp": "2025/11/07 17:39:16",
+      "position": {
+        "x": 561,
+        "y": 633
+      },
+      "rotation": {
+        "x": 0,
+        "y": -0.00001388888888888884
+      },
+      "gaze": {
+        "x": 561,
+        "y": 633,
+        "object": "empty",
+        "inCenter": false
+      }
+    },
+    {
+      "timestamp": "2025/11/07 17:39:16",
+      "position": {
+        "x": 561,
+        "y": 633
+      },
+      "rotation": {
+        "x": 0,
+        "y": 0
+      },
+      "gaze": {
+        "x": 561,
+        "y": 633,
+        "object": "empty",
+        "inCenter": false
+      }
+    },
+    {
+      "timestamp": "2025/11/07 17:39:17",
+      "position": {
+        "x": 561,
+        "y": 629
+      },
+      "rotation": {
+        "x": 0.00009852216748768461,
+        "y": 0
+      },
+      "gaze": {
+        "x": 561,
+        "y": 629,
+        "object": "empty",
+        "inCenter": false
+      }
+    },
+    {
+      "timestamp": "2025/11/07 17:39:17",
+      "position": {
+        "x": 565,
+        "y": 607
+      },
+      "rotation": {
+        "x": 0.0005418719211822665,
+        "y": 0.00005555555555555536
+      },
+      "gaze": {
+        "x": 565,
+        "y": 607,
+        "object": "empty",
+        "inCenter": false
+      }
+    },
+    {
+      "timestamp": "2025/11/07 17:39:17",
+      "position": {
+        "x": 572,
+        "y": 572
+      },
+      "rotation": {
+        "x": 0.0008620689655172397,
+        "y": 0.00009722222222222188
+      },
+      "gaze": {
+        "x": 572,
+        "y": 572,
+        "object": "empty",
+        "inCenter": false
+      }
+    },
+    {
+      "timestamp": "2025/11/07 17:39:17",
+      "position": {
+        "x": 590,
+        "y": 510
+      },
+      "rotation": {
+        "x": 0.0015270935960591148,
+        "y": 0.0002500000000000002
+      },
+      "gaze": {
+        "x": 590,
+        "y": 510,
+        "object": "empty",
+        "inCenter": true
+      }
+    },
+    {
+      "timestamp": "2025/11/07 17:39:17",
+      "position": {
+        "x": 602,
+        "y": 485
+      },
+      "rotation": {
+        "x": 0.0006157635467980293,
+        "y": 0.00016666666666666718
+      },
+      "gaze": {
+        "x": 602,
+        "y": 485,
+        "object": "empty",
+        "inCenter": true
+      }
+    },
+    {
+      "timestamp": "2025/11/07 17:39:17",
+      "position": {
+        "x": 614,
+        "y": 469
+      },
+      "rotation": {
+        "x": 0.00039408866995073845,
+        "y": 0.00016666666666666606
+      },
+      "gaze": {
+        "x": 614,
+        "y": 469,
+        "object": "empty",
+        "inCenter": true
+      }
+    },
+    {
+      "timestamp": "2025/11/07 17:39:17",
+      "position": {
+        "x": 617,
+        "y": 466
+      },
+      "rotation": {
+        "x": 0.0000738916256157629,
+        "y": 0.000041666666666666516
+      },
+      "gaze": {
+        "x": 617,
+        "y": 466,
+        "object": "empty",
+        "inCenter": true
+      }
+    },
+    {
+      "timestamp": "2025/11/07 17:39:17",
+      "position": {
+        "x": 618,
+        "y": 465
+      },
+      "rotation": {
+        "x": 0.00002463054187192171,
+        "y": 0.00001388888888888884
+      },
+      "gaze": {
+        "x": 618,
+        "y": 465,
+        "object": "empty",
+        "inCenter": true
+      }
+    },
+    {
+      "timestamp": "2025/11/07 17:39:17",
+      "position": {
+        "x": 619,
+        "y": 464
+      },
+      "rotation": {
+        "x": 0.00002463054187192171,
+        "y": 0.00001388888888888995
+      },
+      "gaze": {
+        "x": 619,
+        "y": 464,
+        "object": "empty",
+        "inCenter": true
+      }
+    },
+    {
+      "timestamp": "2025/11/07 17:39:17",
+      "position": {
+        "x": 619,
+        "y": 464
+      },
+      "rotation": {
+        "x": 0,
+        "y": 0
+      },
+      "gaze": {
+        "x": 619,
+        "y": 464,
+        "object": "empty",
+        "inCenter": true
+      }
+    },
+    {
+      "timestamp": "2025/11/07 17:39:17",
+      "position": {
+        "x": 621,
+        "y": 463
+      },
+      "rotation": {
+        "x": 0.000024630541871919486,
+        "y": 0.00002777777777777768
+      },
+      "gaze": {
+        "x": 621,
+        "y": 463,
+        "object": "empty",
+        "inCenter": true
+      }
+    },
+    {
+      "timestamp": "2025/11/07 17:39:17",
+      "position": {
+        "x": 624,
+        "y": 461
+      },
+      "rotation": {
+        "x": 0.00004926108374384342,
+        "y": 0.000041666666666666516
+      },
+      "gaze": {
+        "x": 624,
+        "y": 461,
+        "object": "empty",
+        "inCenter": true
+      }
+    },
+    {
+      "timestamp": "2025/11/07 17:39:17",
+      "position": {
+        "x": 627,
+        "y": 458
+      },
+      "rotation": {
+        "x": 0.0000738916256157629,
+        "y": 0.000041666666666666516
+      },
+      "gaze": {
+        "x": 627,
+        "y": 458,
+        "object": "empty",
+        "inCenter": true
+      }
+    },
+    {
+      "timestamp": "2025/11/07 17:39:17",
+      "position": {
+        "x": 631,
+        "y": 451
+      },
+      "rotation": {
+        "x": 0.00017241379310344973,
+        "y": 0.00005555555555555536
+      },
+      "gaze": {
+        "x": 631,
+        "y": 451,
+        "object": "empty",
+        "inCenter": true
+      }
+    },
+    {
+      "timestamp": "2025/11/07 17:39:17",
+      "position": {
+        "x": 636,
+        "y": 442
+      },
+      "rotation": {
+        "x": 0.00022167487684729092,
+        "y": 0.0000694444444444442
+      },
+      "gaze": {
+        "x": 636,
+        "y": 442,
+        "object": "empty",
+        "inCenter": true
+      }
+    },
+    {
+      "timestamp": "2025/11/07 17:39:17",
+      "position": {
+        "x": 640,
+        "y": 430
+      },
+      "rotation": {
+        "x": 0.00029556650246305384,
+        "y": 0.00005555555555555536
+      },
+      "gaze": {
+        "x": 640,
+        "y": 430,
+        "object": "empty",
+        "inCenter": true
+      }
+    },
+    {
+      "timestamp": "2025/11/07 17:39:17",
+      "position": {
+        "x": 643,
+        "y": 416
+      },
+      "rotation": {
+        "x": 0.000344827586206895,
+        "y": 0.00004166666666666763
+      },
+      "gaze": {
+        "x": 643,
+        "y": 416,
+        "object": "empty",
+        "inCenter": true
+      }
+    },
+    {
+      "timestamp": "2025/11/07 17:39:17",
+      "position": {
+        "x": 646,
+        "y": 397
+      },
+      "rotation": {
+        "x": 0.00046798029556650357,
+        "y": 0.000041666666666666516
+      },
+      "gaze": {
+        "x": 646,
+        "y": 397,
+        "object": "empty",
+        "inCenter": true
+      }
+    },
+    {
+      "timestamp": "2025/11/07 17:39:17",
+      "position": {
+        "x": 646,
+        "y": 392
+      },
+      "rotation": {
+        "x": 0.0001231527093596052,
+        "y": 0
+      },
+      "gaze": {
+        "x": 646,
+        "y": 392,
+        "object": "empty",
+        "inCenter": true
+      }
+    },
+    {
+      "timestamp": "2025/11/07 17:39:17",
+      "position": {
+        "x": 646,
+        "y": 390
+      },
+      "rotation": {
+        "x": 0.000049261083743842307,
+        "y": 0
+      },
+      "gaze": {
+        "x": 646,
+        "y": 390,
+        "object": "empty",
+        "inCenter": true
+      }
+    },
+    {
+      "timestamp": "2025/11/07 17:39:17",
+      "position": {
+        "x": 646,
+        "y": 389
+      },
+      "rotation": {
+        "x": 0.00002463054187192171,
+        "y": 0
+      },
+      "gaze": {
+        "x": 646,
+        "y": 389,
+        "object": "empty",
+        "inCenter": true
+      }
+    },
+    {
+      "timestamp": "2025/11/07 17:39:17",
+      "position": {
+        "x": 646,
+        "y": 389
+      },
+      "rotation": {
+        "x": 0,
+        "y": 0
+      },
+      "gaze": {
+        "x": 646,
+        "y": 389,
+        "object": "empty",
+        "inCenter": true
+      }
+    },
+    {
+      "timestamp": "2025/11/07 17:39:18",
+      "position": {
+        "x": 646,
+        "y": 399
+      },
+      "rotation": {
+        "x": -0.00024630541871921153,
+        "y": 0
+      },
+      "gaze": {
+        "x": 646,
+        "y": 399,
+        "object": "empty",
+        "inCenter": true
+      }
+    },
+    {
+      "timestamp": "2025/11/07 17:39:18",
+      "position": {
+        "x": 646,
+        "y": 418
+      },
+      "rotation": {
+        "x": -0.0004679802955665025,
+        "y": 0
+      },
+      "gaze": {
+        "x": 646,
+        "y": 418,
+        "object": "empty",
+        "inCenter": true
+      }
+    },
+    {
+      "timestamp": "2025/11/07 17:39:18",
+      "position": {
+        "x": 646,
+        "y": 444
+      },
+      "rotation": {
+        "x": -0.0006403940886699511,
+        "y": 0
+      },
+      "gaze": {
+        "x": 646,
+        "y": 444,
+        "object": "empty",
+        "inCenter": true
+      }
+    },
+    {
+      "timestamp": "2025/11/07 17:39:18",
+      "position": {
+        "x": 646,
+        "y": 485
+      },
+      "rotation": {
+        "x": -0.001009852216748768,
+        "y": 0
+      },
+      "gaze": {
+        "x": 646,
+        "y": 485,
+        "object": "empty",
+        "inCenter": true
+      }
+    },
+    {
+      "timestamp": "2025/11/07 17:39:18",
+      "position": {
+        "x": 653,
+        "y": 535
+      },
+      "rotation": {
+        "x": -0.0012315270935960587,
+        "y": 0.00009722222222222188
+      },
+      "gaze": {
+        "x": 653,
+        "y": 535,
+        "object": "empty",
+        "inCenter": true
+      }
+    },
+    {
+      "timestamp": "2025/11/07 17:39:18",
+      "position": {
+        "x": 655,
+        "y": 559
+      },
+      "rotation": {
+        "x": -0.0005911330049261098,
+        "y": 0.00002777777777777768
+      },
+      "gaze": {
+        "x": 655,
+        "y": 559,
+        "object": "empty",
+        "inCenter": true
+      }
+    },
+    {
+      "timestamp": "2025/11/07 17:39:18",
+      "position": {
+        "x": 657,
+        "y": 579
+      },
+      "rotation": {
+        "x": -0.0004926108374384231,
+        "y": 0.00002777777777777768
+      },
+      "gaze": {
+        "x": 657,
+        "y": 579,
+        "object": "empty",
+        "inCenter": true
+      }
+    },
+    {
+      "timestamp": "2025/11/07 17:39:18",
+      "position": {
+        "x": 659,
+        "y": 588
+      },
+      "rotation": {
+        "x": -0.00022167487684729092,
+        "y": 0.00002777777777777768
+      },
+      "gaze": {
+        "x": 659,
+        "y": 588,
+        "object": "empty",
+        "inCenter": true
+      }
+    },
+    {
+      "timestamp": "2025/11/07 17:39:18",
+      "position": {
+        "x": 659,
+        "y": 590
+      },
+      "rotation": {
+        "x": -0.000049261083743841195,
+        "y": 0
+      },
+      "gaze": {
+        "x": 659,
+        "y": 590,
+        "object": "empty",
+        "inCenter": true
+      }
+    },
+    {
+      "timestamp": "2025/11/07 17:39:18",
+      "position": {
+        "x": 660,
+        "y": 591
+      },
+      "rotation": {
+        "x": -0.00002463054187192171,
+        "y": 0.00001388888888888884
+      },
+      "gaze": {
+        "x": 660,
+        "y": 591,
+        "object": "empty",
+        "inCenter": true
+      }
+    },
+    {
+      "timestamp": "2025/11/07 17:39:18",
+      "position": {
+        "x": 660,
+        "y": 591
+      },
+      "rotation": {
+        "x": 0,
+        "y": 0
+      },
+      "gaze": {
+        "x": 660,
+        "y": 591,
+        "object": "empty",
+        "inCenter": true
+      }
+    },
+    {
+      "timestamp": "2025/11/07 17:39:18",
+      "position": {
+        "x": 660,
+        "y": 592
+      },
+      "rotation": {
+        "x": -0.00002463054187192171,
+        "y": 0
+      },
+      "gaze": {
+        "x": 660,
+        "y": 592,
+        "object": "empty",
+        "inCenter": true
+      }
+    },
+    {
+      "timestamp": "2025/11/07 17:39:18",
+      "position": {
+        "x": 660,
+        "y": 592
+      },
+      "rotation": {
+        "x": 0,
+        "y": 0
+      },
+      "gaze": {
+        "x": 660,
+        "y": 592,
+        "object": "empty",
+        "inCenter": true
+      }
+    },
+    {
+      "timestamp": "2025/11/07 17:39:18",
+      "position": {
+        "x": 661,
+        "y": 595
+      },
+      "rotation": {
+        "x": -0.0000738916256157629,
+        "y": 0.00001388888888888884
+      },
+      "gaze": {
+        "x": 661,
+        "y": 595,
+        "object": "empty",
+        "inCenter": true
+      }
+    },
+    {
+      "timestamp": "2025/11/07 17:39:18",
+      "position": {
+        "x": 663,
+        "y": 602
+      },
+      "rotation": {
+        "x": -0.00017241379310344973,
+        "y": 0.00002777777777777768
+      },
+      "gaze": {
+        "x": 663,
+        "y": 602,
+        "object": "empty",
+        "inCenter": false
+      }
+    },
+    {
+      "timestamp": "2025/11/07 17:39:18",
+      "position": {
+        "x": 665,
+        "y": 607
+      },
+      "rotation": {
+        "x": -0.00012315270935960409,
+        "y": 0.00002777777777777879
+      },
+      "gaze": {
+        "x": 665,
+        "y": 607,
+        "object": "empty",
+        "inCenter": false
+      }
+    },
+    {
+      "timestamp": "2025/11/07 17:39:18",
+      "position": {
+        "x": 668,
+        "y": 614
+      },
+      "rotation": {
+        "x": -0.00017241379310344973,
+        "y": 0.000041666666666666516
+      },
+      "gaze": {
+        "x": 668,
+        "y": 614,
+        "object": "empty",
+        "inCenter": false
+      }
+    },
+    {
+      "timestamp": "2025/11/07 17:39:18",
+      "position": {
+        "x": 669,
+        "y": 617
+      },
+      "rotation": {
+        "x": -0.0000738916256157629,
+        "y": 0.00001388888888888884
+      },
+      "gaze": {
+        "x": 669,
+        "y": 617,
+        "object": "empty",
+        "inCenter": false
+      }
+    },
+    {
+      "timestamp": "2025/11/07 17:39:18",
+      "position": {
+        "x": 670,
+        "y": 619
+      },
+      "rotation": {
+        "x": -0.00004926108374384342,
+        "y": 0.00001388888888888884
+      },
+      "gaze": {
+        "x": 670,
+        "y": 619,
+        "object": "empty",
+        "inCenter": false
+      }
+    },
+    {
+      "timestamp": "2025/11/07 17:39:18",
+      "position": {
+        "x": 671,
+        "y": 621
+      },
+      "rotation": {
+        "x": -0.000049261083743841195,
+        "y": 0.00001388888888888884
+      },
+      "gaze": {
+        "x": 671,
+        "y": 621,
+        "object": "empty",
+        "inCenter": false
+      }
+    },
+    {
+      "timestamp": "2025/11/07 17:39:18",
+      "position": {
+        "x": 673,
+        "y": 626
+      },
+      "rotation": {
+        "x": -0.0001231527093596063,
+        "y": 0.00002777777777777768
+      },
+      "gaze": {
+        "x": 673,
+        "y": 626,
+        "object": "empty",
+        "inCenter": false
+      }
+    },
+    {
+      "timestamp": "2025/11/07 17:39:18",
+      "position": {
+        "x": 676,
+        "y": 635
+      },
+      "rotation": {
+        "x": -0.00022167487684729092,
+        "y": 0.000041666666666666516
+      },
+      "gaze": {
+        "x": 676,
+        "y": 635,
+        "object": "empty",
+        "inCenter": false
+      }
+    },
+    {
+      "timestamp": "2025/11/07 17:39:18",
+      "position": {
+        "x": 681,
+        "y": 648
+      },
+      "rotation": {
+        "x": -0.00032019704433497556,
+        "y": 0.0000694444444444442
+      },
+      "gaze": {
+        "x": 681,
+        "y": 648,
+        "object": "empty",
+        "inCenter": false
+      }
+    },
+    {
+      "timestamp": "2025/11/07 17:39:18",
+      "position": {
+        "x": 682,
+        "y": 651
+      },
+      "rotation": {
+        "x": -0.0000738916256157629,
+        "y": 0.00001388888888888884
+      },
+      "gaze": {
+        "x": 682,
+        "y": 651,
+        "object": "empty",
+        "inCenter": false
+      }
+    },
+    {
+      "timestamp": "2025/11/07 17:39:18",
+      "position": {
+        "x": 683,
+        "y": 654
+      },
+      "rotation": {
+        "x": -0.0000738916256157629,
+        "y": 0.00001388888888888884
+      },
+      "gaze": {
+        "x": 683,
+        "y": 654,
+        "object": "empty",
+        "inCenter": false
+      }
+    },
+    {
+      "timestamp": "2025/11/07 17:39:18",
+      "position": {
+        "x": 684,
+        "y": 654
+      },
+      "rotation": {
+        "x": 0,
+        "y": 0.00001388888888888884
+      },
+      "gaze": {
+        "x": 684,
+        "y": 654,
+        "object": "empty",
+        "inCenter": false
+      }
+    },
+    {
+      "timestamp": "2025/11/07 17:39:18",
+      "position": {
+        "x": 684,
+        "y": 655
+      },
+      "rotation": {
+        "x": -0.00002463054187192171,
+        "y": 0
+      },
+      "gaze": {
+        "x": 684,
+        "y": 655,
+        "object": "empty",
+        "inCenter": false
+      }
+    },
+    {
+      "timestamp": "2025/11/07 17:39:18",
+      "position": {
+        "x": 684,
+        "y": 655
+      },
+      "rotation": {
+        "x": 0,
+        "y": 0
+      },
+      "gaze": {
+        "x": 684,
+        "y": 655,
+        "object": "empty",
+        "inCenter": false
+      }
+    },
+    {
+      "timestamp": "2025/11/07 17:39:19",
+      "position": {
+        "x": 690,
+        "y": 648
+      },
+      "rotation": {
+        "x": 0.0001724137931034475,
+        "y": 0.00008333333333333414
+      },
+      "gaze": {
+        "x": 690,
+        "y": 648,
+        "object": "empty",
+        "inCenter": false
+      }
+    },
+    {
+      "timestamp": "2025/11/07 17:39:19",
+      "position": {
+        "x": 713,
+        "y": 623
+      },
+      "rotation": {
+        "x": 0.0006157635467980293,
+        "y": 0.0003194444444444444
+      },
+      "gaze": {
+        "x": 713,
+        "y": 623,
+        "object": "empty",
+        "inCenter": false
+      }
+    },
+    {
+      "timestamp": "2025/11/07 17:39:19",
+      "position": {
+        "x": 735,
+        "y": 599
+      },
+      "rotation": {
+        "x": 0.0005911330049261098,
+        "y": 0.00030555555555555447
+      },
+      "gaze": {
+        "x": 735,
+        "y": 599,
+        "object": "empty",
+        "inCenter": true
+      }
+    },
+    {
+      "timestamp": "2025/11/07 17:39:19",
+      "position": {
+        "x": 762,
+        "y": 570
+      },
+      "rotation": {
+        "x": 0.000714285714285714,
+        "y": 0.0003750000000000009
+      },
+      "gaze": {
+        "x": 762,
+        "y": 570,
+        "object": "empty",
+        "inCenter": true
+      }
+    },
+    {
+      "timestamp": "2025/11/07 17:39:19",
+      "position": {
+        "x": 795,
+        "y": 537
+      },
+      "rotation": {
+        "x": 0.0008128078817733986,
+        "y": 0.0004583333333333339
+      },
+      "gaze": {
+        "x": 795,
+        "y": 537,
+        "object": "empty",
+        "inCenter": true
+      }
+    },
+    {
+      "timestamp": "2025/11/07 17:39:19",
+      "position": {
+        "x": 826,
+        "y": 510
+      },
+      "rotation": {
+        "x": 0.0006650246305418728,
+        "y": 0.00043055555555555403
+      },
+      "gaze": {
+        "x": 826,
+        "y": 510,
+        "object": "empty",
+        "inCenter": true
+      }
+    },
+    {
+      "timestamp": "2025/11/07 17:39:19",
+      "position": {
+        "x": 851,
+        "y": 490
+      },
+      "rotation": {
+        "x": 0.0004926108374384231,
+        "y": 0.0003472222222222232
+      },
+      "gaze": {
+        "x": 851,
+        "y": 490,
+        "object": "empty",
+        "inCenter": true
+      }
+    },
+    {
+      "timestamp": "2025/11/07 17:39:19",
+      "position": {
+        "x": 867,
+        "y": 478
+      },
+      "rotation": {
+        "x": 0.00029556650246305384,
+        "y": 0.00022222222222222145
+      },
+      "gaze": {
+        "x": 867,
+        "y": 478,
+        "object": "empty",
+        "inCenter": true
+      }
+    },
+    {
+      "timestamp": "2025/11/07 17:39:19",
+      "position": {
+        "x": 881,
+        "y": 469
+      },
+      "rotation": {
+        "x": 0.00022167487684729092,
+        "y": 0.00019444444444444598
+      },
+      "gaze": {
+        "x": 881,
+        "y": 469,
+        "object": "empty",
+        "inCenter": true
+      }
+    },
+    {
+      "timestamp": "2025/11/07 17:39:19",
+      "position": {
+        "x": 890,
+        "y": 464
+      },
+      "rotation": {
+        "x": 0.0001231527093596063,
+        "y": 0.00012499999999999957
+      },
+      "gaze": {
+        "x": 890,
+        "y": 464,
+        "object": "empty",
+        "inCenter": true
+      }
+    },
+    {
+      "timestamp": "2025/11/07 17:39:19",
+      "position": {
+        "x": 895,
+        "y": 460
+      },
+      "rotation": {
+        "x": 0.00009852216748768461,
+        "y": 0.0000694444444444442
+      },
+      "gaze": {
+        "x": 895,
+        "y": 460,
+        "object": "empty",
+        "inCenter": true
+      }
+    },
+    {
+      "timestamp": "2025/11/07 17:39:19",
+      "position": {
+        "x": 897,
+        "y": 459
+      },
+      "rotation": {
+        "x": 0.00002463054187192171,
+        "y": 0.00002777777777777768
+      },
+      "gaze": {
+        "x": 897,
+        "y": 459,
+        "object": "empty",
+        "inCenter": true
+      }
+    },
+    {
+      "timestamp": "2025/11/07 17:39:19",
+      "position": {
+        "x": 899,
+        "y": 457
+      },
+      "rotation": {
+        "x": 0.000049261083743841195,
+        "y": 0.00002777777777777768
+      },
+      "gaze": {
+        "x": 899,
+        "y": 457,
+        "object": "empty",
+        "inCenter": true
+      }
+    },
+    {
+      "timestamp": "2025/11/07 17:39:19",
+      "position": {
+        "x": 901,
+        "y": 455
+      },
+      "rotation": {
+        "x": 0.00004926108374384342,
+        "y": 0.00002777777777777768
+      },
+      "gaze": {
+        "x": 901,
+        "y": 455,
+        "object": "empty",
+        "inCenter": true
+      }
+    },
+    {
+      "timestamp": "2025/11/07 17:39:19",
+      "position": {
+        "x": 903,
+        "y": 454
+      },
+      "rotation": {
+        "x": 0.000024630541871919486,
+        "y": 0.00002777777777777768
+      },
+      "gaze": {
+        "x": 903,
+        "y": 454,
+        "object": "empty",
+        "inCenter": true
+      }
+    },
+    {
+      "timestamp": "2025/11/07 17:39:19",
+      "position": {
+        "x": 905,
+        "y": 451
+      },
+      "rotation": {
+        "x": 0.00007389162561576513,
+        "y": 0.00002777777777777768
+      },
+      "gaze": {
+        "x": 905,
+        "y": 451,
+        "object": "empty",
+        "inCenter": true
+      }
+    },
+    {
+      "timestamp": "2025/11/07 17:39:19",
+      "position": {
+        "x": 910,
+        "y": 446
+      },
+      "rotation": {
+        "x": 0.00012315270935960409,
+        "y": 0.0000694444444444442
+      },
+      "gaze": {
+        "x": 910,
+        "y": 446,
+        "object": "empty",
+        "inCenter": true
+      }
+    },
+    {
+      "timestamp": "2025/11/07 17:39:19",
+      "position": {
+        "x": 917,
+        "y": 439
+      },
+      "rotation": {
+        "x": 0.00017241379310344973,
+        "y": 0.00009722222222222188
+      },
+      "gaze": {
+        "x": 917,
+        "y": 439,
+        "object": "empty",
+        "inCenter": true
+      }
+    },
+    {
+      "timestamp": "2025/11/07 17:39:19",
+      "position": {
+        "x": 923,
+        "y": 431
+      },
+      "rotation": {
+        "x": 0.00019704433497536923,
+        "y": 0.00008333333333333526
+      },
+      "gaze": {
+        "x": 923,
+        "y": 431,
+        "object": "empty",
+        "inCenter": false
+      }
+    },
+    {
+      "timestamp": "2025/11/07 17:39:19",
+      "position": {
+        "x": 931,
+        "y": 420
+      },
+      "rotation": {
+        "x": 0.0002709359605911321,
+        "y": 0.00011111111111111072
+      },
+      "gaze": {
+        "x": 931,
+        "y": 420,
+        "object": "empty",
+        "inCenter": false
+      }
+    },
+    {
+      "timestamp": "2025/11/07 17:39:19",
+      "position": {
+        "x": 934,
+        "y": 414
+      },
+      "rotation": {
+        "x": 0.00014778325123152803,
+        "y": 0.000041666666666666516
+      },
+      "gaze": {
+        "x": 934,
+        "y": 414,
+        "object": "empty",
+        "inCenter": false
+      }
+    },
+    {
+      "timestamp": "2025/11/07 17:39:19",
+      "position": {
+        "x": 940,
+        "y": 405
+      },
+      "rotation": {
+        "x": 0.00022167487684729092,
+        "y": 0.00008333333333333303
+      },
+      "gaze": {
+        "x": 940,
+        "y": 405,
+        "object": "empty",
+        "inCenter": false
+      }
+    },
+    {
+      "timestamp": "2025/11/07 17:39:19",
+      "position": {
+        "x": 944,
+        "y": 398
+      },
+      "rotation": {
+        "x": 0.0001724137931034475,
+        "y": 0.00005555555555555536
+      },
+      "gaze": {
+        "x": 944,
+        "y": 398,
+        "object": "empty",
+        "inCenter": false
+      }
+    },
+    {
+      "timestamp": "2025/11/07 17:39:19",
+      "position": {
+        "x": 947,
+        "y": 390
+      },
+      "rotation": {
+        "x": 0.00019704433497536923,
+        "y": 0.000041666666666666516
+      },
+      "gaze": {
+        "x": 947,
+        "y": 390,
+        "object": "empty",
+        "inCenter": false
+      }
+    },
+    {
+      "timestamp": "2025/11/07 17:39:19",
+      "position": {
+        "x": 950,
+        "y": 384
+      },
+      "rotation": {
+        "x": 0.00014778325123152803,
+        "y": 0.000041666666666666516
+      },
+      "gaze": {
+        "x": 950,
+        "y": 384,
+        "object": "empty",
+        "inCenter": false
+      }
+    },
+    {
+      "timestamp": "2025/11/07 17:39:19",
+      "position": {
+        "x": 954,
+        "y": 373
+      },
+      "rotation": {
+        "x": 0.0002709359605911321,
+        "y": 0.00005555555555555536
+      },
+      "gaze": {
+        "x": 954,
+        "y": 373,
+        "object": "empty",
+        "inCenter": false
+      }
+    },
+    {
+      "timestamp": "2025/11/07 17:39:19",
+      "position": {
+        "x": 957,
+        "y": 362
+      },
+      "rotation": {
+        "x": 0.00027093596059113326,
+        "y": 0.000041666666666666516
+      },
+      "gaze": {
+        "x": 957,
+        "y": 362,
+        "object": "empty",
+        "inCenter": false
+      }
+    },
+    {
+      "timestamp": "2025/11/07 17:39:19",
+      "position": {
+        "x": 958,
+        "y": 351
+      },
+      "rotation": {
+        "x": 0.00027093596059113326,
+        "y": 0.00001388888888888884
+      },
+      "gaze": {
+        "x": 958,
+        "y": 351,
+        "object": "empty",
+        "inCenter": false
+      }
+    },
+    {
+      "timestamp": "2025/11/07 17:39:19",
+      "position": {
+        "x": 960,
+        "y": 344
+      },
+      "rotation": {
+        "x": 0.00017241379310344861,
+        "y": 0.00002777777777777768
+      },
+      "gaze": {
+        "x": 960,
+        "y": 344,
+        "object": "empty",
+        "inCenter": false
+      }
+    },
+    {
+      "timestamp": "2025/11/07 17:39:19",
+      "position": {
+        "x": 961,
+        "y": 337
+      },
+      "rotation": {
+        "x": 0.0001724137931034475,
+        "y": 0.00001388888888888884
+      },
+      "gaze": {
+        "x": 961,
+        "y": 337,
+        "object": "empty",
+        "inCenter": false
+      }
+    },
+    {
+      "timestamp": "2025/11/07 17:39:19",
+      "position": {
+        "x": 961,
+        "y": 335
+      },
+      "rotation": {
+        "x": 0.000049261083743842307,
+        "y": 0
+      },
+      "gaze": {
+        "x": 961,
+        "y": 335,
+        "object": "empty",
+        "inCenter": false
+      }
+    },
+    {
+      "timestamp": "2025/11/07 17:39:19",
+      "position": {
+        "x": 961,
+        "y": 334
+      },
+      "rotation": {
+        "x": 0.00002463054187192171,
+        "y": 0
+      },
+      "gaze": {
+        "x": 961,
+        "y": 334,
+        "object": "empty",
+        "inCenter": false
+      }
+    },
+    {
+      "timestamp": "2025/11/07 17:39:19",
+      "position": {
+        "x": 961,
+        "y": 331
+      },
+      "rotation": {
+        "x": 0.00007389162561576402,
+        "y": 0
+      },
+      "gaze": {
+        "x": 961,
+        "y": 331,
+        "object": "empty",
+        "inCenter": false
+      }
+    },
+    {
+      "timestamp": "2025/11/07 17:39:19",
+      "position": {
+        "x": 961,
+        "y": 328
+      },
+      "rotation": {
+        "x": 0.0000738916256157629,
+        "y": 0
+      },
+      "gaze": {
+        "x": 961,
+        "y": 328,
+        "object": "empty",
+        "inCenter": false
+      }
+    },
+    {
+      "timestamp": "2025/11/07 17:39:19",
+      "position": {
+        "x": 961,
+        "y": 323
+      },
+      "rotation": {
+        "x": 0.0001231527093596063,
+        "y": 0
+      },
+      "gaze": {
+        "x": 961,
+        "y": 323,
+        "object": "empty",
+        "inCenter": false
+      }
+    },
+    {
+      "timestamp": "2025/11/07 17:39:19",
+      "position": {
+        "x": 960,
+        "y": 316
+      },
+      "rotation": {
+        "x": 0.0001724137931034475,
+        "y": -0.00001388888888888884
+      },
+      "gaze": {
+        "x": 960,
+        "y": 316,
+        "object": "empty",
+        "inCenter": false
+      }
+    },
+    {
+      "timestamp": "2025/11/07 17:39:19",
+      "position": {
+        "x": 959,
+        "y": 311
+      },
+      "rotation": {
+        "x": 0.0001231527093596063,
+        "y": -0.00001388888888888884
+      },
+      "gaze": {
+        "x": 959,
+        "y": 311,
+        "object": "empty",
+        "inCenter": false
+      }
+    },
+    {
+      "timestamp": "2025/11/07 17:39:19",
+      "position": {
+        "x": 959,
+        "y": 306
+      },
+      "rotation": {
+        "x": 0.0001231527093596063,
+        "y": 0
+      },
+      "gaze": {
+        "x": 959,
+        "y": 306,
+        "object": "empty",
+        "inCenter": false
+      }
+    },
+    {
+      "timestamp": "2025/11/07 17:39:19",
+      "position": {
+        "x": 958,
+        "y": 303
+      },
+      "rotation": {
+        "x": 0.0000738916256157629,
+        "y": -0.00001388888888888884
+      },
+      "gaze": {
+        "x": 958,
+        "y": 303,
+        "object": "empty",
+        "inCenter": false
+      }
+    },
+    {
+      "timestamp": "2025/11/07 17:39:19",
+      "position": {
+        "x": 958,
+        "y": 301
+      },
+      "rotation": {
+        "x": 0.000049261083743842307,
+        "y": 0
+      },
+      "gaze": {
+        "x": 958,
+        "y": 301,
+        "object": "empty",
+        "inCenter": false
+      }
+    },
+    {
+      "timestamp": "2025/11/07 17:39:20",
+      "position": {
+        "x": 958,
+        "y": 300
+      },
+      "rotation": {
+        "x": 0.00002463054187192171,
+        "y": 0
+      },
+      "gaze": {
+        "x": 958,
+        "y": 300,
+        "object": "empty",
+        "inCenter": false
+      }
+    },
+    {
+      "timestamp": "2025/11/07 17:39:20",
+      "position": {
+        "x": 958,
+        "y": 299
+      },
+      "rotation": {
+        "x": 0.000024630541871920598,
+        "y": 0
+      },
+      "gaze": {
+        "x": 958,
+        "y": 299,
+        "object": "empty",
+        "inCenter": false
+      }
+    },
+    {
+      "timestamp": "2025/11/07 17:39:20",
+      "position": {
+        "x": 958,
+        "y": 299
+      },
+      "rotation": {
+        "x": 0,
+        "y": 0
+      },
+      "gaze": {
+        "x": 958,
+        "y": 299,
+        "object": "empty",
+        "inCenter": false
+      }
+    },
+    {
+      "timestamp": "2025/11/07 17:39:20",
+      "position": {
+        "x": 959,
+        "y": 299
+      },
+      "rotation": {
+        "x": 0,
+        "y": 0.00001388888888888884
+      },
+      "gaze": {
+        "x": 959,
+        "y": 299,
+        "object": "empty",
+        "inCenter": false
+      }
+    },
+    {
+      "timestamp": "2025/11/07 17:39:20",
+      "position": {
+        "x": 962,
+        "y": 299
+      },
+      "rotation": {
+        "x": 0,
+        "y": 0.000041666666666666516
+      },
+      "gaze": {
+        "x": 962,
+        "y": 299,
+        "object": "empty",
+        "inCenter": false
+      }
+    },
+    {
+      "timestamp": "2025/11/07 17:39:20",
+      "position": {
+        "x": 964,
+        "y": 299
+      },
+      "rotation": {
+        "x": 0,
+        "y": 0.00002777777777777768
+      },
+      "gaze": {
+        "x": 964,
+        "y": 299,
+        "object": "empty",
+        "inCenter": false
+      }
+    },
+    {
+      "timestamp": "2025/11/07 17:39:20",
+      "position": {
+        "x": 968,
+        "y": 300
+      },
+      "rotation": {
+        "x": -0.000024630541871920598,
+        "y": 0.00005555555555555758
+      },
+      "gaze": {
+        "x": 968,
+        "y": 300,
+        "object": "empty",
+        "inCenter": false
+      }
+    },
+    {
+      "timestamp": "2025/11/07 17:39:20",
+      "position": {
+        "x": 969,
+        "y": 302
+      },
+      "rotation": {
+        "x": -0.000049261083743842307,
+        "y": 0.00001388888888888884
+      },
+      "gaze": {
+        "x": 969,
+        "y": 302,
+        "object": "empty",
+        "inCenter": false
+      }
+    },
+    {
+      "timestamp": "2025/11/07 17:39:20",
+      "position": {
+        "x": 970,
+        "y": 303
+      },
+      "rotation": {
+        "x": -0.00002463054187192171,
+        "y": 0.00001388888888888884
+      },
+      "gaze": {
+        "x": 970,
+        "y": 303,
+        "object": "empty",
+        "inCenter": false
+      }
+    },
+    {
+      "timestamp": "2025/11/07 17:39:20",
+      "position": {
+        "x": 971,
+        "y": 304
+      },
+      "rotation": {
+        "x": -0.000024630541871920598,
+        "y": 0.00001388888888888884
+      },
+      "gaze": {
+        "x": 971,
+        "y": 304,
+        "object": "empty",
+        "inCenter": false
+      }
+    },
+    {
+      "timestamp": "2025/11/07 17:39:20",
+      "position": {
+        "x": 972,
+        "y": 304
+      },
+      "rotation": {
+        "x": 0,
+        "y": 0.00001388888888888884
+      },
+      "gaze": {
+        "x": 972,
+        "y": 304,
+        "object": "empty",
+        "inCenter": false
+      }
+    },
+    {
+      "timestamp": "2025/11/07 17:39:20",
+      "position": {
+        "x": 972,
+        "y": 305
+      },
+      "rotation": {
+        "x": -0.00002463054187192171,
+        "y": 0
+      },
+      "gaze": {
+        "x": 972,
+        "y": 305,
+        "object": "empty",
+        "inCenter": false
+      }
+    },
+    {
+      "timestamp": "2025/11/07 17:39:20",
+      "position": {
+        "x": 972,
+        "y": 305
+      },
+      "rotation": {
+        "x": 0,
+        "y": 0
+      },
+      "gaze": {
+        "x": 972,
+        "y": 305,
+        "object": "empty",
+        "inCenter": false
+      }
+    },
+    {
+      "timestamp": "2025/11/07 17:39:20",
+      "position": {
+        "x": 972,
+        "y": 306
+      },
+      "rotation": {
+        "x": -0.000024630541871920598,
+        "y": 0
+      },
+      "gaze": {
+        "x": 972,
+        "y": 306,
+        "object": "empty",
+        "inCenter": false
+      }
+    },
+    {
+      "timestamp": "2025/11/07 17:39:20",
+      "position": {
+        "x": 972,
+        "y": 306
+      },
+      "rotation": {
+        "x": 0,
+        "y": 0
+      },
+      "gaze": {
+        "x": 972,
+        "y": 306,
+        "object": "empty",
+        "inCenter": false
+      }
+    },
+    {
+      "timestamp": "2025/11/07 17:39:20",
+      "position": {
+        "x": 972,
+        "y": 306
+      },
+      "rotation": {
+        "x": 0,
+        "y": 0
+      },
+      "gaze": {
+        "x": 972,
+        "y": 306,
+        "object": "empty",
+        "inCenter": false
+      }
+    },
+    {
+      "timestamp": "2025/11/07 17:39:20",
+      "position": {
+        "x": 972,
+        "y": 307
+      },
+      "rotation": {
+        "x": -0.00002463054187192171,
+        "y": 0
+      },
+      "gaze": {
+        "x": 972,
+        "y": 307,
+        "object": "empty",
+        "inCenter": false
+      }
+    },
+    {
+      "timestamp": "2025/11/07 17:39:20",
+      "position": {
+        "x": 971,
+        "y": 311
+      },
+      "rotation": {
+        "x": -0.00009852216748768461,
+        "y": -0.00001388888888888884
+      },
+      "gaze": {
+        "x": 971,
+        "y": 311,
+        "object": "empty",
+        "inCenter": false
+      }
+    },
+    {
+      "timestamp": "2025/11/07 17:39:20",
+      "position": {
+        "x": 963,
+        "y": 326
+      },
+      "rotation": {
+        "x": -0.00036945812807881787,
+        "y": -0.00011111111111111293
+      },
+      "gaze": {
+        "x": 963,
+        "y": 326,
+        "object": "empty",
+        "inCenter": false
+      }
+    },
+    {
+      "timestamp": "2025/11/07 17:39:20",
+      "position": {
+        "x": 951,
+        "y": 345
+      },
+      "rotation": {
+        "x": -0.0004679802955665025,
+        "y": -0.00016666666666666606
+      },
+      "gaze": {
+        "x": 951,
+        "y": 345,
+        "object": "empty",
+        "inCenter": false
+      }
+    },
+    {
+      "timestamp": "2025/11/07 17:39:20",
+      "position": {
+        "x": 938,
+        "y": 364
+      },
+      "rotation": {
+        "x": -0.0004679802955665025,
+        "y": -0.00018055555555555492
+      },
+      "gaze": {
+        "x": 938,
+        "y": 364,
+        "object": "empty",
+        "inCenter": false
+      }
+    },
+    {
+      "timestamp": "2025/11/07 17:39:20",
+      "position": {
+        "x": 916,
+        "y": 392
+      },
+      "rotation": {
+        "x": -0.0006896551724137934,
+        "y": -0.0003055555555555567
+      },
+      "gaze": {
+        "x": 916,
+        "y": 392,
+        "object": "empty",
+        "inCenter": true
+      }
+    },
+    {
+      "timestamp": "2025/11/07 17:39:20",
+      "position": {
+        "x": 887,
+        "y": 418
+      },
+      "rotation": {
+        "x": -0.0006403940886699499,
+        "y": -0.00040277777777777637
+      },
+      "gaze": {
+        "x": 887,
+        "y": 418,
+        "object": "empty",
+        "inCenter": true
+      }
+    },
+    {
+      "timestamp": "2025/11/07 17:39:20",
+      "position": {
+        "x": 878,
+        "y": 425
+      },
+      "rotation": {
+        "x": -0.00017241379310344973,
+        "y": -0.00012499999999999957
+      },
+      "gaze": {
+        "x": 878,
+        "y": 425,
+        "object": "empty",
+        "inCenter": true
+      }
+    },
+    {
+      "timestamp": "2025/11/07 17:39:20",
+      "position": {
+        "x": 871,
+        "y": 431
+      },
+      "rotation": {
+        "x": -0.0001477832512315258,
+        "y": -0.0000972222222222241
+      },
+      "gaze": {
+        "x": 871,
+        "y": 431,
+        "object": "empty",
+        "inCenter": true
+      }
+    },
+    {
+      "timestamp": "2025/11/07 17:39:20",
+      "position": {
+        "x": 866,
+        "y": 434
+      },
+      "rotation": {
+        "x": -0.0000738916256157629,
+        "y": -0.0000694444444444442
+      },
+      "gaze": {
+        "x": 866,
+        "y": 434,
+        "object": "empty",
+        "inCenter": true
+      }
+    },
+    {
+      "timestamp": "2025/11/07 17:39:20",
+      "position": {
+        "x": 863,
+        "y": 436
+      },
+      "rotation": {
+        "x": -0.00004926108374384342,
+        "y": -0.000041666666666666516
+      },
+      "gaze": {
+        "x": 863,
+        "y": 436,
+        "object": "empty",
+        "inCenter": true
+      }
+    },
+    {
+      "timestamp": "2025/11/07 17:39:20",
+      "position": {
+        "x": 862,
+        "y": 437
+      },
+      "rotation": {
+        "x": -0.00002463054187192171,
+        "y": -0.00001388888888888884
+      },
+      "gaze": {
+        "x": 862,
+        "y": 437,
+        "object": "empty",
+        "inCenter": true
+      }
+    },
+    {
+      "timestamp": "2025/11/07 17:39:20",
+      "position": {
+        "x": 861,
+        "y": 438
+      },
+      "rotation": {
+        "x": -0.000024630541871919486,
+        "y": -0.00001388888888888884
+      },
+      "gaze": {
+        "x": 861,
+        "y": 438,
+        "object": "empty",
+        "inCenter": true
+      }
+    },
+    {
+      "timestamp": "2025/11/07 17:39:21",
+      "position": {
+        "x": 860,
+        "y": 438
+      },
+      "rotation": {
+        "x": 0,
+        "y": -0.00001388888888888884
+      },
+      "gaze": {
+        "x": 860,
+        "y": 438,
+        "object": "empty",
+        "inCenter": true
+      }
+    },
+    {
+      "timestamp": "2025/11/07 17:39:21",
+      "position": {
+        "x": 860,
+        "y": 438
+      },
+      "rotation": {
+        "x": 0,
+        "y": 0
+      },
+      "gaze": {
+        "x": 860,
+        "y": 438,
+        "object": "empty",
+        "inCenter": true
+      }
+    },
+    {
+      "timestamp": "2025/11/07 17:39:21",
+      "position": {
+        "x": 860,
+        "y": 438
+      },
+      "rotation": {
+        "x": 0,
+        "y": 0
+      },
+      "gaze": {
+        "x": 860,
+        "y": 438,
+        "object": "empty",
+        "inCenter": true
+      }
+    },
+    {
+      "timestamp": "2025/11/07 17:39:21",
+      "position": {
+        "x": 859,
+        "y": 438
+      },
+      "rotation": {
+        "x": 0,
+        "y": -0.00001388888888888884
+      },
+      "gaze": {
+        "x": 859,
+        "y": 438,
+        "object": "empty",
+        "inCenter": true
+      }
+    },
+    {
+      "timestamp": "2025/11/07 17:39:21",
+      "position": {
+        "x": 859,
+        "y": 438
+      },
+      "rotation": {
+        "x": 0,
+        "y": 0
+      },
+      "gaze": {
+        "x": 859,
+        "y": 438,
+        "object": "empty",
+        "inCenter": true
+      }
+    },
+    {
+      "timestamp": "2025/11/07 17:39:21",
+      "position": {
+        "x": 859,
+        "y": 438
+      },
+      "rotation": {
+        "x": 0,
+        "y": 0
+      },
+      "gaze": {
+        "x": 859,
+        "y": 438,
+        "object": "empty",
+        "inCenter": true
+      }
+    },
+    {
+      "timestamp": "2025/11/07 17:39:21",
+      "position": {
+        "x": 859,
+        "y": 438
+      },
+      "rotation": {
+        "x": 0,
+        "y": 0
+      },
+      "gaze": {
+        "x": 859,
+        "y": 438,
+        "object": "empty",
+        "inCenter": true
+      }
+    },
+    {
+      "timestamp": "2025/11/07 17:39:21",
+      "position": {
+        "x": 859,
+        "y": 437
+      },
+      "rotation": {
+        "x": 0.000024630541871919486,
+        "y": 0
+      },
+      "gaze": {
+        "x": 859,
+        "y": 437,
+        "object": "empty",
+        "inCenter": true
+      }
+    },
+    {
+      "timestamp": "2025/11/07 17:39:21",
+      "position": {
+        "x": 859,
+        "y": 437
+      },
+      "rotation": {
+        "x": 0,
+        "y": 0
+      },
+      "gaze": {
+        "x": 859,
+        "y": 437,
+        "object": "empty",
+        "inCenter": true
+      }
+    },
+    {
+      "timestamp": "2025/11/07 17:39:21",
+      "position": {
+        "x": 859,
+        "y": 436
+      },
+      "rotation": {
+        "x": 0.00002463054187192171,
+        "y": 0
+      },
+      "gaze": {
+        "x": 859,
+        "y": 436,
+        "object": "empty",
+        "inCenter": true
+      }
+    },
+    {
+      "timestamp": "2025/11/07 17:39:21",
+      "position": {
+        "x": 859,
+        "y": 436
+      },
+      "rotation": {
+        "x": 0,
+        "y": 0
+      },
+      "gaze": {
+        "x": 859,
+        "y": 436,
+        "object": "empty",
+        "inCenter": true
+      }
+    },
+    {
+      "timestamp": "2025/11/07 17:39:21",
+      "position": {
+        "x": 858,
+        "y": 435
+      },
+      "rotation": {
+        "x": 0.00002463054187192171,
+        "y": -0.00001388888888888884
+      },
+      "gaze": {
+        "x": 858,
+        "y": 435,
+        "object": "empty",
+        "inCenter": true
+      }
+    },
+    {
+      "timestamp": "2025/11/07 17:39:21",
+      "position": {
+        "x": 858,
+        "y": 434
+      },
+      "rotation": {
+        "x": 0.00002463054187192171,
+        "y": 0
+      },
+      "gaze": {
+        "x": 858,
+        "y": 434,
+        "object": "empty",
+        "inCenter": true
+      }
+    },
+    {
+      "timestamp": "2025/11/07 17:39:21",
+      "position": {
+        "x": 857,
+        "y": 432
+      },
+      "rotation": {
+        "x": 0.000049261083743841195,
+        "y": -0.00001388888888888884
+      },
+      "gaze": {
+        "x": 857,
+        "y": 432,
+        "object": "empty",
+        "inCenter": true
+      }
+    },
+    {
+      "timestamp": "2025/11/07 17:39:21",
+      "position": {
+        "x": 856,
+        "y": 430
+      },
+      "rotation": {
+        "x": 0.00004926108374384342,
+        "y": -0.00001388888888888884
+      },
+      "gaze": {
+        "x": 856,
+        "y": 430,
+        "object": "empty",
+        "inCenter": true
+      }
+    },
+    {
+      "timestamp": "2025/11/07 17:39:21",
+      "position": {
+        "x": 855,
+        "y": 427
+      },
+      "rotation": {
+        "x": 0.0000738916256157629,
+        "y": -0.00001388888888888884
+      },
+      "gaze": {
+        "x": 855,
+        "y": 427,
+        "object": "empty",
+        "inCenter": true
+      }
+    },
+    {
+      "timestamp": "2025/11/07 17:39:21",
+      "position": {
+        "x": 853,
+        "y": 421
+      },
+      "rotation": {
+        "x": 0.00014778325123152803,
+        "y": -0.00002777777777777768
+      },
+      "gaze": {
+        "x": 853,
+        "y": 421,
+        "object": "empty",
+        "inCenter": true
+      }
+    },
+    {
+      "timestamp": "2025/11/07 17:39:21",
+      "position": {
+        "x": 852,
+        "y": 420
+      },
+      "rotation": {
+        "x": 0.000024630541871919486,
+        "y": -0.00001388888888888884
+      },
+      "gaze": {
+        "x": 852,
+        "y": 420,
+        "object": "empty",
+        "inCenter": true
+      }
+    },
+    {
+      "timestamp": "2025/11/07 17:39:21",
+      "position": {
+        "x": 852,
+        "y": 419
+      },
+      "rotation": {
+        "x": 0.00002463054187192171,
+        "y": 0
+      },
+      "gaze": {
+        "x": 852,
+        "y": 419,
+        "object": "empty",
+        "inCenter": true
+      }
+    },
+    {
+      "timestamp": "2025/11/07 17:39:21",
+      "position": {
+        "x": 852,
+        "y": 418
+      },
+      "rotation": {
+        "x": 0.00002463054187192171,
+        "y": 0
+      },
+      "gaze": {
+        "x": 852,
+        "y": 418,
+        "object": "empty",
+        "inCenter": true
+      }
+    },
+    {
+      "timestamp": "2025/11/07 17:39:21",
+      "position": {
+        "x": 852,
+        "y": 418
+      },
+      "rotation": {
+        "x": 0,
+        "y": 0
+      },
+      "gaze": {
+        "x": 852,
+        "y": 418,
+        "object": "empty",
+        "inCenter": true
+      }
+    },
+    {
+      "timestamp": "2025/11/07 17:39:21",
+      "position": {
+        "x": 851,
+        "y": 418
+      },
+      "rotation": {
+        "x": 0,
+        "y": -0.00001388888888888884
+      },
+      "gaze": {
+        "x": 851,
+        "y": 418,
+        "object": "empty",
+        "inCenter": true
+      }
+    },
+    {
+      "timestamp": "2025/11/07 17:39:21",
+      "position": {
+        "x": 851,
+        "y": 418
+      },
+      "rotation": {
+        "x": 0,
+        "y": 0
+      },
+      "gaze": {
+        "x": 851,
+        "y": 418,
+        "object": "empty",
+        "inCenter": true
+      }
+    },
+    {
+      "timestamp": "2025/11/07 17:39:21",
+      "position": {
+        "x": 851,
+        "y": 421
+      },
+      "rotation": {
+        "x": -0.0000738916256157629,
+        "y": 0
+      },
+      "gaze": {
+        "x": 851,
+        "y": 421,
+        "object": "empty",
+        "inCenter": true
+      }
+    },
+    {
+      "timestamp": "2025/11/07 17:39:21",
+      "position": {
+        "x": 851,
+        "y": 433
+      },
+      "rotation": {
+        "x": -0.00029556650246305606,
+        "y": 0
+      },
+      "gaze": {
+        "x": 851,
+        "y": 433,
+        "object": "empty",
+        "inCenter": true
+      }
+    },
+    {
+      "timestamp": "2025/11/07 17:39:21",
+      "position": {
+        "x": 851,
+        "y": 449
+      },
+      "rotation": {
+        "x": -0.00039408866995073845,
+        "y": 0
+      },
+      "gaze": {
+        "x": 851,
+        "y": 449,
+        "object": "empty",
+        "inCenter": true
+      }
+    },
+    {
+      "timestamp": "2025/11/07 17:39:21",
+      "position": {
+        "x": 847,
+        "y": 498
+      },
+      "rotation": {
+        "x": -0.0012068965517241371,
+        "y": -0.00005555555555555536
+      },
+      "gaze": {
+        "x": 847,
+        "y": 498,
+        "object": "empty",
+        "inCenter": true
+      }
+    },
+    {
+      "timestamp": "2025/11/07 17:39:21",
+      "position": {
+        "x": 842,
+        "y": 525
+      },
+      "rotation": {
+        "x": -0.0006650246305418728,
+        "y": -0.0000694444444444442
+      },
+      "gaze": {
+        "x": 842,
+        "y": 525,
+        "object": "empty",
+        "inCenter": true
+      }
+    },
+    {
+      "timestamp": "2025/11/07 17:39:21",
+      "position": {
+        "x": 836,
+        "y": 551
+      },
+      "rotation": {
+        "x": -0.0006403940886699511,
+        "y": -0.00008333333333333303
+      },
+      "gaze": {
+        "x": 836,
+        "y": 551,
+        "object": "empty",
+        "inCenter": true
+      }
+    },
+    {
+      "timestamp": "2025/11/07 17:39:21",
+      "position": {
+        "x": 831,
+        "y": 574
+      },
+      "rotation": {
+        "x": -0.000566502463054186,
+        "y": -0.00006944444444444642
+      },
+      "gaze": {
+        "x": 831,
+        "y": 574,
+        "object": "empty",
+        "inCenter": false
+      }
+    },
+    {
+      "timestamp": "2025/11/07 17:39:21",
+      "position": {
+        "x": 825,
+        "y": 597
+      },
+      "rotation": {
+        "x": -0.0005665024630541882,
+        "y": -0.00008333333333333303
+      },
+      "gaze": {
+        "x": 825,
+        "y": 597,
+        "object": "empty",
+        "inCenter": false
+      }
+    },
+    {
+      "timestamp": "2025/11/07 17:39:21",
+      "position": {
+        "x": 821,
+        "y": 612
+      },
+      "rotation": {
+        "x": -0.00036945812807881673,
+        "y": -0.00005555555555555536
+      },
+      "gaze": {
+        "x": 821,
+        "y": 612,
+        "object": "empty",
+        "inCenter": false
+      }
+    },
+    {
+      "timestamp": "2025/11/07 17:39:21",
+      "position": {
+        "x": 814,
+        "y": 636
+      },
+      "rotation": {
+        "x": -0.0005911330049261098,
+        "y": -0.00009722222222222188
+      },
+      "gaze": {
+        "x": 814,
+        "y": 636,
+        "object": "empty",
+        "inCenter": false
+      }
+    },
+    {
+      "timestamp": "2025/11/07 17:39:21",
+      "position": {
+        "x": 809,
+        "y": 649
+      },
+      "rotation": {
+        "x": -0.00032019704433497556,
+        "y": -0.0000694444444444442
+      },
+      "gaze": {
+        "x": 809,
+        "y": 649,
+        "object": "empty",
+        "inCenter": false
+      }
+    },
+    {
+      "timestamp": "2025/11/07 17:39:21",
+      "position": {
+        "x": 805,
+        "y": 664
+      },
+      "rotation": {
+        "x": -0.00036945812807881673,
+        "y": -0.00005555555555555536
+      },
+      "gaze": {
+        "x": 805,
+        "y": 664,
+        "object": "empty",
+        "inCenter": false
+      }
+    },
+    {
+      "timestamp": "2025/11/07 17:39:21",
+      "position": {
+        "x": 802,
+        "y": 670
+      },
+      "rotation": {
+        "x": -0.00014778325123152803,
+        "y": -0.000041666666666666516
+      },
+      "gaze": {
+        "x": 802,
+        "y": 670,
+        "object": "empty",
+        "inCenter": false
+      }
+    },
+    {
+      "timestamp": "2025/11/07 17:39:21",
+      "position": {
+        "x": 802,
+        "y": 672
+      },
+      "rotation": {
+        "x": -0.000049261083743841195,
+        "y": 0
+      },
+      "gaze": {
+        "x": 802,
+        "y": 672,
+        "object": "empty",
+        "inCenter": false
+      }
+    },
+    {
+      "timestamp": "2025/11/07 17:39:21",
+      "position": {
+        "x": 800,
+        "y": 674
+      },
+      "rotation": {
+        "x": -0.00004926108374384342,
+        "y": -0.00002777777777777768
+      },
+      "gaze": {
+        "x": 800,
+        "y": 674,
+        "object": "empty",
+        "inCenter": false
+      }
+    },
+    {
+      "timestamp": "2025/11/07 17:39:21",
+      "position": {
+        "x": 800,
+        "y": 675
+      },
+      "rotation": {
+        "x": -0.000024630541871919486,
+        "y": 0
+      },
+      "gaze": {
+        "x": 800,
+        "y": 675,
+        "object": "empty",
+        "inCenter": false
+      }
+    },
+    {
+      "timestamp": "2025/11/07 17:39:21",
+      "position": {
+        "x": 799,
+        "y": 677
+      },
+      "rotation": {
+        "x": -0.00004926108374384342,
+        "y": -0.00001388888888888884
+      },
+      "gaze": {
+        "x": 799,
+        "y": 677,
+        "object": "empty",
+        "inCenter": false
+      }
+    },
+    {
+      "timestamp": "2025/11/07 17:39:21",
+      "position": {
+        "x": 798,
+        "y": 678
+      },
+      "rotation": {
+        "x": -0.00002463054187192171,
+        "y": -0.00001388888888888884
+      },
+      "gaze": {
+        "x": 798,
+        "y": 678,
+        "object": "empty",
+        "inCenter": false
+      }
+    },
+    {
+      "timestamp": "2025/11/07 17:39:22",
+      "position": {
+        "x": 797,
+        "y": 679
+      },
+      "rotation": {
+        "x": -0.000024630541871919486,
+        "y": -0.00001388888888888884
+      },
+      "gaze": {
+        "x": 797,
+        "y": 679,
+        "object": "empty",
+        "inCenter": false
+      }
+    },
+    {
+      "timestamp": "2025/11/07 17:39:22",
+      "position": {
+        "x": 797,
+        "y": 679
+      },
+      "rotation": {
+        "x": 0,
+        "y": 0
+      },
+      "gaze": {
+        "x": 797,
+        "y": 679,
+        "object": "empty",
+        "inCenter": false
+      }
+    },
+    {
+      "timestamp": "2025/11/07 17:39:22",
+      "position": {
+        "x": 797,
+        "y": 678
+      },
+      "rotation": {
+        "x": 0.000024630541871919486,
+        "y": 0
+      },
+      "gaze": {
+        "x": 797,
+        "y": 678,
+        "object": "empty",
+        "inCenter": false
+      }
+    },
+    {
+      "timestamp": "2025/11/07 17:39:22",
+      "position": {
+        "x": 797,
+        "y": 677
+      },
+      "rotation": {
+        "x": 0.00002463054187192171,
+        "y": 0
+      },
+      "gaze": {
+        "x": 797,
+        "y": 677,
+        "object": "empty",
+        "inCenter": false
+      }
+    },
+    {
+      "timestamp": "2025/11/07 17:39:22",
+      "position": {
+        "x": 796,
+        "y": 677
+      },
+      "rotation": {
+        "x": 0,
+        "y": -0.00001388888888888884
+      },
+      "gaze": {
+        "x": 796,
+        "y": 677,
+        "object": "empty",
+        "inCenter": false
+      }
+    },
+    {
+      "timestamp": "2025/11/07 17:39:22",
+      "position": {
+        "x": 794,
+        "y": 676
+      },
+      "rotation": {
+        "x": 0.00002463054187192171,
+        "y": -0.00002777777777777768
+      },
+      "gaze": {
+        "x": 794,
+        "y": 676,
+        "object": "empty",
+        "inCenter": false
+      }
+    },
+    {
+      "timestamp": "2025/11/07 17:39:22",
+      "position": {
+        "x": 792,
+        "y": 674
+      },
+      "rotation": {
+        "x": 0.000049261083743841195,
+        "y": -0.00002777777777777768
+      },
+      "gaze": {
+        "x": 792,
+        "y": 674,
+        "object": "empty",
+        "inCenter": false
+      }
+    },
+    {
+      "timestamp": "2025/11/07 17:39:22",
+      "position": {
+        "x": 789,
+        "y": 671
+      },
+      "rotation": {
+        "x": 0.00007389162561576513,
+        "y": -0.000041666666666666516
+      },
+      "gaze": {
+        "x": 789,
+        "y": 671,
+        "object": "empty",
+        "inCenter": false
+      }
+    },
+    {
+      "timestamp": "2025/11/07 17:39:22",
+      "position": {
+        "x": 785,
+        "y": 668
+      },
+      "rotation": {
+        "x": 0.0000738916256157629,
+        "y": -0.00005555555555555758
+      },
+      "gaze": {
+        "x": 785,
+        "y": 668,
+        "object": "empty",
+        "inCenter": false
+      }
+    },
+    {
+      "timestamp": "2025/11/07 17:39:22",
+      "position": {
+        "x": 781,
+        "y": 665
+      },
+      "rotation": {
+        "x": 0.0000738916256157629,
+        "y": -0.00005555555555555536
+      },
+      "gaze": {
+        "x": 781,
+        "y": 665,
+        "object": "empty",
+        "inCenter": false
+      }
+    },
+    {
+      "timestamp": "2025/11/07 17:39:22",
+      "position": {
+        "x": 779,
+        "y": 663
+      },
+      "rotation": {
+        "x": 0.00004926108374384342,
+        "y": -0.00002777777777777768
+      },
+      "gaze": {
+        "x": 779,
+        "y": 663,
+        "object": "empty",
+        "inCenter": false
+      }
+    },
+    {
+      "timestamp": "2025/11/07 17:39:22",
+      "position": {
+        "x": 777,
+        "y": 661
+      },
+      "rotation": {
+        "x": 0.000049261083743841195,
+        "y": -0.00002777777777777768
+      },
+      "gaze": {
+        "x": 777,
+        "y": 661,
+        "object": "empty",
+        "inCenter": false
+      }
+    },
+    {
+      "timestamp": "2025/11/07 17:39:22",
+      "position": {
+        "x": 775,
+        "y": 660
+      },
+      "rotation": {
+        "x": 0.00002463054187192171,
+        "y": -0.00002777777777777768
+      },
+      "gaze": {
+        "x": 775,
+        "y": 660,
+        "object": "empty",
+        "inCenter": false
+      }
+    },
+    {
+      "timestamp": "2025/11/07 17:39:22",
+      "position": {
+        "x": 774,
+        "y": 659
+      },
+      "rotation": {
+        "x": 0.00002463054187192171,
+        "y": -0.00001388888888888884
+      },
+      "gaze": {
+        "x": 774,
+        "y": 659,
+        "object": "empty",
+        "inCenter": false
+      }
+    },
+    {
+      "timestamp": "2025/11/07 17:39:22",
+      "position": {
+        "x": 773,
+        "y": 659
+      },
+      "rotation": {
+        "x": 0,
+        "y": -0.00001388888888888884
+      },
+      "gaze": {
+        "x": 773,
+        "y": 659,
+        "object": "empty",
+        "inCenter": false
+      }
+    },
+    {
+      "timestamp": "2025/11/07 17:39:22",
+      "position": {
+        "x": 772,
+        "y": 659
+      },
+      "rotation": {
+        "x": 0,
+        "y": -0.00001388888888888884
+      },
+      "gaze": {
+        "x": 772,
+        "y": 659,
+        "object": "empty",
+        "inCenter": false
+      }
+    }
+  ],
+  "quizResponses": [
+    {
+      "quizId": 1,
+      "selectedAnswer": 1,
+      "isCorrect": true,
+      "timestamp": "2025/11/07 17:39:11"
+    },
+    {
+      "quizId": 3,
+      "selectedAnswer": 2,
+      "isCorrect": true,
+      "timestamp": "2025/11/07 17:39:15"
+    },
+    {
+      "quizId": 2,
+      "selectedAnswer": 1,
+      "isCorrect": true,
+      "timestamp": "2025/11/07 17:39:18"
+    },
+    {
+      "quizId": 4,
+      "selectedAnswer": 1,
+      "isCorrect": true,
+      "timestamp": "2025/11/07 17:39:22"
+    }
+  ],
+  "endTime": "2025/11/07 17:40:08"
+}

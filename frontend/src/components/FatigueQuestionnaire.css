@@ -1,0 +1,224 @@
+.fatigue-questionnaire {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 107, 157, 0.08);
+  backdrop-filter: blur(4px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1500;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.questionnaire-card {
+  background: linear-gradient(135deg, #fffbf8, #fff5f7);
+  border-radius: 25px;
+  padding: 50px 45px;
+  max-width: 600px;
+  width: 90%;
+  box-shadow: var(--soft-shadow);
+  animation: slideUp 0.5s ease-out;
+  border: 2px solid #ffb3d9;
+}
+
+.questionnaire-card h2 {
+  font-size: 2rem;
+  margin: 0 0 30px 0;
+  text-align: center;
+  color: #ff6b9d;
+  font-weight: 700;
+}
+
+.questionnaire-question {
+  font-size: 1.1rem;
+  color: #ff8ab3;
+  text-align: center;
+  margin-bottom: 50px;
+  line-height: 1.6;
+  font-weight: 500;
+}
+
+/* スケール コンテナ */
+.scale-container {
+  margin-bottom: 40px;
+}
+
+.scale-labels {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+  font-size: 0.9rem;
+  color: #999;
+}
+
+.label-left {
+  text-align: left;
+}
+
+.label-right {
+  text-align: right;
+}
+
+/* 10段階ボタン */
+.scale-buttons {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.scale-button {
+  padding: 15px 10px;
+  border: 2px solid #ffb3d9;
+  border-radius: 12px;
+  background: linear-gradient(135deg, #fffbf8, #fff5f7);
+  color: #ff8ab3;
+  font-size: 0.95rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.scale-button:hover {
+  border-color: #ff6b9d;
+  color: #ff6b9d;
+  background: linear-gradient(135deg, #ffb3d9, #ffe6f0);
+  transform: translateY(-2px);
+  box-shadow: var(--soft-shadow-sm);
+}
+
+.scale-button.selected {
+  background: linear-gradient(135deg, #ff6b9d, #ff8ab3);
+  color: white;
+  border-color: #ff4757;
+  box-shadow: var(--soft-shadow);
+  transform: scale(1.05);
+}
+
+.scale-numbers {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.85rem;
+  color: #ff8ab3;
+  margin-top: 15px;
+  font-weight: 500;
+}
+
+.number-left {
+  text-align: left;
+}
+
+.number-right {
+  text-align: right;
+}
+
+/* わからないオプション */
+.unknown-option {
+  text-align: center;
+  margin-bottom: 40px;
+  padding: 25px 0;
+  border-top: 2px solid #ffb3d9;
+  border-bottom: 2px solid #ffb3d9;
+}
+
+.unknown-button {
+  padding: 12px 50px;
+  border: 2px solid #ffb3d9;
+  border-radius: 50px;
+  background: linear-gradient(135deg, #fffbf8, #fff5f7);
+  color: #ff8ab3;
+  font-size: 0.95rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.unknown-button:hover {
+  border-color: #ff6b9d;
+  color: #ff6b9d;
+  background: linear-gradient(135deg, #ffb3d9, #ffe6f0);
+  transform: translateY(-2px);
+  box-shadow: var(--soft-shadow-sm);
+}
+
+.unknown-button.selected {
+  background: linear-gradient(135deg, #ff6b9d, #ff8ab3);
+  color: white;
+  border-color: #ff4757;
+  box-shadow: var(--soft-shadow);
+  transform: scale(1.05);
+}
+
+/* 送信ボタン */
+.submit-button {
+  width: 100%;
+  padding: 16px;
+  border: none;
+  border-radius: 12px;
+  font-size: 1.05rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.submit-button.enabled {
+  background: linear-gradient(135deg, #ff6b9d, #ff8ab3);
+  color: white;
+  box-shadow: var(--soft-shadow);
+}
+
+.submit-button.enabled:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--soft-shadow);
+}
+
+.submit-button.enabled:active {
+  transform: scale(0.98);
+}
+
+.submit-button.disabled {
+  background: #ffb3d9;
+  color: #ffffff;
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+/* アニメーション */
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* レスポンシブ */
+@media (max-width: 600px) {
+  .questionnaire-card {
+    padding: 25px;
+  }
+
+  .questionnaire-card h2 {
+    font-size: 1.4rem;
+  }
+
+  .scale-buttons {
+    grid-template-columns: repeat(5, 1fr);
+  }
+
+  .scale-button {
+    padding: 10px;
+    font-size: 0.85rem;
+  }
+
+  .submit-button {
+    padding: 12px;
+    font-size: 0.95rem;
+  }
+}
