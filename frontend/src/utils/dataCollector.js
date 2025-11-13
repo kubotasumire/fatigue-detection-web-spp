@@ -154,23 +154,32 @@ class DataCollector {
    */
   async sendSensorData(data) {
     try {
-      const response = await fetch(`${this.apiBaseUrl}/api/data/sensor`, {
+      const url = `${this.apiBaseUrl}/api/data/sensor`;
+      const body = JSON.stringify({
+        sessionId: this.sessionId,
+        data
+      });
+
+      const response = await fetch(url, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({
-          sessionId: this.sessionId,
-          data
-        })
+        body
       });
 
       if (!response.ok) {
-        console.warn(`Sensor data send failed: ${response.status} ${response.statusText}`, {
+        // 404 エラーはセッション未初期化の一時的な状態なので無視
+        if (response.status === 404) {
+          return; // サイレント無視
+        }
+        console.warn(`❌ Sensor data send failed: ${response.status} ${response.statusText}`, {
           sessionId: this.sessionId,
-          url: `${this.apiBaseUrl}/api/data/sensor`
+          url,
+          apiBaseUrl: this.apiBaseUrl
         });
       }
     } catch (error) {
-      console.error('Error sending sensor data:', error);
+      // ネットワークエラーのみログ出力
+      console.error('❌ Error sending sensor data:', error);
     }
   }
 

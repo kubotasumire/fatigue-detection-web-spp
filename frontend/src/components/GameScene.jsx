@@ -278,11 +278,14 @@ const GameScene = ({ difficulty, sessionId, onGameEnd, onTimeUp, onQuizResponse,
   useEffect(() => {
     if (!isInitialized || !sessionId) return;
 
+    console.log('🔧 Initializing DataCollector:', { sessionId, API_BASE_URL });
     dataCollectorRef.current = new DataCollector(sessionId, API_BASE_URL);
     dataCollectorRef.current.start();
+    console.log('✅ DataCollector started');
 
     return () => {
       if (dataCollectorRef.current) {
+        console.log('🛑 Stopping DataCollector');
         dataCollectorRef.current.stop();
       }
     };

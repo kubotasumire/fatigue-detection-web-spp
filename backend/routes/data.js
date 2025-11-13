@@ -12,6 +12,8 @@ router.post('/session/start', (req, res) => {
   const { difficulty, timestamp } = req.body;
   const sessionId = `session_${Date.now()}_${Math.random().toString(36).substr(2, 9)}`;
 
+  console.log(`🎬 Session started:`, { sessionId, difficulty });
+
   sessions.set(sessionId, {
     id: sessionId,
     difficulty,
@@ -21,6 +23,7 @@ router.post('/session/start', (req, res) => {
     endTime: null
   });
 
+  console.log(`✅ Sessions count: ${sessions.size}`);
   res.json({ sessionId });
 });
 
@@ -29,12 +32,17 @@ router.post('/sensor', (req, res) => {
   const { sessionId, data } = req.body;
   // data構造: { timestamp, position: {x, y}, rotation: {x, y}, gaze: {x, y, object} }
 
+  console.log(`📤 Sensor data received:`, { sessionId, dataType: data?.timestamp ? 'valid' : 'invalid' });
+
   const session = sessions.get(sessionId);
   if (!session) {
-    return res.status(404).json({ error: 'Session not found' });
+    console.warn(`❌ Session not found: ${sessionId}`);
+    console.warn(`Available sessions: ${Array.from(sessions.keys()).join(', ')}`);
+    return res.status(404).json({ error: 'Session not found', receivedSessionId: sessionId });
   }
 
   session.sensorData.push(data);
+  console.log(`✅ Sensor data saved. Total: ${session.sensorData.length}`);
   res.json({ success: true });
 });
 

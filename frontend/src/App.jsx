@@ -32,6 +32,7 @@ function App() {
     const newSessionId = `session_${Date.now()}_${Math.random().toString(36).substr(2, 9)}`;
 
     try {
+      console.log('🚀 Starting session with:', { selectedDifficulty, API_BASE_URL });
       // バックエンドにセッション開始を通知
       const response = await fetch(`${API_BASE_URL}/api/data/session/start`, {
         method: 'POST',
@@ -44,6 +45,7 @@ function App() {
       });
 
       const data = await response.json();
+      console.log('✅ Session started from backend:', { sessionId: data.sessionId });
 
       setSessionId(data.sessionId);
       setQuizResponses([]); // クイズ回答をリセット
@@ -61,8 +63,9 @@ function App() {
         preFatigue: fatigueLevel,
         postFatigue: null
       };
+      console.log('📋 Session data created:', sessionDataRef.current);
     } catch (error) {
-      console.error('Failed to start session:', error);
+      console.error('❌ Failed to start session:', error);
     }
   };
 
