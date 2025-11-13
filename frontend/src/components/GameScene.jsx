@@ -7,7 +7,7 @@ import './GameScene.css';
 const GameScene = ({ difficulty, sessionId, onGameEnd, onTimeUp, onQuizResponse, onQuizAttempt, quizResponses, attemptedQuizzes, apiBaseUrl, sessionDataRef }) => {
   const containerRef = useRef(null);
   const canvasRef = useRef(null);
-  const API_BASE_URL = apiBaseUrl || 'http://localhost:5001';
+  const API_BASE_URL = apiBaseUrl !== undefined ? apiBaseUrl : 'http://localhost:5001';
 
   // タイムアップ時の処理
   const handleTimeUp = () => {

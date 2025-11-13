@@ -3,7 +3,7 @@ import { formatSessionDataToJST, formatToJST, generateJapaneseDatetimeFilename }
 import './EndScreen.css';
 
 const EndScreen = ({ sessionData, difficulty, onRestart, apiBaseUrl }) => {
-  const API_BASE_URL = apiBaseUrl || 'http://localhost:5001';
+  const API_BASE_URL = apiBaseUrl !== undefined ? apiBaseUrl : 'http://localhost:5001';
   const [accuracy, setAccuracy] = useState(0);
   const [metrics, setMetrics] = useState(null);
   const [isLoading, setIsLoading] = useState(true);

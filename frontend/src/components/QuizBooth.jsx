@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import './QuizBooth.css';
 
 const QuizBooth = ({ quiz, difficulty, onClose, dataCollector, apiBaseUrl }) => {
-  const API_BASE_URL = apiBaseUrl || 'http://localhost:5001';
+  const API_BASE_URL = apiBaseUrl !== undefined ? apiBaseUrl : 'http://localhost:5001';
   const [selectedAnswer, setSelectedAnswer] = useState(null);
   const [submitted, setSubmitted] = useState(false);
   const [isCorrect, setIsCorrect] = useState(false);
