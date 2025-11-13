@@ -1,13 +1,14 @@
 {
-  "name": "test-h",
+  "name": "fatigue-detection-web-spp",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "Fatigue detection web application with integrated frontend and backend",
+  "main": "backend/server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node backend/server.js",
+    "build": "bash build.sh",
+    "dev": "cd backend && npm run dev"
   },
   "keywords": [],
   "author": "",
-  "license": "ISC",
-  "type": "commonjs"
+  "license": "ISC"
 }

@@ -1,11 +1,10 @@
 services:
-  # Backend Web Service (serves both API and frontend static files)
+  # Full Stack Web Service (serves both API and frontend static files)
   - type: web
     name: fatigue-detection-backend
     runtime: node
-    buildCommand: bash build.sh
-    startCommand: node backend/server.js
-    workingDirectory: /
+    buildCommand: npm run build
+    startCommand: npm start
     envVars:
       - key: PORT
         value: "5001"
