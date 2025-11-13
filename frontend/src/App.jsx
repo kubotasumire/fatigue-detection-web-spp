@@ -6,8 +6,11 @@ import FatigueQuestionnaire from './components/FatigueQuestionnaire';
 import './App.css';
 
 function App() {
-  // APIベースURL（環境変数から取得、なければlocalhost:5001使用）
-  const API_BASE_URL = process.env.REACT_APP_API_BASE_URL || 'http://localhost:5001';
+  // APIベースURL（本番環境では相対パスで同一ホストから取得）
+  // 開発環境では REACT_APP_API_BASE_URL をフォールバック
+  const API_BASE_URL = process.env.NODE_ENV === 'production'
+    ? ''
+    : (process.env.REACT_APP_API_BASE_URL || 'http://localhost:5001');
 
   const [gameState, setGameState] = useState('start'); // start, pre-questionnaire, playing, end, post-questionnaire
   const [selectedDifficulty, setSelectedDifficulty] = useState(null);
