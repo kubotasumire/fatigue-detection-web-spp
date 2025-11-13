@@ -5,10 +5,9 @@ services:
     runtime: node
     buildCommand: bash build.sh
     startCommand: node backend/server.js
+    workingDirectory: /
     envVars:
       - key: PORT
         value: "5001"
       - key: NODE_ENV
         value: production
-      - key: REACT_APP_API_BASE_URL
-        value: https://fatigue-detection-backend.onrender.com
