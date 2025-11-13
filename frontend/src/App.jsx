@@ -6,11 +6,10 @@ import FatigueQuestionnaire from './components/FatigueQuestionnaire';
 import './App.css';
 
 function App() {
-  // APIベースURL（本番環境では相対パスで同一ホストから取得）
-  // 開発環境では REACT_APP_API_BASE_URL をフォールバック
-  const API_BASE_URL = process.env.NODE_ENV === 'production'
-    ? ''
-    : (process.env.REACT_APP_API_BASE_URL || 'http://localhost:5001');
+  // APIベースURL
+  // ブラウザの現在のホストから相対パスで API にアクセス
+  // window.location.origin で https://fatigue-detection-backend.onrender.com などを取得
+  const API_BASE_URL = '';  // 相対パス: /api/... で同一オリジンの API にアクセス
 
   const [gameState, setGameState] = useState('start'); // start, pre-questionnaire, playing, end, post-questionnaire
   const [selectedDifficulty, setSelectedDifficulty] = useState(null);
