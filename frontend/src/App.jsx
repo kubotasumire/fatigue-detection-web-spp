@@ -175,6 +175,7 @@ function App() {
           quizResponses={quizResponses}
           attemptedQuizzes={attemptedQuizzes}
           apiBaseUrl={API_BASE_URL}
+          sessionDataRef={sessionDataRef}
         />
       )}
 

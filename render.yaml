@@ -1,0 +1,23 @@
+services:
+  # Backend Web Service
+  - type: web
+    name: fatigue-detection-backend
+    runtime: node
+    buildCommand: cd backend && npm install
+    startCommand: cd backend && npm start
+    envVars:
+      - key: PORT
+        value: "5001"
+      - key: NODE_ENV
+        value: production
+
+  # Frontend Static Site
+  - type: static_site
+    name: fatigue-detection-frontend
+    buildCommand: cd frontend && npm install && npm run build
+    publishPath: frontend/build
+    envVars:
+      - key: REACT_APP_API_BASE_URL
+        value: https://fatigue-detection-backend.onrender.com
+      - key: CI
+        value: "false"

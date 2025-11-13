@@ -4,7 +4,7 @@ import DataCollector from '../utils/dataCollector';
 import QuizBooth from './QuizBooth';
 import './GameScene.css';
 
-const GameScene = ({ difficulty, sessionId, onGameEnd, onTimeUp, onQuizResponse, onQuizAttempt, quizResponses, attemptedQuizzes, apiBaseUrl }) => {
+const GameScene = ({ difficulty, sessionId, onGameEnd, onTimeUp, onQuizResponse, onQuizAttempt, quizResponses, attemptedQuizzes, apiBaseUrl, sessionDataRef }) => {
   const containerRef = useRef(null);
   const canvasRef = useRef(null);
   const API_BASE_URL = apiBaseUrl || 'http://localhost:5001';
