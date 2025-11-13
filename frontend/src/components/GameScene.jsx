@@ -278,7 +278,7 @@ const GameScene = ({ difficulty, sessionId, onGameEnd, onTimeUp, onQuizResponse,
   useEffect(() => {
     if (!isInitialized || !sessionId) return;
 
-    dataCollectorRef.current = new DataCollector(sessionId);
+    dataCollectorRef.current = new DataCollector(sessionId, API_BASE_URL);
     dataCollectorRef.current.start();
 
     return () => {
@@ -286,10 +286,10 @@ const GameScene = ({ difficulty, sessionId, onGameEnd, onTimeUp, onQuizResponse,
         dataCollectorRef.current.stop();
       }
     };
-  }, [isInitialized, sessionId]);
+  }, [isInitialized, sessionId, API_BASE_URL]);
 
   const handleQuizClose = async (quizId, isCorrect) => {
-    // クイズ回答データを記録
+    // クイズ回答データを記録（App.jsx経由でsessionDataRefにも記録される）
     if (onQuizResponse) {
       onQuizResponse(quizId, isCorrect);
     }
@@ -297,12 +297,16 @@ const GameScene = ({ difficulty, sessionId, onGameEnd, onTimeUp, onQuizResponse,
     setSolvedQuizzes(prev => new Set(prev).add(quizId));
     setActiveQuizId(null);
 
+    // sessionDataRefを使うことで、更新前のquizResponsesの値に依存せず
     // すべてのクイズに回答したか確認
-    // quizResponsesは更新中の可能性があるため、手動で計算
-    const totalAnswered = (quizResponses?.length || 0) + (isCorrect !== null ? 1 : 0);
-    if (totalAnswered === quizzes.length) {
-      onGameEnd({ reason: 'completed' });
-    }
+    setTimeout(() => {
+      if (sessionDataRef.current && quizzes.length > 0) {
+        if (sessionDataRef.current.quizResponses.length >= quizzes.length) {
+          console.log('✅ All quizzes answered! Game completed.');
+          onGameEnd({ reason: 'completed' });
+        }
+      }
+    }, 100);
   };
 
   return (

@@ -154,7 +154,7 @@ class DataCollector {
    */
   async sendSensorData(data) {
     try {
-      await fetch(`${this.apiBaseUrl}/api/data/sensor`, {
+      const response = await fetch(`${this.apiBaseUrl}/api/data/sensor`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
@@ -162,6 +162,13 @@ class DataCollector {
           data
         })
       });
+
+      if (!response.ok) {
+        console.warn(`Sensor data send failed: ${response.status} ${response.statusText}`, {
+          sessionId: this.sessionId,
+          url: `${this.apiBaseUrl}/api/data/sensor`
+        });
+      }
     } catch (error) {
       console.error('Error sending sensor data:', error);
     }
@@ -172,7 +179,7 @@ class DataCollector {
    */
   async recordQuizResponse(quizId, selectedAnswer, isCorrect) {
     try {
-      await fetch(`${this.apiBaseUrl}/api/data/quiz-response`, {
+      const response = await fetch(`${this.apiBaseUrl}/api/data/quiz-response`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
@@ -183,6 +190,14 @@ class DataCollector {
           timestamp: Date.now()
         })
       });
+
+      if (!response.ok) {
+        console.warn(`Quiz response recording failed: ${response.status} ${response.statusText}`, {
+          sessionId: this.sessionId,
+          quizId,
+          url: `${this.apiBaseUrl}/api/data/quiz-response`
+        });
+      }
     } catch (error) {
       console.error('Error recording quiz response:', error);
     }
