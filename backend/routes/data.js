@@ -2,11 +2,17 @@ const express = require('express');
 const router = express.Router();
 const fs = require('fs');
 const path = require('path');
-const { db } = require('../utils/firebase');
 const { formatSessionDataToJST } = require('../utils/dateFormatter');
 
 // セッションデータをメモリに保存（セッション中のデータ）
 const sessions = new Map();
+
+// データ保存ディレクトリ
+const dataDir = path.join(__dirname, '../../data/sessions');
+if (!fs.existsSync(dataDir)) {
+  fs.mkdirSync(dataDir, { recursive: true });
+  console.log(`📁 Created data directory: ${dataDir}`);
+}
 
 // セッション開始
 router.post('/session/start', (req, res) => {
@@ -72,7 +78,7 @@ router.post('/quiz-response', (req, res) => {
 });
 
 // セッション終了
-router.post('/session/end', async (req, res) => {
+router.post('/session/end', (req, res) => {
   const { sessionId, timestamp } = req.body;
 
   console.log(`📊 Session end request:`, { sessionId, timestamp, sessionsCount: sessions.size });
@@ -87,53 +93,17 @@ router.post('/session/end', async (req, res) => {
   session.endTime = timestamp;
 
   try {
-    // セッションをFirestoreに保存
-    await db.collection('sessions').doc(sessionId).set({
-      id: sessionId,
-      difficulty: session.difficulty,
-      startTime: session.startTime,
-      endTime: timestamp,
-      postFatigue: session.postFatigue || null,
-      sensorDataCount: session.sensorData.length,
-      quizResponsesCount: session.quizResponses.length,
-      createdAt: new Date(),
-      updatedAt: new Date()
-    });
+    // セッションデータをローカルファイルに保存
+    const formattedSessionData = formatSessionDataToJST(session);
+    const sessionFile = path.join(dataDir, `${sessionId}.json`);
+    fs.writeFileSync(sessionFile, JSON.stringify(formattedSessionData, null, 2));
 
-    console.log(`✅ Session saved to Firestore: ${sessionId}`);
+    console.log(`✅ Session saved to file: ${sessionFile}`);
+    console.log(`📊 Sensor data records: ${session.sensorData.length}, Quiz responses: ${session.quizResponses.length}`);
 
-    // センサーデータを保存
-    for (const data of session.sensorData) {
-      await db.collection('sessions').doc(sessionId).collection('sensorData').add({
-        timestamp: data.timestamp,
-        positionX: data.position?.x || null,
-        positionY: data.position?.y || null,
-        rotationX: data.rotation?.x || null,
-        rotationY: data.rotation?.y || null,
-        gazeX: data.gaze?.x || null,
-        gazeY: data.gaze?.y || null,
-        gazeObject: data.gaze?.object || null,
-        gazeInCenter: data.gaze?.inCenter || false
-      });
-    }
-
-    console.log(`✅ Sensor data saved: ${session.sensorData.length} records`);
-
-    // クイズ回答を保存
-    for (const response of session.quizResponses) {
-      await db.collection('sessions').doc(sessionId).collection('quizResponses').add({
-        quizId: response.quizId,
-        selectedAnswer: response.selectedAnswer,
-        isCorrect: response.isCorrect,
-        timestamp: response.timestamp
-      });
-    }
-
-    console.log(`✅ Quiz responses saved: ${session.quizResponses.length} records`);
-
-    res.json({ success: true, message: 'Session saved to Firebase' });
+    res.json({ success: true, message: 'Session saved to local file' });
   } catch (error) {
-    console.error(`❌ Error saving session to Firebase:`, error);
+    console.error(`❌ Error saving session:`, error);
     res.status(500).json({ error: 'Failed to save session', details: error.message });
   }
 });
@@ -150,74 +120,46 @@ router.get('/session/:sessionId', (req, res) => {
   res.json(session);
 });
 
-// 保存されたセッション一覧を取得（Firebaseから）
-router.get('/sessions/list', async (req, res) => {
+// 保存されたセッション一覧を取得（ローカルファイルから）
+router.get('/sessions/list', (req, res) => {
   try {
-    const sessionsSnapshot = await db.collection('sessions')
-      .orderBy('createdAt', 'desc')
-      .get();
+    if (!fs.existsSync(dataDir)) {
+      return res.json({ sessions: [], count: 0 });
+    }
 
-    const sessions = [];
-    sessionsSnapshot.forEach(doc => {
-      sessions.push({
-        id: doc.id,
-        ...doc.data()
-      });
-    });
+    const files = fs.readdirSync(dataDir).filter(file => file.endsWith('.json'));
+    const sessionsList = files.map(file => {
+      const filePath = path.join(dataDir, file);
+      const data = JSON.parse(fs.readFileSync(filePath, 'utf8'));
+      return {
+        id: file.replace('.json', ''),
+        difficulty: data.difficulty,
+        startTime: data.startTime,
+        endTime: data.endTime,
+        postFatigue: data.postFatigue
+      };
+    }).sort((a, b) => b.startTime - a.startTime);
 
-    res.json({ sessions, count: sessions.length });
+    res.json({ sessions: sessionsList, count: sessionsList.length });
   } catch (error) {
     console.error('Error listing sessions:', error);
     res.status(500).json({ error: 'Failed to list sessions', details: error.message });
   }
 });
 
-// 特定のセッションデータを取得（Firebaseから）
-router.get('/sessions/:sessionId', async (req, res) => {
+// 特定のセッションデータを取得（ローカルファイルから）
+router.get('/sessions/:sessionId', (req, res) => {
   const { sessionId } = req.params;
 
   try {
-    // セッション情報を取得
-    const sessionDoc = await db.collection('sessions').doc(sessionId).get();
+    const sessionFile = path.join(dataDir, `${sessionId}.json`);
 
-    if (!sessionDoc.exists) {
+    if (!fs.existsSync(sessionFile)) {
       return res.status(404).json({ error: 'Session not found' });
     }
 
-    const sessionData = {
-      id: sessionDoc.id,
-      ...sessionDoc.data()
-    };
-
-    // センサーデータを取得
-    const sensorSnapshot = await db.collection('sessions')
-      .doc(sessionId)
-      .collection('sensorData')
-      .orderBy('timestamp', 'asc')
-      .get();
-
-    const sensorData = [];
-    sensorSnapshot.forEach(doc => {
-      sensorData.push(doc.data());
-    });
-
-    // クイズ回答を取得
-    const quizSnapshot = await db.collection('sessions')
-      .doc(sessionId)
-      .collection('quizResponses')
-      .orderBy('timestamp', 'asc')
-      .get();
-
-    const quizResponses = [];
-    quizSnapshot.forEach(doc => {
-      quizResponses.push(doc.data());
-    });
-
-    res.json({
-      ...sessionData,
-      sensorData,
-      quizResponses
-    });
+    const data = JSON.parse(fs.readFileSync(sessionFile, 'utf8'));
+    res.json(data);
   } catch (error) {
     console.error('Error retrieving session:', error);
     res.status(500).json({ error: 'Failed to retrieve session', details: error.message });
