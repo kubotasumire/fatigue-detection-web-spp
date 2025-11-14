@@ -74,8 +74,12 @@ router.post('/quiz-response', (req, res) => {
 router.post('/session/end', (req, res) => {
   const { sessionId, timestamp } = req.body;
 
+  console.log(`📊 Session end request:`, { sessionId, timestamp, sessionsCount: sessions.size });
+
   const session = sessions.get(sessionId);
   if (!session) {
+    console.warn(`❌ Session not found: ${sessionId}`);
+    console.warn(`📋 Available sessions: ${Array.from(sessions.keys()).join(', ') || 'NONE'}`);
     return res.status(404).json({ error: 'Session not found' });
   }
 
@@ -87,16 +91,25 @@ router.post('/session/end', (req, res) => {
     ? '/var/data/sessions'
     : path.join(__dirname, '../../data/sessions');
 
-  if (!fs.existsSync(dataDir)) {
-    fs.mkdirSync(dataDir, { recursive: true });
+  try {
+    if (!fs.existsSync(dataDir)) {
+      console.log(`📁 Creating directory: ${dataDir}`);
+      fs.mkdirSync(dataDir, { recursive: true });
+    }
+
+    // タイムスタンプをJST形式に変換してファイルに保存
+    const formattedSessionData = formatSessionDataToJST(session);
+    const sessionFile = path.join(dataDir, `${sessionId}.json`);
+    fs.writeFileSync(sessionFile, JSON.stringify(formattedSessionData, null, 2));
+
+    console.log(`✅ Session saved: ${sessionFile}`);
+    console.log(`📊 Session data: ${JSON.stringify(formattedSessionData, null, 2).substring(0, 200)}...`);
+
+    res.json({ success: true, message: 'Session saved' });
+  } catch (error) {
+    console.error(`❌ Error saving session: ${error.message}`, error);
+    res.status(500).json({ error: 'Failed to save session', details: error.message });
   }
-
-  // タイムスタンプをJST形式に変換してファイルに保存
-  const formattedSessionData = formatSessionDataToJST(session);
-  const sessionFile = path.join(dataDir, `${sessionId}.json`);
-  fs.writeFileSync(sessionFile, JSON.stringify(formattedSessionData, null, 2));
-
-  res.json({ success: true, message: 'Session saved' });
 });
 
 // セッションデータ取得
