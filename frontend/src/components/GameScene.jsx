@@ -287,10 +287,10 @@ const GameScene = ({ difficulty, sessionId, onGameEnd, onTimeUp, onQuizResponse,
     };
   }, [isInitialized, sessionId, API_BASE_URL]);
 
-  const handleQuizClose = async (quizId, isCorrect) => {
+  const handleQuizClose = async (quizId, isCorrect, isSubmitted) => {
     // クイズ回答データを記録（App.jsx経由でsessionDataRefにも記録される）
     if (onQuizResponse) {
-      onQuizResponse(quizId, isCorrect);
+      onQuizResponse(quizId, isCorrect, isSubmitted);
     }
 
     setSolvedQuizzes(prev => new Set(prev).add(quizId));
