@@ -2,7 +2,7 @@ const express = require('express');
 const router = express.Router();
 const fs = require('fs');
 const path = require('path');
-const db = require('../utils/database');
+const { db } = require('../utils/firebase');
 const { formatSessionDataToJST } = require('../utils/dateFormatter');
 
 // セッションデータをメモリに保存（セッション中のデータ）
@@ -72,7 +72,7 @@ router.post('/quiz-response', (req, res) => {
 });
 
 // セッション終了
-router.post('/session/end', (req, res) => {
+router.post('/session/end', async (req, res) => {
   const { sessionId, timestamp } = req.body;
 
   console.log(`📊 Session end request:`, { sessionId, timestamp, sessionsCount: sessions.size });
@@ -87,87 +87,53 @@ router.post('/session/end', (req, res) => {
   session.endTime = timestamp;
 
   try {
-    // セッションをデータベースに保存
-    db.run(
-      `INSERT INTO sessions (id, difficulty, startTime, endTime, postFatigue)
-       VALUES (?, ?, ?, ?, ?)`,
-      [sessionId, session.difficulty, session.startTime, timestamp, session.postFatigue || null],
-      (err) => {
-        if (err) {
-          console.error(`❌ Error inserting session:`, err);
-          return res.status(500).json({ error: 'Failed to save session', details: err.message });
-        }
+    // セッションをFirestoreに保存
+    await db.collection('sessions').doc(sessionId).set({
+      id: sessionId,
+      difficulty: session.difficulty,
+      startTime: session.startTime,
+      endTime: timestamp,
+      postFatigue: session.postFatigue || null,
+      sensorDataCount: session.sensorData.length,
+      quizResponsesCount: session.quizResponses.length,
+      createdAt: new Date(),
+      updatedAt: new Date()
+    });
 
-        // センサーデータを保存
-        const sensorInsertPromises = session.sensorData.map((data) => {
-          return new Promise((resolve, reject) => {
-            db.run(
-              `INSERT INTO sensor_data
-               (sessionId, timestamp, positionX, positionY, rotationX, rotationY, gazeX, gazeY, gazeObject, gazeInCenter)
-               VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)`,
-              [
-                sessionId,
-                data.timestamp,
-                data.position?.x || null,
-                data.position?.y || null,
-                data.rotation?.x || null,
-                data.rotation?.y || null,
-                data.gaze?.x || null,
-                data.gaze?.y || null,
-                data.gaze?.object || null,
-                data.gaze?.inCenter ? 1 : 0
-              ],
-              (err) => {
-                if (err) {
-                  console.error(`❌ Error inserting sensor data:`, err);
-                  reject(err);
-                } else {
-                  resolve();
-                }
-              }
-            );
-          });
-        });
+    console.log(`✅ Session saved to Firestore: ${sessionId}`);
 
-        // クイズ回答を保存
-        const quizInsertPromises = session.quizResponses.map((response) => {
-          return new Promise((resolve, reject) => {
-            db.run(
-              `INSERT INTO quiz_responses (sessionId, quizId, selectedAnswer, isCorrect, timestamp)
-               VALUES (?, ?, ?, ?, ?)`,
-              [
-                sessionId,
-                response.quizId,
-                response.selectedAnswer,
-                response.isCorrect ? 1 : 0,
-                response.timestamp
-              ],
-              (err) => {
-                if (err) {
-                  console.error(`❌ Error inserting quiz response:`, err);
-                  reject(err);
-                } else {
-                  resolve();
-                }
-              }
-            );
-          });
-        });
+    // センサーデータを保存
+    for (const data of session.sensorData) {
+      await db.collection('sessions').doc(sessionId).collection('sensorData').add({
+        timestamp: data.timestamp,
+        positionX: data.position?.x || null,
+        positionY: data.position?.y || null,
+        rotationX: data.rotation?.x || null,
+        rotationY: data.rotation?.y || null,
+        gazeX: data.gaze?.x || null,
+        gazeY: data.gaze?.y || null,
+        gazeObject: data.gaze?.object || null,
+        gazeInCenter: data.gaze?.inCenter || false
+      });
+    }
 
-        Promise.all([...sensorInsertPromises, ...quizInsertPromises])
-          .then(() => {
-            console.log(`✅ Session saved to database: ${sessionId}`);
-            console.log(`📊 Sensor data records: ${session.sensorData.length}, Quiz responses: ${session.quizResponses.length}`);
-            res.json({ success: true, message: 'Session saved to database' });
-          })
-          .catch((error) => {
-            console.error(`❌ Error saving session data:`, error);
-            res.status(500).json({ error: 'Failed to save session data', details: error.message });
-          });
-      }
-    );
+    console.log(`✅ Sensor data saved: ${session.sensorData.length} records`);
+
+    // クイズ回答を保存
+    for (const response of session.quizResponses) {
+      await db.collection('sessions').doc(sessionId).collection('quizResponses').add({
+        quizId: response.quizId,
+        selectedAnswer: response.selectedAnswer,
+        isCorrect: response.isCorrect,
+        timestamp: response.timestamp
+      });
+    }
+
+    console.log(`✅ Quiz responses saved: ${session.quizResponses.length} records`);
+
+    res.json({ success: true, message: 'Session saved to Firebase' });
   } catch (error) {
-    console.error(`❌ Error in session end handler:`, error);
+    console.error(`❌ Error saving session to Firebase:`, error);
     res.status(500).json({ error: 'Failed to save session', details: error.message });
   }
 });
@@ -184,68 +150,78 @@ router.get('/session/:sessionId', (req, res) => {
   res.json(session);
 });
 
-// 保存されたセッション一覧を取得（SQLiteから）
-router.get('/sessions/list', (req, res) => {
-  db.all(`SELECT id, difficulty, startTime, endTime, postFatigue, createdAt FROM sessions ORDER BY createdAt DESC`,
-    (err, rows) => {
-      if (err) {
-        console.error('Error querying sessions:', err);
-        return res.status(500).json({ error: 'Failed to list sessions' });
-      }
-      res.json({ sessions: rows || [], count: (rows || []).length });
-    }
-  );
+// 保存されたセッション一覧を取得（Firebaseから）
+router.get('/sessions/list', async (req, res) => {
+  try {
+    const sessionsSnapshot = await db.collection('sessions')
+      .orderBy('createdAt', 'desc')
+      .get();
+
+    const sessions = [];
+    sessionsSnapshot.forEach(doc => {
+      sessions.push({
+        id: doc.id,
+        ...doc.data()
+      });
+    });
+
+    res.json({ sessions, count: sessions.length });
+  } catch (error) {
+    console.error('Error listing sessions:', error);
+    res.status(500).json({ error: 'Failed to list sessions', details: error.message });
+  }
 });
 
-// 特定のセッションデータを取得（SQLiteから）
-router.get('/sessions/:sessionId', (req, res) => {
+// 特定のセッションデータを取得（Firebaseから）
+router.get('/sessions/:sessionId', async (req, res) => {
   const { sessionId } = req.params;
 
-  // セッション情報、センサーデータ、クイズ回答を取得
-  db.get(
-    `SELECT id, difficulty, startTime, endTime, postFatigue, createdAt FROM sessions WHERE id = ?`,
-    [sessionId],
-    (err, session) => {
-      if (err) {
-        console.error('Error querying session:', err);
-        return res.status(500).json({ error: 'Failed to get session' });
-      }
+  try {
+    // セッション情報を取得
+    const sessionDoc = await db.collection('sessions').doc(sessionId).get();
 
-      if (!session) {
-        return res.status(404).json({ error: 'Session not found' });
-      }
-
-      // センサーデータを取得
-      db.all(
-        `SELECT * FROM sensor_data WHERE sessionId = ? ORDER BY timestamp ASC`,
-        [sessionId],
-        (err, sensorData) => {
-          if (err) {
-            console.error('Error querying sensor data:', err);
-            return res.status(500).json({ error: 'Failed to get sensor data' });
-          }
-
-          // クイズ回答を取得
-          db.all(
-            `SELECT * FROM quiz_responses WHERE sessionId = ? ORDER BY timestamp ASC`,
-            [sessionId],
-            (err, quizResponses) => {
-              if (err) {
-                console.error('Error querying quiz responses:', err);
-                return res.status(500).json({ error: 'Failed to get quiz responses' });
-              }
-
-              res.json({
-                ...session,
-                sensorData: sensorData || [],
-                quizResponses: quizResponses || []
-              });
-            }
-          );
-        }
-      );
+    if (!sessionDoc.exists) {
+      return res.status(404).json({ error: 'Session not found' });
     }
-  );
+
+    const sessionData = {
+      id: sessionDoc.id,
+      ...sessionDoc.data()
+    };
+
+    // センサーデータを取得
+    const sensorSnapshot = await db.collection('sessions')
+      .doc(sessionId)
+      .collection('sensorData')
+      .orderBy('timestamp', 'asc')
+      .get();
+
+    const sensorData = [];
+    sensorSnapshot.forEach(doc => {
+      sensorData.push(doc.data());
+    });
+
+    // クイズ回答を取得
+    const quizSnapshot = await db.collection('sessions')
+      .doc(sessionId)
+      .collection('quizResponses')
+      .orderBy('timestamp', 'asc')
+      .get();
+
+    const quizResponses = [];
+    quizSnapshot.forEach(doc => {
+      quizResponses.push(doc.data());
+    });
+
+    res.json({
+      ...sessionData,
+      sensorData,
+      quizResponses
+    });
+  } catch (error) {
+    console.error('Error retrieving session:', error);
+    res.status(500).json({ error: 'Failed to retrieve session', details: error.message });
+  }
 });
 
 module.exports = router;
