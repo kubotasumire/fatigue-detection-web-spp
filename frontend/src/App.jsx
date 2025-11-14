@@ -78,9 +78,10 @@ function App() {
   };
 
   // クイズ回答データを記録（「回答する」ボタンが押された場合のみ）
-  const handleQuizResponse = (quizId, isCorrect) => {
-    // バツボタン（isCorrect === false）で閉じた場合は記録しない
-    if (isCorrect === false) {
+  const handleQuizResponse = (quizId, isCorrect, isSubmitted) => {
+    // isSubmitted = true: 「回答する」ボタンが押された → 記録
+    // isSubmitted = undefined or false: バツボタン → 記録しない
+    if (!isSubmitted) {
       console.log(`Quiz cancelled: ${quizId} - not recorded`);
       return;
     }

@@ -45,9 +45,9 @@ const QuizBooth = ({ quiz, difficulty, onClose, dataCollector, apiBaseUrl }) => 
       };
       const delay = delayMap[difficulty] || 2000; // デフォルト: 2秒
 
-      // 遅延後に画面を閉じる
+      // 遅延後に画面を閉じる（「回答する」ボタンが押されたため必ず記録）
       setTimeout(() => {
-        onClose(quiz.id, result.isCorrect);
+        onClose(quiz.id, result.isCorrect, true);  // 3番目の引数: 実際に答えた
       }, delay);
     } catch (error) {
       console.error('Error submitting quiz:', error);
