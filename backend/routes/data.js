@@ -30,7 +30,7 @@ router.post('/session/start', (req, res) => {
 // リアルタイムセンサーデータを受信
 router.post('/sensor', (req, res) => {
   const { sessionId, data } = req.body;
-  // data構造: { timestamp, position: {x, y}, rotation: {x, y}, gaze: {x, y, object} }
+  // data構造: { timestamp, position: {x, y}, gaze: {x, y, object, inCenter} }
 
   console.log(`📤 Sensor data received:`, {
     sessionId,

@@ -1,6 +1,6 @@
 /**
  * リアルタイムセンサーデータ収集
- * position, rotation, gazeをキャプチャしてバックエンドに送信
+ * マウス座標（position）とガゼ（gaze）をキャプチャしてバックエンドに送信
  */
 
 class DataCollector {
@@ -9,7 +9,6 @@ class DataCollector {
     this.apiBaseUrl = apiBaseUrl;
     this.isCollecting = false;
     this.lastMousePos = { x: 0, y: 0 };
-    this.lastRotation = { x: 0, y: 0 };
     this.startTime = Date.now();
 
     // データバッチ処理（効率化のため複数データをまとめて送信）
@@ -39,7 +38,7 @@ class DataCollector {
       this.flushBatch();
     }, 100); // 100msごとにバッチ送信
 
-    console.log('🎬 DataCollector started - collecting position, rotation, gaze data every 50ms');
+    console.log('🎬 DataCollector started - collecting position and gaze data every 50ms');
   }
 
   /**
@@ -74,46 +73,13 @@ class DataCollector {
   handleMouseMove(event) {
     if (!this.isCollecting) return;
 
-    const timestamp = Date.now();
-
-    // ウィンドウサイズを基準に正規化
-    const normalizedX = (event.clientX / window.innerWidth) * 2 - 1;
-    const normalizedY = -(event.clientY / window.innerHeight) * 2 + 1;
-
-    // rotation: マウス移動量から計算
-    // カメラの回転角度を推定
-    const rotationDelta = {
-      x: (normalizedY - this.lastRotation.y) * 0.01, // Y軸周り回転
-      y: (normalizedX - this.lastRotation.x) * 0.01   // X軸周り回転
-    };
-
-    this.lastRotation.x = normalizedX;
-    this.lastRotation.y = normalizedY;
-
-    // センサーデータを収集
-    const sensorData = {
-      timestamp,
-      position: {
-        x: event.clientX,
-        y: event.clientY
-      },
-      rotation: {
-        x: rotationDelta.x,
-        y: rotationDelta.y
-      },
-      gaze: this.detectGaze(event.clientX, event.clientY)
-    };
-
-    this.dataBatch.push(sensorData);
-
-    // バッチが満杯なら送信
-    if (this.dataBatch.length >= this.batchSize) {
-      this.flushBatch();
-    }
+    // マウス位置を更新
+    this.lastMousePos.x = event.clientX;
+    this.lastMousePos.y = event.clientY;
   }
 
   /**
-   * フレーム毎の定期的なデータ収集（マウス移動がない時も）
+   * フレーム毎の定期的なデータ収集（50ms毎）
    */
   collectFrameData() {
     if (!this.isCollecting) return;
@@ -126,10 +92,6 @@ class DataCollector {
       position: {
         x: this.lastMousePos.x,
         y: this.lastMousePos.y
-      },
-      rotation: {
-        x: this.lastRotation.x,
-        y: this.lastRotation.y
       },
       gaze: this.detectGaze(this.lastMousePos.x, this.lastMousePos.y)
     };
