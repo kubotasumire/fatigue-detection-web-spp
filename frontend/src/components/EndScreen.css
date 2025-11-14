@@ -243,28 +243,180 @@
 }
 
 @media (max-width: 768px) {
+  .end-screen {
+    padding: 20px 10px;
+  }
+
   .end-container {
-    padding: 20px;
+    padding: 25px 20px;
   }
 
   .end-container h1 {
     font-size: 1.8rem;
+    margin-bottom: 8px;
+  }
+
+  .subtitle {
+    font-size: 1rem;
+    margin-bottom: 30px;
   }
 
   .results-summary {
     grid-template-columns: 1fr;
+    gap: 15px;
+    margin-bottom: 30px;
+  }
+
+  .result-card {
+    padding: 25px 20px;
+  }
+
+  .result-value {
+    font-size: 2rem;
+  }
+
+  .metrics-section {
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+
+  .metrics-section h2 {
+    font-size: 1.2rem;
+    margin-bottom: 15px;
   }
 
   .metrics-grid {
     grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+  }
+
+  .metric-item {
+    padding: 12px;
+  }
+
+  .metric-label {
+    font-size: 0.8rem;
+  }
+
+  .metric-value {
+    font-size: 1rem;
+  }
+
+  .download-section {
+    padding: 20px;
+    margin-bottom: 30px;
+  }
+
+  .download-section h3 {
+    font-size: 1.1rem;
+    margin-bottom: 15px;
   }
 
   .button-group {
     flex-direction: column;
+    gap: 10px;
+  }
+
+  .download-button {
+    padding: 10px 20px;
+    font-size: 0.9rem;
   }
 
   .restart-button {
     padding: 12px 30px;
     font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .end-screen {
+    padding: 15px 10px;
+  }
+
+  .end-container {
+    padding: 20px 15px;
+    border-radius: 20px;
+  }
+
+  .end-container h1 {
+    font-size: 1.5rem;
+  }
+
+  .subtitle {
+    font-size: 0.9rem;
+    margin-bottom: 20px;
+  }
+
+  .results-summary {
+    margin-bottom: 20px;
+  }
+
+  .result-card {
+    padding: 20px 15px;
+    border-radius: 15px;
+  }
+
+  .result-label {
+    font-size: 0.8rem;
+  }
+
+  .result-value {
+    font-size: 1.8rem;
+  }
+
+  .result-count {
+    font-size: 0.8rem;
+  }
+
+  .metrics-section {
+    padding: 15px;
+    margin-bottom: 15px;
+  }
+
+  .metrics-section h2 {
+    font-size: 1rem;
+    margin-bottom: 12px;
+  }
+
+  .metrics-grid {
+    gap: 10px;
+  }
+
+  .metric-item {
+    padding: 10px;
+  }
+
+  .metric-label {
+    font-size: 0.75rem;
+  }
+
+  .metric-value {
+    font-size: 0.9rem;
+  }
+
+  .download-section {
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 15px;
+  }
+
+  .download-section h3 {
+    font-size: 1rem;
+    margin-bottom: 12px;
+  }
+
+  .download-button {
+    padding: 9px 15px;
+    font-size: 0.85rem;
+  }
+
+  .action-buttons {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .restart-button {
+    padding: 10px 20px;
+    font-size: 0.95rem;
   }
 }

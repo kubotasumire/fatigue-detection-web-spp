@@ -121,12 +121,69 @@
 @media (max-width: 768px) {
   .timer,
   .progress {
-    font-size: 1rem;
-    padding: 10px 15px;
+    font-size: 0.9rem;
+    padding: 10px 12px;
+    border-radius: 8px;
+  }
+
+  .timer {
+    top: 10px;
+    right: 10px;
+  }
+
+  .progress {
+    top: 10px;
+    left: 10px;
+  }
+
+  .timer .label,
+  .progress .label {
+    font-size: 0.75rem;
   }
 
   .timer .time {
-    font-size: 1.2rem;
-    min-width: 70px;
+    font-size: 1rem;
+    min-width: 60px;
+  }
+
+  .progress .count {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .timer,
+  .progress {
+    font-size: 0.8rem;
+    padding: 8px 10px;
+  }
+
+  .timer {
+    top: 8px;
+    right: 8px;
+  }
+
+  .progress {
+    top: 8px;
+    left: 8px;
+  }
+
+  .timer .label,
+  .progress .label {
+    display: none;
+  }
+
+  .timer .time {
+    font-size: 0.9rem;
+    min-width: 50px;
+  }
+
+  .progress .count {
+    font-size: 0.9rem;
+  }
+
+  /* 星のクリック判定を大きくしてモバイルで操作しやすく */
+  .three-container canvas {
+    touch-action: manipulation;
   }
 }

@@ -200,16 +200,34 @@
 
 /* レスポンシブ */
 @media (max-width: 600px) {
+  .fatigue-questionnaire {
+    padding: 20px;
+  }
+
   .questionnaire-card {
     padding: 25px;
+    width: 95%;
   }
 
   .questionnaire-card h2 {
     font-size: 1.4rem;
+    margin-bottom: 25px;
+  }
+
+  .questionnaire-question {
+    font-size: 1rem;
+    margin-bottom: 40px;
+  }
+
+  .scale-labels {
+    font-size: 0.85rem;
+    margin-bottom: 12px;
   }
 
   .scale-buttons {
     grid-template-columns: repeat(5, 1fr);
+    gap: 10px;
+    margin-bottom: 15px;
   }
 
   .scale-button {
@@ -217,8 +235,80 @@
     font-size: 0.85rem;
   }
 
+  .scale-numbers {
+    font-size: 0.8rem;
+    margin-top: 12px;
+  }
+
+  .unknown-option {
+    margin-bottom: 30px;
+    padding: 20px 0;
+  }
+
+  .unknown-button {
+    padding: 10px 30px;
+    font-size: 0.9rem;
+  }
+
   .submit-button {
     padding: 12px;
     font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 400px) {
+  .questionnaire-card {
+    padding: 20px 15px;
+    width: 98%;
+  }
+
+  .questionnaire-card h2 {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+  }
+
+  .questionnaire-question {
+    font-size: 0.95rem;
+    margin-bottom: 30px;
+    line-height: 1.5;
+  }
+
+  .scale-container {
+    margin-bottom: 30px;
+  }
+
+  .scale-labels {
+    font-size: 0.8rem;
+  }
+
+  .scale-buttons {
+    grid-template-columns: repeat(5, 1fr);
+    gap: 8px;
+    margin-bottom: 12px;
+  }
+
+  .scale-button {
+    padding: 8px 5px;
+    font-size: 0.8rem;
+    border-radius: 8px;
+  }
+
+  .scale-numbers {
+    font-size: 0.75rem;
+  }
+
+  .unknown-option {
+    margin-bottom: 25px;
+    padding: 15px 0;
+  }
+
+  .unknown-button {
+    padding: 9px 25px;
+    font-size: 0.85rem;
+  }
+
+  .submit-button {
+    padding: 10px;
+    font-size: 0.9rem;
   }
 }

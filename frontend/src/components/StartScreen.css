@@ -191,16 +191,91 @@
 }
 
 @media (max-width: 768px) {
+  .start-container {
+    width: 95%;
+  }
+
   .start-container h1 {
     font-size: 2rem;
   }
 
+  .subtitle {
+    font-size: 1.1rem;
+    margin-bottom: 30px;
+  }
+
   .difficulty-grid {
     grid-template-columns: 1fr;
+    gap: 20px;
+    margin-bottom: 30px;
+  }
+
+  .difficulty-card {
+    padding: 30px 20px;
+  }
+
+  .difficulty-card h2 {
+    font-size: 1.3rem;
+  }
+
+  .difficulty-card p {
+    font-size: 0.9rem;
+  }
+
+  .card-color {
+    height: 40px;
+    margin: 0 auto 15px;
   }
 
   .start-button {
     padding: 12px 30px;
     font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .start-container {
+    width: 98%;
+  }
+
+  .start-container h1 {
+    font-size: 1.5rem;
+  }
+
+  .subtitle {
+    font-size: 0.95rem;
+    margin-bottom: 25px;
+  }
+
+  .difficulty-grid {
+    gap: 15px;
+    margin-bottom: 25px;
+  }
+
+  .difficulty-card {
+    padding: 20px 15px;
+  }
+
+  .difficulty-card h2 {
+    font-size: 1.1rem;
+    margin: 10px 0;
+  }
+
+  .difficulty-card p {
+    font-size: 0.85rem;
+    margin: 8px 0;
+  }
+
+  .card-icon {
+    min-height: 30px;
+  }
+
+  .checkmark {
+    font-size: 2rem;
+  }
+
+  .start-button {
+    padding: 10px 25px;
+    font-size: 0.95rem;
   }
 }
