@@ -82,7 +82,11 @@ router.post('/session/end', (req, res) => {
   session.endTime = timestamp;
 
   // セッションデータをファイルに保存（タイムスタンプをJST形式に変換）
-  const dataDir = path.join(__dirname, '../../data/sessions');
+  // Render環境では /var/data/sessions、ローカル開発環境では ./data/sessions を使用
+  const dataDir = process.env.NODE_ENV === 'production'
+    ? '/var/data/sessions'
+    : path.join(__dirname, '../../data/sessions');
+
   if (!fs.existsSync(dataDir)) {
     fs.mkdirSync(dataDir, { recursive: true });
   }
