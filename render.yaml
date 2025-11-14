@@ -11,5 +11,5 @@ services:
         value: production
     disk:
       - name: session-data
-        mountPath: /var/data/sessions
+        mountPath: /mnt/data
         sizeGB: 1

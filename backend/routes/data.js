@@ -86,9 +86,9 @@ router.post('/session/end', (req, res) => {
   session.endTime = timestamp;
 
   // セッションデータをファイルに保存（タイムスタンプをJST形式に変換）
-  // Render環境では /var/data/sessions、ローカル開発環境では ./data/sessions を使用
+  // Render環境では /mnt/data/sessions、ローカル開発環境では ./data/sessions を使用
   const dataDir = process.env.NODE_ENV === 'production'
-    ? '/var/data/sessions'
+    ? '/mnt/data/sessions'
     : path.join(__dirname, '../../data/sessions');
 
   try {
@@ -127,7 +127,7 @@ router.get('/session/:sessionId', (req, res) => {
 // 保存されたセッションファイル一覧を取得
 router.get('/sessions/list', (req, res) => {
   const dataDir = process.env.NODE_ENV === 'production'
-    ? '/var/data/sessions'
+    ? '/mnt/data/sessions'
     : path.join(__dirname, '../../data/sessions');
 
   try {
@@ -164,7 +164,7 @@ router.get('/sessions/:filename', (req, res) => {
   }
 
   const dataDir = process.env.NODE_ENV === 'production'
-    ? '/var/data/sessions'
+    ? '/mnt/data/sessions'
     : path.join(__dirname, '../../data/sessions');
 
   try {
