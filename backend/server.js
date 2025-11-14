@@ -25,11 +25,7 @@ app.options('*', cors());
 app.use(bodyParser.json({ limit: '50mb' }));
 app.use(bodyParser.urlencoded({ limit: '50mb', extended: true }));
 
-// Serve static files from frontend build
-const frontendBuildPath = path.join(__dirname, '../frontend/build');
-app.use(express.static(frontendBuildPath));
-
-// API Routes
+// API Routes (定義順序が重要: SPAルーティングより先に定義)
 app.use('/api/quiz', quizRoutes);
 app.use('/api/data', dataRoutes);
 app.use('/api/results', resultsRoutes);
@@ -38,6 +34,10 @@ app.use('/api/results', resultsRoutes);
 app.get('/api/health', (req, res) => {
   res.json({ status: 'ok' });
 });
+
+// Serve static files from frontend build
+const frontendBuildPath = path.join(__dirname, '../frontend/build');
+app.use(express.static(frontendBuildPath));
 
 // Serve React app for all other routes (SPA routing)
 app.get('*', (req, res) => {
