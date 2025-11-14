@@ -3,7 +3,6 @@ services:
   - type: web
     name: fatigue-detection-backend
     runtime: node
-    buildCommand: npm run build
     startCommand: npm start
     envVars:
       - key: PORT
