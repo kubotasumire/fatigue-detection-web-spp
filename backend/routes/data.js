@@ -111,4 +111,62 @@ router.get('/session/:sessionId', (req, res) => {
   res.json(session);
 });
 
+// 保存されたセッションファイル一覧を取得
+router.get('/sessions/list', (req, res) => {
+  const dataDir = process.env.NODE_ENV === 'production'
+    ? '/var/data/sessions'
+    : path.join(__dirname, '../../data/sessions');
+
+  try {
+    if (!fs.existsSync(dataDir)) {
+      return res.json({ sessions: [], count: 0 });
+    }
+
+    const files = fs.readdirSync(dataDir).filter(file => file.endsWith('.json'));
+    const sessions = files.map(file => {
+      const filePath = path.join(dataDir, file);
+      const stats = fs.statSync(filePath);
+      return {
+        filename: file,
+        size: stats.size,
+        createdAt: stats.birthtime,
+        modifiedAt: stats.mtime
+      };
+    });
+
+    res.json({ sessions, count: sessions.length });
+  } catch (error) {
+    console.error('Error listing sessions:', error);
+    res.status(500).json({ error: 'Failed to list sessions' });
+  }
+});
+
+// 保存されたセッションファイルの内容を取得
+router.get('/sessions/:filename', (req, res) => {
+  const { filename } = req.params;
+
+  // ファイル名の検証（セキュリティ対策）
+  if (!filename.endsWith('.json') || filename.includes('..') || filename.includes('/')) {
+    return res.status(400).json({ error: 'Invalid filename' });
+  }
+
+  const dataDir = process.env.NODE_ENV === 'production'
+    ? '/var/data/sessions'
+    : path.join(__dirname, '../../data/sessions');
+
+  try {
+    const filePath = path.join(dataDir, filename);
+
+    if (!fs.existsSync(filePath)) {
+      return res.status(404).json({ error: 'Session file not found' });
+    }
+
+    const data = fs.readFileSync(filePath, 'utf8');
+    res.json(JSON.parse(data));
+  } catch (error) {
+    console.error('Error reading session file:', error);
+    res.status(500).json({ error: 'Failed to read session file' });
+  }
+});
+
 module.exports = router;
