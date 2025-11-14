@@ -134,12 +134,29 @@ function App() {
   };
 
   // 事後疲労アンケート送信時（終了画面へ）
-  const handlePostFatigueSubmit = (fatigueLevel) => {
+  const handlePostFatigueSubmit = async (fatigueLevel) => {
     setPostFatigue(fatigueLevel);
 
     // セッションデータに事後疲労を追加
     if (sessionDataRef.current) {
       sessionDataRef.current.postFatigue = fatigueLevel;
+    }
+
+    // 終了画面表示時にセッションデータを最終保存
+    if (sessionDataRef.current && sessionId) {
+      try {
+        await fetch(`${API_BASE_URL}/api/data/session/end`, {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({
+            sessionId,
+            timestamp: Date.now()
+          })
+        });
+        console.log('📁 Session data saved with post-fatigue data');
+      } catch (error) {
+        console.error('Failed to save final session data:', error);
+      }
     }
 
     // 終了画面へ移動
