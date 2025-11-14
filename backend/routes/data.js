@@ -2,9 +2,10 @@ const express = require('express');
 const router = express.Router();
 const fs = require('fs');
 const path = require('path');
+const db = require('../utils/database');
 const { formatSessionDataToJST } = require('../utils/dateFormatter');
 
-// セッションデータをメモリに保存（本番環境ではデータベース使用）
+// セッションデータをメモリに保存（セッション中のデータ）
 const sessions = new Map();
 
 // セッション開始
@@ -85,56 +86,88 @@ router.post('/session/end', (req, res) => {
 
   session.endTime = timestamp;
 
-  // セッションデータをファイルに保存（タイムスタンプをJST形式に変換）
-  // Render環境では /mnt/data/sessions、ローカル開発環境では ./data/sessions を使用
-  const dataDir = process.env.NODE_ENV === 'production'
-    ? '/mnt/data/sessions'
-    : path.join(__dirname, '../../data/sessions');
-
   try {
-    // ディレクトリが存在しない場合は作成
-    if (!fs.existsSync(dataDir)) {
-      console.log(`📁 Creating directory: ${dataDir}`);
-      try {
-        fs.mkdirSync(dataDir, { recursive: true });
-        console.log(`✅ Directory created successfully`);
-      } catch (mkdirError) {
-        console.warn(`⚠️ Cannot create directory ${dataDir}, will try parent: ${mkdirError.message}`);
-        // 親ディレクトリで試す
-        const parentDir = path.dirname(dataDir);
-        if (fs.existsSync(parentDir)) {
-          console.log(`📁 Parent directory exists: ${parentDir}`);
-          fs.mkdirSync(dataDir, { recursive: true });
-        } else {
-          throw mkdirError;
+    // セッションをデータベースに保存
+    db.run(
+      `INSERT INTO sessions (id, difficulty, startTime, endTime, postFatigue)
+       VALUES (?, ?, ?, ?, ?)`,
+      [sessionId, session.difficulty, session.startTime, timestamp, session.postFatigue || null],
+      (err) => {
+        if (err) {
+          console.error(`❌ Error inserting session:`, err);
+          return res.status(500).json({ error: 'Failed to save session', details: err.message });
         }
+
+        // センサーデータを保存
+        const sensorInsertPromises = session.sensorData.map((data) => {
+          return new Promise((resolve, reject) => {
+            db.run(
+              `INSERT INTO sensor_data
+               (sessionId, timestamp, positionX, positionY, rotationX, rotationY, gazeX, gazeY, gazeObject, gazeInCenter)
+               VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)`,
+              [
+                sessionId,
+                data.timestamp,
+                data.position?.x || null,
+                data.position?.y || null,
+                data.rotation?.x || null,
+                data.rotation?.y || null,
+                data.gaze?.x || null,
+                data.gaze?.y || null,
+                data.gaze?.object || null,
+                data.gaze?.inCenter ? 1 : 0
+              ],
+              (err) => {
+                if (err) {
+                  console.error(`❌ Error inserting sensor data:`, err);
+                  reject(err);
+                } else {
+                  resolve();
+                }
+              }
+            );
+          });
+        });
+
+        // クイズ回答を保存
+        const quizInsertPromises = session.quizResponses.map((response) => {
+          return new Promise((resolve, reject) => {
+            db.run(
+              `INSERT INTO quiz_responses (sessionId, quizId, selectedAnswer, isCorrect, timestamp)
+               VALUES (?, ?, ?, ?, ?)`,
+              [
+                sessionId,
+                response.quizId,
+                response.selectedAnswer,
+                response.isCorrect ? 1 : 0,
+                response.timestamp
+              ],
+              (err) => {
+                if (err) {
+                  console.error(`❌ Error inserting quiz response:`, err);
+                  reject(err);
+                } else {
+                  resolve();
+                }
+              }
+            );
+          });
+        });
+
+        Promise.all([...sensorInsertPromises, ...quizInsertPromises])
+          .then(() => {
+            console.log(`✅ Session saved to database: ${sessionId}`);
+            console.log(`📊 Sensor data records: ${session.sensorData.length}, Quiz responses: ${session.quizResponses.length}`);
+            res.json({ success: true, message: 'Session saved to database' });
+          })
+          .catch((error) => {
+            console.error(`❌ Error saving session data:`, error);
+            res.status(500).json({ error: 'Failed to save session data', details: error.message });
+          });
       }
-    }
-
-    // タイムスタンプをJST形式に変換してファイルに保存
-    const formattedSessionData = formatSessionDataToJST(session);
-    const sessionFile = path.join(dataDir, `${sessionId}.json`);
-
-    console.log(`📝 Writing session file: ${sessionFile}`);
-    fs.writeFileSync(sessionFile, JSON.stringify(formattedSessionData, null, 2));
-
-    console.log(`✅ Session saved: ${sessionFile}`);
-    console.log(`📊 Session data: ${JSON.stringify(formattedSessionData, null, 2).substring(0, 200)}...`);
-
-    res.json({ success: true, message: 'Session saved' });
+    );
   } catch (error) {
-    console.error(`❌ Error saving session: ${error.message}`, error);
-    console.error(`📂 dataDir: ${dataDir}`);
-    console.error(`📂 NODE_ENV: ${process.env.NODE_ENV}`);
-
-    // デバッグ: マウントポイントの確認
-    try {
-      const mntDirContents = fs.readdirSync('/mnt/data', { withFileTypes: true });
-      console.log(`📂 /mnt/data contents:`, mntDirContents.map(d => d.name));
-    } catch (e) {
-      console.error(`❌ Cannot read /mnt/data:`, e.message);
-    }
-
+    console.error(`❌ Error in session end handler:`, error);
     res.status(500).json({ error: 'Failed to save session', details: error.message });
   }
 });
@@ -151,62 +184,68 @@ router.get('/session/:sessionId', (req, res) => {
   res.json(session);
 });
 
-// 保存されたセッションファイル一覧を取得
+// 保存されたセッション一覧を取得（SQLiteから）
 router.get('/sessions/list', (req, res) => {
-  const dataDir = process.env.NODE_ENV === 'production'
-    ? '/mnt/data/sessions'
-    : path.join(__dirname, '../../data/sessions');
-
-  try {
-    if (!fs.existsSync(dataDir)) {
-      return res.json({ sessions: [], count: 0 });
+  db.all(`SELECT id, difficulty, startTime, endTime, postFatigue, createdAt FROM sessions ORDER BY createdAt DESC`,
+    (err, rows) => {
+      if (err) {
+        console.error('Error querying sessions:', err);
+        return res.status(500).json({ error: 'Failed to list sessions' });
+      }
+      res.json({ sessions: rows || [], count: (rows || []).length });
     }
-
-    const files = fs.readdirSync(dataDir).filter(file => file.endsWith('.json'));
-    const sessions = files.map(file => {
-      const filePath = path.join(dataDir, file);
-      const stats = fs.statSync(filePath);
-      return {
-        filename: file,
-        size: stats.size,
-        createdAt: stats.birthtime,
-        modifiedAt: stats.mtime
-      };
-    });
-
-    res.json({ sessions, count: sessions.length });
-  } catch (error) {
-    console.error('Error listing sessions:', error);
-    res.status(500).json({ error: 'Failed to list sessions' });
-  }
+  );
 });
 
-// 保存されたセッションファイルの内容を取得
-router.get('/sessions/:filename', (req, res) => {
-  const { filename } = req.params;
+// 特定のセッションデータを取得（SQLiteから）
+router.get('/sessions/:sessionId', (req, res) => {
+  const { sessionId } = req.params;
 
-  // ファイル名の検証（セキュリティ対策）
-  if (!filename.endsWith('.json') || filename.includes('..') || filename.includes('/')) {
-    return res.status(400).json({ error: 'Invalid filename' });
-  }
+  // セッション情報、センサーデータ、クイズ回答を取得
+  db.get(
+    `SELECT id, difficulty, startTime, endTime, postFatigue, createdAt FROM sessions WHERE id = ?`,
+    [sessionId],
+    (err, session) => {
+      if (err) {
+        console.error('Error querying session:', err);
+        return res.status(500).json({ error: 'Failed to get session' });
+      }
 
-  const dataDir = process.env.NODE_ENV === 'production'
-    ? '/mnt/data/sessions'
-    : path.join(__dirname, '../../data/sessions');
+      if (!session) {
+        return res.status(404).json({ error: 'Session not found' });
+      }
 
-  try {
-    const filePath = path.join(dataDir, filename);
+      // センサーデータを取得
+      db.all(
+        `SELECT * FROM sensor_data WHERE sessionId = ? ORDER BY timestamp ASC`,
+        [sessionId],
+        (err, sensorData) => {
+          if (err) {
+            console.error('Error querying sensor data:', err);
+            return res.status(500).json({ error: 'Failed to get sensor data' });
+          }
 
-    if (!fs.existsSync(filePath)) {
-      return res.status(404).json({ error: 'Session file not found' });
+          // クイズ回答を取得
+          db.all(
+            `SELECT * FROM quiz_responses WHERE sessionId = ? ORDER BY timestamp ASC`,
+            [sessionId],
+            (err, quizResponses) => {
+              if (err) {
+                console.error('Error querying quiz responses:', err);
+                return res.status(500).json({ error: 'Failed to get quiz responses' });
+              }
+
+              res.json({
+                ...session,
+                sensorData: sensorData || [],
+                quizResponses: quizResponses || []
+              });
+            }
+          );
+        }
+      );
     }
-
-    const data = fs.readFileSync(filePath, 'utf8');
-    res.json(JSON.parse(data));
-  } catch (error) {
-    console.error('Error reading session file:', error);
-    res.status(500).json({ error: 'Failed to read session file' });
-  }
+  );
 });
 
 module.exports = router;
