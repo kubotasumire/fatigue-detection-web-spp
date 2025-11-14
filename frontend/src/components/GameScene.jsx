@@ -247,10 +247,6 @@ const GameScene = ({ difficulty, sessionId, onGameEnd, onTimeUp, onQuizResponse,
 
         if (distance < clickThreshold && !isAnswered) {
           console.log(`✅ Clicked star: ${booth.id}`);
-          // Record attempt when opening quiz
-          if (onQuizAttempt) {
-            onQuizAttempt(booth.id);
-          }
           setActiveQuizId(booth.id);
           activeQuizRef.current = booth.id;
           event.preventDefault();
