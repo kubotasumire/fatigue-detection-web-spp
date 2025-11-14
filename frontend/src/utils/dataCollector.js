@@ -26,12 +26,20 @@ class DataCollector {
     this.startTime = Date.now();
 
     // マウス移動トラッキング
-    document.addEventListener('mousemove', this.handleMouseMove.bind(this));
+    this.mouseMoveHandler = this.handleMouseMove.bind(this);
+    document.addEventListener('mousemove', this.mouseMoveHandler);
+
+    // フレーム毎のデータ収集（マウス移動がない時も記録）
+    this.frameInterval = setInterval(() => {
+      this.collectFrameData();
+    }, 50); // 50ms毎（約20fps）でフレームデータ採集
 
     // 定期的にデータを送信
     this.sendInterval = setInterval(() => {
       this.flushBatch();
     }, 100); // 100msごとにバッチ送信
+
+    console.log('🎬 DataCollector started - collecting position, rotation, gaze data every 50ms');
   }
 
   /**
@@ -39,7 +47,16 @@ class DataCollector {
    */
   stop() {
     this.isCollecting = false;
-    document.removeEventListener('mousemove', this.handleMouseMove.bind(this));
+
+    // イベントリスナーを削除
+    if (this.mouseMoveHandler) {
+      document.removeEventListener('mousemove', this.mouseMoveHandler);
+    }
+
+    // インターバルをクリア
+    if (this.frameInterval) {
+      clearInterval(this.frameInterval);
+    }
 
     if (this.sendInterval) {
       clearInterval(this.sendInterval);
@@ -47,6 +64,8 @@ class DataCollector {
 
     // 残っているデータを送信
     this.flushBatch();
+
+    console.log('🛑 DataCollector stopped - all intervals cleared');
   }
 
   /**
@@ -83,6 +102,36 @@ class DataCollector {
         y: rotationDelta.y
       },
       gaze: this.detectGaze(event.clientX, event.clientY)
+    };
+
+    this.dataBatch.push(sensorData);
+
+    // バッチが満杯なら送信
+    if (this.dataBatch.length >= this.batchSize) {
+      this.flushBatch();
+    }
+  }
+
+  /**
+   * フレーム毎の定期的なデータ収集（マウス移動がない時も）
+   */
+  collectFrameData() {
+    if (!this.isCollecting) return;
+
+    const timestamp = Date.now();
+
+    // 最後のマウス位置を使用してセンサーデータを記録
+    const sensorData = {
+      timestamp,
+      position: {
+        x: this.lastMousePos.x,
+        y: this.lastMousePos.y
+      },
+      rotation: {
+        x: this.lastRotation.x,
+        y: this.lastRotation.y
+      },
+      gaze: this.detectGaze(this.lastMousePos.x, this.lastMousePos.y)
     };
 
     this.dataBatch.push(sensorData);
@@ -144,6 +193,12 @@ class DataCollector {
     const batch = [...this.dataBatch];
     this.dataBatch = [];
 
+    console.log(`📤 Flushing ${batch.length} sensor data records to backend`, {
+      sessionId: this.sessionId,
+      apiBaseUrl: this.apiBaseUrl,
+      sampleData: batch[0]
+    });
+
     batch.forEach(data => {
       this.sendSensorData(data);
     });
@@ -169,12 +224,19 @@ class DataCollector {
       if (!response.ok) {
         // 404 エラーはセッション未初期化の一時的な状態なので無視
         if (response.status === 404) {
+          console.debug(`⏳ Session not yet initialized (404) - will retry on next flush`);
           return; // サイレント無視
         }
         console.warn(`❌ Sensor data send failed: ${response.status} ${response.statusText}`, {
           sessionId: this.sessionId,
           url,
-          apiBaseUrl: this.apiBaseUrl
+          apiBaseUrl: this.apiBaseUrl,
+          dataType: data?.timestamp ? 'valid' : 'invalid'
+        });
+      } else {
+        console.debug(`✅ Sensor data sent successfully`, {
+          position: data?.position,
+          timestamp: data?.timestamp
         });
       }
     } catch (error) {

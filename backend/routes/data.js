@@ -32,17 +32,22 @@ router.post('/sensor', (req, res) => {
   const { sessionId, data } = req.body;
   // data構造: { timestamp, position: {x, y}, rotation: {x, y}, gaze: {x, y, object} }
 
-  console.log(`📤 Sensor data received:`, { sessionId, dataType: data?.timestamp ? 'valid' : 'invalid' });
+  console.log(`📤 Sensor data received:`, {
+    sessionId,
+    dataType: data?.timestamp ? 'valid' : 'invalid',
+    position: data?.position,
+    gaze: data?.gaze?.object
+  });
 
   const session = sessions.get(sessionId);
   if (!session) {
     console.warn(`❌ Session not found: ${sessionId}`);
-    console.warn(`Available sessions: ${Array.from(sessions.keys()).join(', ')}`);
+    console.warn(`📋 Available sessions: ${Array.from(sessions.keys()).join(', ') || 'NONE'}`);
     return res.status(404).json({ error: 'Session not found', receivedSessionId: sessionId });
   }
 
   session.sensorData.push(data);
-  console.log(`✅ Sensor data saved. Total: ${session.sensorData.length}`);
+  console.log(`✅ Sensor data saved. Total: ${session.sensorData.length} records`);
   res.json({ success: true });
 });
 
