@@ -92,14 +92,30 @@ router.post('/session/end', (req, res) => {
     : path.join(__dirname, '../../data/sessions');
 
   try {
+    // ディレクトリが存在しない場合は作成
     if (!fs.existsSync(dataDir)) {
       console.log(`📁 Creating directory: ${dataDir}`);
-      fs.mkdirSync(dataDir, { recursive: true });
+      try {
+        fs.mkdirSync(dataDir, { recursive: true });
+        console.log(`✅ Directory created successfully`);
+      } catch (mkdirError) {
+        console.warn(`⚠️ Cannot create directory ${dataDir}, will try parent: ${mkdirError.message}`);
+        // 親ディレクトリで試す
+        const parentDir = path.dirname(dataDir);
+        if (fs.existsSync(parentDir)) {
+          console.log(`📁 Parent directory exists: ${parentDir}`);
+          fs.mkdirSync(dataDir, { recursive: true });
+        } else {
+          throw mkdirError;
+        }
+      }
     }
 
     // タイムスタンプをJST形式に変換してファイルに保存
     const formattedSessionData = formatSessionDataToJST(session);
     const sessionFile = path.join(dataDir, `${sessionId}.json`);
+
+    console.log(`📝 Writing session file: ${sessionFile}`);
     fs.writeFileSync(sessionFile, JSON.stringify(formattedSessionData, null, 2));
 
     console.log(`✅ Session saved: ${sessionFile}`);
@@ -108,6 +124,17 @@ router.post('/session/end', (req, res) => {
     res.json({ success: true, message: 'Session saved' });
   } catch (error) {
     console.error(`❌ Error saving session: ${error.message}`, error);
+    console.error(`📂 dataDir: ${dataDir}`);
+    console.error(`📂 NODE_ENV: ${process.env.NODE_ENV}`);
+
+    // デバッグ: マウントポイントの確認
+    try {
+      const mntDirContents = fs.readdirSync('/mnt/data', { withFileTypes: true });
+      console.log(`📂 /mnt/data contents:`, mntDirContents.map(d => d.name));
+    } catch (e) {
+      console.error(`❌ Cannot read /mnt/data:`, e.message);
+    }
+
     res.status(500).json({ error: 'Failed to save session', details: error.message });
   }
 });
