@@ -7,9 +7,8 @@ import './App.css';
 
 function App() {
   // APIベースURL
-  // ブラウザの現在のホストから相対パスで API にアクセス
-  // window.location.origin で https://fatigue-detection-backend.onrender.com などを取得
-  const API_BASE_URL = '';  // 相対パス: /api/... で同一オリジンの API にアクセス
+  // 環境変数から取得、なければ相対パスを使用
+  const API_BASE_URL = process.env.REACT_APP_API_BASE_URL || '';  // 相対パス: /api/... で同一オリジンの API にアクセス
 
   const [gameState, setGameState] = useState('start'); // start, pre-questionnaire, playing, end, post-questionnaire
   const [selectedDifficulty, setSelectedDifficulty] = useState(null);
