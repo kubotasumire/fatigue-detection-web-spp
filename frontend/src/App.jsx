@@ -77,8 +77,14 @@ function App() {
     console.log(`Quiz attempt recorded: ${quizId}`);
   };
 
-  // クイズ回答データを記録
+  // クイズ回答データを記録（「回答する」ボタンが押された場合のみ）
   const handleQuizResponse = (quizId, isCorrect) => {
+    // バツボタン（isCorrect === false）で閉じた場合は記録しない
+    if (isCorrect === false) {
+      console.log(`Quiz cancelled: ${quizId} - not recorded`);
+      return;
+    }
+
     const response = {
       quizId,
       isCorrect,
